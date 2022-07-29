@@ -27,12 +27,55 @@ const description =
 console.log(description);
 */
 
+
+
+
+
+
+
+
+
+
+
+
 //BMI = mass / height ** 2 = mass / (height * height)//(mass in kg and height in meter)
+
+/*
 let markMass = 78;
 let markHeight = 1.69;
 let johnMass = 92;
-let jonsHeight = 1.95;
+let johnHeight = 1.95;
+*/
 
-BMI = markMass / markHeight ** 2 = markMass / (markHeight * markHeight);
+let markMass = 95;
+let markHeight = 1.88;
+let johnMass = 85;
+let johnHeight = 1.76;
 
-BMI = mass / height ** 2 = mass / (height * height)
+let markBMI = markMass / markHeight ** 2;
+let johnBMI = johnMass / johnHeight ** 2;
+
+let markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI)
+console.log(johnBMI)
+console.log(markHigherBMI)
+// or console.log(markBMI, johnBMI, markHigherBMI);
+
+let data1 =
+    "Mark's weights " +
+    markMass +
+    ' kg and is ' +
+    markHeight +
+    " m tall. John's weights " +
+    johnMass +
+    ' kg and is ' +
+    johnHeight +
+    ' m tall'
+console.log(data1);
+
+
+
+
+
+
