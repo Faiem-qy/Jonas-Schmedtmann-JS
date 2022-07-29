@@ -77,6 +77,7 @@ const firstName = 'Jonas';
 const lastName = 'Schmedtmann';
 console.log(firstName + ' ' + lastName);
 
+
 let x = 10 + 5; // 15
 x += 10; // x = x + 10 = 25
 x *= 4; // x = x *4 = 100
@@ -111,4 +112,24 @@ const averageAge = (ageJonas + ageSarah) / 2
 console.log(ageJonas, ageSarah, averageAge);
 */
 
+const firstName = 'Jonas';
+const job = 'teacher'
+const birthYear = 1991;
+const year = 2037;
 
+
+const jonas = "i'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + (job) + '!';
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}! `;
+console.log(jonasNew);
+
+console.log(`Just a regular string...`);
+
+console.log(`String with\n\
+multiple\n\
+lines`);
+
+console.log(`String
+multiple
+lines`);
