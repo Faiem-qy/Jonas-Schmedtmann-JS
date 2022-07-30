@@ -82,7 +82,7 @@ let x = 10 + 5; // 15
 x += 10; // x = x + 10 = 25
 x *= 4; // x = x *4 = 100
 x++;// x = x + 1
-x--;// 
+x--;//
 x--;//
 console.log(x);
 
@@ -112,6 +112,70 @@ const averageAge = (ageJonas + ageSarah) / 2
 console.log(ageJonas, ageSarah, averageAge);
 */
 
+
+
+// 1.16
+
+
+// /*
+let markMass = 95;
+let markHeight = 1.88;
+let johnMass = 85;
+let johnHeight = 1.76;
+
+let markBMI = markMass / markHeight ** 2;
+let johnBMI = johnMass / johnHeight ** 2;
+
+// let markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI)
+
+// console.log(markBMI)
+// console.log(johnBMI)
+// console.log(markHigherBMI)
+// or console.log(markBMI, johnBMI, markHigherBMI);
+
+let data1 =
+    "Mark's weights " +
+    markMass +
+    ' kg and is ' +
+    markHeight +
+    " m tall. John's weights " +
+    johnMass +
+    ' kg and is ' +
+    johnHeight +
+    ' m tall'
+console.log(data1);
+
+
+/*
+const massJim = 55;
+const heightJim = 1.25;
+const massJohn = 104;
+const heightJohn = 1.88;
+
+let BMIJim = massJim / heightJim ** 2;
+let BMIJohn = massJohn / heightJohn ** 2;
+const jimHigherBMI = BMIJim > BMIJohn;
+
+console.log(BMIJim);
+console.log(BMIJohn);
+console.log(jimHigherBMI);
+// console.log(BMIJIm, BMIJohn, markHigherBMI);// or this
+
+
+
+// Data 1: Jim weighs 55 kg and is 1.25 m tall.John weighs 104 kg and is 1.88m tall.
+// § Data 2: Jim weighs 95 kg and is 1.88 m tall.John weighs 85 kg and is 1.76m tall.
+
+
+const data1 = `Jim's weighs ${massJim}kg and is ${heightJim}m tall. John weighs ${massJohn}kg and is ${heightJohn}  tall`;
+
+console.log(data1)
+*/
+
+// 1.17
+/*
 const firstName = 'Jonas';
 const job = 'teacher'
 const birthYear = 1991;
@@ -133,3 +197,47 @@ lines`);
 console.log(`String
 multiple
 lines`);
+*/
+
+/*
+// 1.18 Taking decisions is/else Statements
+
+const age = 15;
+
+if (age >= 18) {
+    console.log('Sarah can start driving license 🚗')
+} else {// else block is optional
+    const yearsLeft = 18 - age;
+    console.log(` Sarah is too young. Wait another ${yearsLeft} years :)`)
+}
+
+const birthYear = 2012; //variable of century. define century outside if / else block
+
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+*/
+
+// 1.19 coding challenge #2
+/*
+1. Print a nice output to the console, saying who has the higher BMI.The message
+is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs.Example: "Mark's
+BMI(28.3) is higher than John's (23.9)!"
+
+
+const whoHasHigherBMI = `John's ${johnBMI} is higher than Mark's!`;
+
+console.log(whoHasHigherBMI);
+
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`)
+} else {
+    console.log(`John's (${johnBMI}) BMI is higher than Mark's!(${markBMI})`)
+}
+*/
