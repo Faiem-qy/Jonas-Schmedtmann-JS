@@ -263,7 +263,7 @@ console.log('23' / '2');
 
 
 let n = '1' + 1; // '11'
-n = n - 1;// 
+n = n - 1;//
 console.log(n);
 
 */
@@ -325,3 +325,37 @@ if (favourite !== 23)
 console.log('Why not 23?');
 
 */
+
+// 1.23 basic boolean logic: the and, or & not operators
+// truth tables
+
+
+/*
+// 1.24 Logical operators
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; //B
+const isTired = false; // C
+
+console.log(hasDriversLicense && hasGoodVision);// And
+console.log(hasDriversLicense || hasGoodVision);// or
+console.log(!hasDriversLicense);// ! means not
+
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log('Sarah is able to drive!');
+// } else {
+//     console.log('Someone else should drive...');
+// }
+
+
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!');
+} else {
+    console.log('Someone else should drive...');
+}
+*/
+
+//1.25 
