@@ -181,4 +181,3 @@ if (scoreDolphins2 > scoreKoalas2 && scoreDolphins2 >= 100) {
 }
 
 */
-
