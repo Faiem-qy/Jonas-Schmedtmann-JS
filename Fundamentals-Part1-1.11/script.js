@@ -1,4 +1,3 @@
-
 /*
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
@@ -494,5 +493,81 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 }
 */
 
-//1.25 
+//1.25
+// Coding challenge#3
 
+// 1.26 The Switch Statement
+
+// const day = 'friday';
+
+// switch (day) {
+//     case 'monday':// day === 'monday'if this ts true then this code will be executed
+//         console.log('Plan course structure');
+//         console.log('Go to coding meetup');
+//         break;// the break stops the code from executing tuesday etc
+//     case 'tuesday':
+//         console.log('Prepare theory videos');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Write code examples');
+//     case 'friday':
+//         console.log('Record videos');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Enjoy the weekend ;D');
+//         break;
+//     default:
+//         console.log('Not a valid day');
+// // }
+
+// if (day === 'monday') {
+//     console.log('Plan a structure for coding');
+// } else if (day === 'tuesday') {
+//     console.log('Prepare theory videos');
+// } else if (day === 'wednesday' || day === 'thursday') {
+//     console.log('Write some code examples');
+// } else if (day === 'friday') {
+//     console.log('Record videos');
+// } else if (day === 'saturday' || day === 'sunday') {
+//     console.log('Enjoy the weekened :D');
+// } else {
+//     console.log('Not a valid day');
+// }
+
+// why does day need to be defined
+
+/*
+// 1.27 Statementrs and expressions
+3 + 4 //expressions
+1991 // expresion
+true && false && !false //Expression
+// declaration is like a sentence and expressions are like the words that make up the expressions
+//  A statement is a bigger piece of code that is executed and does not produce a value by itsself. we wrote a program as a sequence of actions. These actions are statements eg.
+if (23 > 10) {
+    const str = '23 is bigger';//  ending with a semicolon means its a statement
+}
+
+const me = 'Jonas';
+console.log(`Im ${2037 - 1991} years old) ${me}`)
+*/
+
+// 1.28 The conditional (Ternary) operator - allows to write like if else statement but all in one line. iT's like writing an if else statement all in one line.
+
+const age = 15;
+// age >= 18 ? console.log(' I like to drink juice') :
+//     console.log(' I like to drink water');
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
+console.log(drink2);
+
+console.log(I like to drink ${ age } >= 18 ? 'wine' : 'water'}`);
