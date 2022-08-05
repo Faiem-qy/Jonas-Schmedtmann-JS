@@ -555,19 +555,45 @@ console.log(`Im ${2037 - 1991} years old) ${me}`)
 
 // 1.28 The conditional (Ternary) operator - allows to write like if else statement but all in one line. iT's like writing an if else statement all in one line.
 
-const age = 15;
-// age >= 18 ? console.log(' I like to drink juice') :
-//     console.log(' I like to drink water');
+// const age = 18;
+// // age >= 18 ? console.log(' I like to drink juice') :
+// //     console.log(' I like to drink water');
 
-const drink = age >= 18 ? 'wine' : 'water';
-console.log(drink);
+// const drink = age >= 18 ? 'wine' : 'water';
+// console.log(drink);
 
-let drink2;
-if (age >= 18) {
-    drink2 = 'wine';
-} else {
-    drink2 = 'water';
-}
-console.log(drink2);
+// let drink2;
+// if (age >= 18) {
+//     drink2 = 'wine';
+// } else {
+//     drink2 = 'water';
+// }
+// console.log(drink2);
 
-console.log(I like to drink ${ age } >= 18 ? 'wine' : 'water'}`);
+// console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
+// 1.29
+// coding challenge#3
+
+// const bill = 275;
+// const bill = 40;
+// const bill = 430;
+// const tip = 0.15 * bill;
+// const tip2 = 0.2 * bill;
+// // const total = (tip + bill);
+
+// if (bill >= 50 && bill <= 300) {
+//     console.log(tip + bill);
+// } else if (bill > 300) {
+//     console.log(tip2 + bill);
+// } else if (bill < 50) {
+//     console.log(bill);
+// }
+
+// ternary
+// const bill = 40;
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// console.log(`The bill was $${bill}, the tip was $${tip}, and the total value $${bill + tip}`);
+
+// 1.3 java script releases
+
