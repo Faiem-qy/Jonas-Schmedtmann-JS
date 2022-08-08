@@ -32,7 +32,7 @@ console.log(cerealSales);
 
 // function declaration
 // const games = 2000 - gamesPlayed; //no need for this line simply remove 2000 - gamesPlayed and add it to the return value. can be called first before declaring it
-// const youngerAges = totalGames(1500);// called before 
+// const youngerAges = totalGames(1500);// called before
 
 function totalGames(gamesPlayed) {
     return 2000 - gamesPlayed;
@@ -74,3 +74,51 @@ const yearsUntilNewConsole = (gamesPlayed, firstName) => {// it there are multip
 console.log(yearsUntilNewConsole(1300, 'Bobby'));
 console.log(yearsUntilNewConsole(1300, 'Fred'));
 */
+
+/*
+// functions calling other functions
+function quantityOfVegetables(veg) {
+    return veg * 1;
+}
+
+function vegySalad(lettuce, onions, carrots) {
+    const amountOfLettuce = quantityOfVegetables(lettuce);
+    const amountOfOnions = quantityOfVegetables(onions);
+    const amountOfCarrots = quantityOfVegetables(carrots);
+
+    const salads = `Some people like ${amountOfLettuce} lettuce, ${amountOfOnions} onions and ${amountOfCarrots} carrots in their salad`;
+    return salads;
+};
+
+console.log(vegySalad(2, 5, 3));
+*/
+
+// 3.7 practice reviewing functions
+
+const calcAge = function (dateOfBirth) {
+    return 2052 - dateOfBirth;
+}
+
+const yearsUntilRetirement = function (dateOfBirth, lastName) {
+    const age = calcAge(dateOfBirth)
+    const retirement = 60 - age;
+
+    if (retirement > 0) {
+        console.log(`${lastName} retires in ${retirement} years`);
+        return +1
+    } else if (retirement < 10) {
+        console.log(`${lastName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${lastName} retires in ${retirement} years`);
+        return -1;
+    }
+
+
+}
+
+console.log(yearsUntilRetirement(2000, 'Edward'));
+console.log(yearsUntilRetirement(1900, 'Marley'));
+
+
+
