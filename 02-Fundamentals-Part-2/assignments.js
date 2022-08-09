@@ -91,7 +91,7 @@ function vegySalad(lettuce, onions, carrots) {
 };
 
 console.log(vegySalad(2, 5, 3));
-*/
+
 
 // 3.7 practice reviewing functions
 
@@ -119,6 +119,53 @@ const yearsUntilRetirement = function (dateOfBirth, lastName) {
 
 console.log(yearsUntilRetirement(2000, 'Edward'));
 console.log(yearsUntilRetirement(1900, 'Marley'));
+
+*/
+// 3.9 arrays practice
+
+/*
+const friend1 = 'Jerry';
+const friend2 = 'Fred';
+const friend3 = 'Lewis';// instead of all this
+
+const friends = ['Jerry', 'Fred', 'Lewis', 'Kirby'];//one way - first element is [0, 1, 2]
+console.log(friends)
+
+// const years = new Array(1991, 1984, 2008, 2020);// another way(more ususal)
+
+console.log(friends[0])
+console.log(friends[2])
+
+console.log(friends.length);// getting number of elements in the array (called a property)
+console.log(friends[friends.length - 1]);//(expects an expression, not a statement)
+
+friends[2] = 'James';// change the element of the array.(Arrays can be mutated as per element)
+console.log(friends);
+
+//friends = ['Bob. 'Alice];// cannot be done to replace the entire array
+
+const firstName = 'Jim';
+const jim = [firstName, 'Clark', 2032 - 1960, 'racer', friends];// compiling all relevant data in one data structure. firstname, lastname, age , profession and array
+console.log(jim);
+console.log(jim.length);
+
+// exercise
+const calcAge = function (birthyear) {
+    return 2055 - birthyear;
+}
+
+const years = [1950, 1962, 2015, 2022];
+
+console.log(calcAge(years)); //cannot do this
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0])], calcAge(years[1]), calcAge(years[years.length - 1]);???????
+console.log(ages);
+*/
 
 
 
