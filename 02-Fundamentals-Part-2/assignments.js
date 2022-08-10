@@ -167,5 +167,21 @@ const ages = [calcAge(years[0])], calcAge(years[1]), calcAge(years[years.length 
 console.log(ages);
 */
 
+// 4.1
 
 
+// const bill = 125;
+// const bill2 = 555;
+// const bill3 = 44;
+
+// const jacob = {// objects practice
+//     firstName: 'Jacob',
+//     lastName: 'Frenchy',
+//     age: 2023 - 1987,
+//     hairColor: 'Blue',
+//     hobby: 'Racing',
+//     job: 'Contractor',
+//     eyeColor: 'violet',
+// };
+
+// console.log(jacob);
