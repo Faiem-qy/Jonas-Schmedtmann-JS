@@ -207,7 +207,7 @@ console.log(ages);
 */
 
 /*
-// 4. Basic array operations
+// 4.0 Basic array operations
 const friends = ['Michael', 'Steven', 'Peter'];
 const newLength = friends.push('Jay');
 console.log(friends);
@@ -218,6 +218,7 @@ console.log(friends);
 
 // remove elements
 friends.pop();// last
+friends.pop();// remove another
 const popped = friends.pop();
 console.log(popped);
 console.log(friends);
@@ -229,7 +230,7 @@ console.log(friends.indexOf('Steven'));
 console.log(friends.indexOf('Bob'));// because Bob is not in the list then it returns a value of -1
 
 friends.push(23);
-console.log(friends.includes('Steven'));//ES6 method
+console.log(friends.includes('Steven'));//ES6 method to check if the elsement is included
 console.log(friends.includes('Bob'));
 console.log(friends.includes(23));
 
@@ -239,4 +240,62 @@ if (friends.includes('Steven')) {
     console.log('You have a friend called Steven');
 }
 */
+
+/*
+// 4.1
+const calcTip = function (bill) {//function expression
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+// const calcTip = bill => bill>=50 && bill <= 300 ? bill * 0.15 : bill * 0.2; //arrow function
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, totals);
+*/
+
+// 4.2 introduction to objects
+// const jonasArray = [// array
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven']
+// ];// in arrays we cannot give the elements a name only by order number
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };// by using objects we can give each element a name
+
+// console.log(jonas);
+
+// 4.3 Dot an Bracket Notation
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};// by using objects we can give each element a name
+
+console.log(jonas);
+
+console.log(jonas.lastName); //dot notation
+console.log(jonas['lastName']);// bracket notation
+
+const nameKey = 'Name'
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+// console.log(jonas.'last' + namekey)//cannot work with the dot notation
+
+const interestedIn = prompt('WHat do you want to know about Jonas? CHoose between firstName, lastnNme, age, job and friends.');
+console.log(jonas.interestedIn)//is undefined because there is no property called interestedIn.
+console.log(jonas[interestedIn]);//using brackets yields results in this case
 
