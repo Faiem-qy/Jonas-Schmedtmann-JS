@@ -277,25 +277,39 @@ console.log(bills, tips, totals);
 
 // 4.3 Dot an Bracket Notation
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    age: 2037 - 1991,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven']
-};// by using objects we can give each element a name
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };// by using objects we can give each element a name
 
-console.log(jonas);
+// console.log(jonas);
 
-console.log(jonas.lastName); //dot notation
-console.log(jonas['lastName']);// bracket notation
+// console.log(jonas.lastName); //dot notation
+// console.log(jonas['lastName']);// bracket notation
 
-const nameKey = 'Name'
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
-// console.log(jonas.'last' + namekey)//cannot work with the dot notation
+// const nameKey = 'Name'
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
+// // console.log(jonas.'last' + namekey)//cannot work with the dot notation
 
-const interestedIn = prompt('WHat do you want to know about Jonas? CHoose between firstName, lastnNme, age, job and friends.');
-console.log(jonas.interestedIn)//is undefined because there is no property called interestedIn.
-console.log(jonas[interestedIn]);//using brackets yields results in this case
+// const interestedIn = prompt('What do you want to know about Jonas? CHoose between firstName, lastnNme, age, job and friends.');
+// // console.log(jonas.interestedIn)//is undefined because there is no property called interestedIn.
+// console.log(jonas[interestedIn]);//using brackets yields results in this case
+
+// if (jonas[interestedIn]) {
+//     console.log(jonas[interestedIn]);
+// } else {
+//     console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
+// }
+
+// jonas.location = 'Portugal';//dot
+// jonas['twitter'] = '@jonasschmedtmann';//bracket
+// console.log(jonas);
+
+// // challenge
+// // "Jonas has 3 friends, and his best friend is called Michael"
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`)
 
