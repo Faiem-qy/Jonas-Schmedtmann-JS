@@ -169,19 +169,47 @@ console.log(ages);
 
 // 4.1
 
-
+/*
 // const bill = 125;
 // const bill2 = 555;
 // const bill3 = 44;
 
-// const jacob = {// objects practice
-//     firstName: 'Jacob',
-//     lastName: 'Frenchy',
-//     age: 2023 - 1987,
-//     hairColor: 'Blue',
-//     hobby: 'Racing',
-//     job: 'Contractor',
-//     eyeColor: 'violet',
-// };
+const jacob = {// objects practice
+    firstName: 'Jacob',
+    lastName: 'Frenchy',
+    age: 2023 - 1987,
+    hairColor: 'Blue',
+    hobby: ['Racing', 'eductaion'],
+    job: 'Contractor',
+    eyeColor: 'violet',
+    friends: ['Jim', 'Fred', 'Bob', 'James'],
+    favouriteFood: 'Pie',
+    pet: 'dog',
+};
 
-// console.log(jacob);
+// console.log(jacob['lastName']);
+
+// const nameKey = 'Name';
+// console.log(jacob['first' + nameKey]);
+// console.log(jacob['last' + nameKey]);
+
+
+const details = prompt('Information about Jacob. Choose between firstName, lastName, age, hairColor, hobby, job, eyeColor, friends, favouriteFood and pet');
+
+
+
+if (jacob[details]) {//codeblock for error
+    console.log(jacob[details]);
+} else {
+    console.log(`Wrong entry! Please choose between firstName, lastName, age, hairColor, hobby, job, eyeColor, friends, favouriteFood and pet`);
+}
+
+console.log(jacob.friends.length);//length
+
+
+// another challenge
+// 'Jacob has 4 friends and he is eager to meet new people. He enjoys his job as a contractor. Favourite food is Pie and his pet of choice is a dog.'
+
+console.log(`Jacob has ${jacob.friends.length} friends and he is eager to meet new people. He enjoys his job as a ${'job'}. His favourite food is ${'favouriteFood'} and his pet of choice is a ${'pet'}`);
+
+* /
