@@ -250,15 +250,16 @@ if (mark.bmi > john.bmi) {
 }
 */
 
-// // practice loop 1
-// for (let rep = 1; rep <= 50; rep++) {
-//     console.log(`I like car#${rep}`);
-// }
+
+// practice loop 1
+for (let rep = 1; rep <= 50; rep++) {
+    console.log(`I like car#${rep}`);
+}
 
 // practice loop 2
-// for (let rep = 256; rep <= 280; rep++) {
-//     console.log(`I am not a pencil ${rep}`);
-// }
+for (let rep = 256; rep <= 280; rep++) {
+    console.log(`I am not a pencil ${rep}`);
+}
 
 // practice loop 3
 for (let rep = 1; rep <= 20; rep++) {
@@ -277,3 +278,14 @@ for (let rep = 4; rep <= 8; rep++) {
 for (let rep = 3; rep <= 6; rep++) {
     console.log(`lets have ${rep} drinks`);
 }
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`I have ${rep} pencils!`)
+    console.log(`I have ${rep} bananas`)
+    console.log(`This is ${rep} times interesting`)
+}
+
+for (let rep = 2; rep <= 3; rep++) {
+    console.log(`How amazing is this x${rep}`)
+}
+
