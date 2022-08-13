@@ -313,6 +313,7 @@ console.log(bills, tips, totals);
 // // "Jonas has 3 friends, and his best friend is called Michael"
 // console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`)
 
+/*
 
 const jonas = {
     firstName: 'Jonas',
@@ -350,9 +351,26 @@ console.log(jonas.age);
 
 // console.log(jonas['calcAge'](1991));
 
-// challenge 
+// challenge
 // "Jonas is a 46-year old teacher, and he has a driver's license.
-
 
 console.log(jonas.getSmmary());// for challenge to be executed
 
+*/
+
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 2');
+// console.log('Lifting weights repetition 3');
+// console.log('Lifting weights repetition 4');
+// console.log('Lifting weights repetition 5');
+// console.log('Lifting weights repetition 6');
+// console.log('Lifting weights repetition 7');
+// console.log('Lifting weights repetition 8');
+// console.log('Lifting weights repetition 9');
+// console.log('Lifting weights repetition 10');
+
+
+//for loop keeps running while condition is true
+// for (let rep = 1; rep <= 10; rep++) {// rep++ means rep +1
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
