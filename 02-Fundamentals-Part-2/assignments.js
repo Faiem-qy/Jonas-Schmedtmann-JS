@@ -213,7 +213,7 @@ console.log(jacob.friends.length);//length
 console.log(`Jacob has ${jacob.friends.length} friends and he is eager to meet new people. He enjoys his job as a ${'job'}. His favourite food is ${'favouriteFood'} and his pet of choice is a ${'pet'}`);
 
 */
-
+/*
 // assignment challenge 3
 
 const mark = {
@@ -248,5 +248,32 @@ if (mark.bmi > john.bmi) {
 } else if (john.bmi > mark.bmi) {
     console.log(`${john.fullName}'s BMI ${john.bmi} is higher than ${mark.fullName}'s BMI ${mark.bmi}.`);
 }
+*/
 
+// // practice loop 1
+// for (let rep = 1; rep <= 50; rep++) {
+//     console.log(`I like car#${rep}`);
+// }
 
+// practice loop 2
+// for (let rep = 256; rep <= 280; rep++) {
+//     console.log(`I am not a pencil ${rep}`);
+// }
+
+// practice loop 3
+for (let rep = 1; rep <= 20; rep++) {
+    console.log(`I have ${rep} chicken`)
+}
+// practice 4
+for (let rep = 2; rep <= 30; rep++) {
+    console.log(`I have ${rep} and chips`);
+}
+
+for (let rep = 4; rep <= 8; rep++) {
+    console.log(`to eat with ${rep} forks`);
+}
+
+//practice 4
+for (let rep = 3; rep <= 6; rep++) {
+    console.log(`lets have ${rep} drinks`);
+}
