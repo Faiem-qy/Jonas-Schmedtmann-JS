@@ -374,3 +374,57 @@ console.log(jonas.getSmmary());// for challenge to be executed
 // for (let rep = 1; rep <= 10; rep++) {// rep++ means rep +1
 //     console.log(`Lifting weights repetition ${rep}`);
 // }
+
+
+// 4.7 Looping arrays, breaking and continuing
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    2033 - 1990,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+
+const types = [];
+// console.log(jonas(1))// what we are trying to acheive
+// console.log(jonas(2))
+// console.log(jonas(3))
+// console.log(jonas(4))
+//honas[5] does not exist
+
+for (let i = 0; i < jonas.length; i++) {//adding jonas.length allows you to retrieve all the elements of the array instead of hardcoding it
+    //reading from jonas arrray
+    console.log(jonas[i], typeof jonas[i]);
+
+    //filling types of array
+    //types[i] = typeof jonas[i];//1 way
+    types.push(typeof jonas[i]);//another way
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];//using a loop to calculate
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('---ONLY STRINGS--- ')// example 
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log('---BREAK WITH NUMBERS--- ')// example stop ater the firs number is found
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] === 'number') break;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
