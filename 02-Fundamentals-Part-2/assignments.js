@@ -250,7 +250,7 @@ if (mark.bmi > john.bmi) {
 }
 */
 
-
+/*
 // practice loop 1
 for (let rep = 1; rep <= 50; rep++) {
     console.log(`I like car#${rep}`);
@@ -288,4 +288,40 @@ for (let rep = 1; rep <= 10; rep++) {
 for (let rep = 2; rep <= 3; rep++) {
     console.log(`How amazing is this x${rep}`)
 }
+*/
 
+/*
+// loop within a loop practice
+
+for (let bag = 1; bag <= 10; bag++) {
+    console.log(`I have ${bag} bag of apples`);
+
+    for (let apples = 1; apples <= 10; apples++) {
+        console.log(`Bag ${bag}: apple # ${apples} `);
+    }
+}
+
+for (let basket = 1; basket <= 3; basket++) {
+    console.log(`I have ${basket} baskets`);
+
+    for (let fruits = 1; fruits <= 8; fruits++) {
+        console.log(` Basket # ${basket} : Fruit #${fruits} is in this basket`);
+    }
+}
+
+for (let parkingLot = 1; parkingLot <= 2; parkingLot++) {
+    console.log(` There are ${parkingLot} parking lots.`)
+
+    for (let cars = 1; cars <= 200; cars++) {
+        console.log(` car # ${cars} is located in parking lot # ${parkingLot} `);
+    }
+}
+
+for (let paint = 1; paint <= 5; paint++) {
+    console.log(` WHen using this color # ${paint} to paint`);
+
+    for (let coats = 1; coats <= 3; coats++) {
+        console.log(`It is recommended for paint # ${paint}, apply ${coats} coats`)
+    }
+}
+*/
