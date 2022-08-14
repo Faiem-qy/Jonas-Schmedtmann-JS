@@ -375,7 +375,7 @@ console.log(jonas.getSmmary());// for challenge to be executed
 //     console.log(`Lifting weights repetition ${rep}`);
 // }
 
-
+/*
 // 4.7 Looping arrays, breaking and continuing
 const jonas = [
     'Jonas',
@@ -415,7 +415,7 @@ for (let i = 0; i < years.length; i++) {
 console.log(ages);
 
 // continue and break
-console.log('---ONLY STRINGS--- ')// example 
+console.log('---ONLY STRINGS--- ')// example
 for (let i = 0; i < jonas.length; i++) {
     if (typeof jonas[i] !== 'string') continue;
 
@@ -428,3 +428,32 @@ for (let i = 0; i < jonas.length; i++) {
 
     console.log(jonas[i], typeof jonas[i]);
 }
+*/
+/*
+// 4.8
+
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    2033 - 1990,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+// 0,1,2,3...
+//4,3,2,1....
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {//(loop #1)
+    console.log(`------starting exercise${exercise}`);
+
+    for (let rep = 1; rep <= 5; rep++) {// loop within a loop(loop#2)
+        console.log(`Exercise ${exercise}: lifting weight repetition ${rep}`);
+    }
+}
+*/
