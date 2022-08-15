@@ -1,327 +1,501 @@
 'use strict';
 
-/*
-// const testName = 'Prince';
-// console.log(testName);
+// let hasDriversLicense = false;
+// const passTest = true;
 
-//practice of functions P1
-function cars(toyota, honda, mercedes, porsche) {
-    // console.log(toyota, honda, mercedes, porsche);//not needed
-    const brands = `There are ${honda} honda cars, ${toyota} toyota cars ${mercedes} Mercedes cars and ${porsche} porsches in the parking lot`;
-    return brands;
-}
+// if (passTest) hasDriversLicense = true;
+// if (hasDriversLicense) console.log('I can drive');
 
-const howManyCars = cars(26, 42, 12, 15);
-console.log(howManyCars);// this can produce the string
-console.log(cars(26, 42, 12, 15));// as well as this
+// const interface = 'Audio';
+// const private = 534;
 
-const howManyGoodCars = cars(26, 42, 0, 26)
-console.log(howManyGoodCars);
-
-// P2
-function cereal(captinCrunch, cornFlakes, pebbles) {
-    const brandOfCereal = `Monthly sales of cereal was as follow. Captin Crunch was ${captinCrunch} boxes . CornFlakes was ${cornFlakes} boxes and Pebbles was ${pebbles} boxes respectively.`;
-    return brandOfCereal;
-}
-
-const cerealSales = cereal(500, 400, 300);
-console.log(cerealSales);
-
-
-// 3.4 function declarations and expressions
-
-// function declaration
-// const games = 2000 - gamesPlayed; //no need for this line simply remove 2000 - gamesPlayed and add it to the return value. can be called first before declaring it
-// const youngerAges = totalGames(1500);// called before
-
-function totalGames(gamesPlayed) {
-    return 2000 - gamesPlayed;
-}
-
-const games1 = totalGames(1500);
-// console.log(games1);
-
-//function expression (I prefer to us eto maintain order)
-const totalGames2 = function (gamesPlayed) {
-    return 2000 - gamesPlayed;
-}
-const games2 = totalGames2(1200);
-
-console.log(games1, games2);
-
-// 3.5 arrow function practice
-// 1.0
-// const games3 = gamesPlayed => 2000 - gamesPlayed;
-// const games = games3(850);
-// console.log(games);
-
-// const yearsUntilNewConsole = gamesPlayed => {// it there are multiple parameters then we need to wrap the parameter in parenthesis
-//     const date = 2000 - gamesPlayed;
-//     const releaseDate = 1200 - date;
-//     return releaseDate;//return statement is needed here
+// // 3.3 Functions
+// function logger() {
+//     console.log('My name is Jonas');
 // }
 
-// console.log(yearsUntilNewConsole(1300));
+// // calling/running/invoking the function
+// logger();
+// logger();
+// logger();
 
-// 2.0
-const yearsUntilNewConsole = (gamesPlayed, firstName) => {// it there are multiple parameters then we need to wrap the parameter in parenthesis and add paramete, as seen here.
-    const date = 2000 - gamesPlayed;
-    const releaseDate = 1200 - date;
-    // return releaseDate;
-    return `${firstName} plays ${gamesPlayed} games`;
-}
+// function fruitProcessor(apples, oranges) {
+//     console.log(apples, oranges);
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//     return juice;
+// }
 
-console.log(yearsUntilNewConsole(1300, 'Bobby'));
-console.log(yearsUntilNewConsole(1300, 'Fred'));
-*/
+// const appleJuice = fruitProcessor(5, 0);// these parameters are called the arguement
+// console.log(appleJuice);
+// const appleOrangeJuice = fruitProcessor(2, 4)
+// console.log(appleOrangeJuice);
+
+// const num = Number('23');
+
+
+// 3.4
+// Function Declarations vs Expressions
+
+// function declaration
+
+// function calcAge1(birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const age1 = calcAge1(1991);
+
+
+// // function expression
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+// const age2 = calcAge2(1991);
+
+// console.log(age1, age2);
+
+// 3.5 Arrow Function
+
+// // function expression
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// // Arrow function
+// const calcAge3 = birthyear => 2037 - birthyear;
+// const age3 = calcAge3(1991);
+// console.log(age3);
+
+// const yearsUntilRetirement = (birthyear, firstName) => {
+//     const age = 2037 - birthyear;
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstName} retires in ${retirement} years`;
+// }
+
+// console.log(yearsUntilRetirement(1991, 'Jonas'));
+// console.log(yearsUntilRetirement(1980, 'Bob'));
+
+// 3.6 Functions calling other Functions
+
+// function cutFruitPieces(fruit) {
+//     return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangePieces = cutFruitPieces(oranges);
+
+//     const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} piece of orange.`;
+//     return juice;
+// }
+// console.log(fruitProcessor(2, 3));
+
+// 3.7 Reviewing Functions
+
+// const calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
+
+//     if (retirement > 0) {
+//         console.log(`${firstName} retires in ${retirement} years`);
+//         return retirement;
+//     } else {
+//         console.log(`${firstName} has already retired`);
+//         return -1;
+//     }
+// }
+
+// console.log(yearsUntilRetirement(1991, 'Jonas'));
+// console.log(yearsUntilRetirement(1950, 'Mike'));
+
+
+
+// function dolphinsScore1(score1, score2, score3) {
+//     console.log(score1, score2, score3);
+//     const score = `The dolphins average score is ${(score1 + score2 + score3) / 3} `;
+//     return score;
+// };
+
+// const firstScore = dolphinsScore1(44, 23, 71);
+// console.log(firstScore);
+// // console.log(dolphinsScore1(44, 23, 71));
+
+
+// const secondScore = dolphinsScore1(85, 54, 41);
+// console.log(secondScore);
+
+
+// const calcAverage = (a, b, c) => ((a + b + c) / 3);
+// console.log(calcAverage(3, 4, 5));
+
+// let scoreDolphins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreDolphins, scoreKoalas);
+
+// const scoreDolphins2 = calcAverage(85, 54, 41);
+// const scoreKoalas2 = calcAverage(23, 34, 27);
+// console.log(scoreDolphins2, scoreKoalas2);
+
+
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//     if (avgDolphins >= 2 * avgKoalas) {
+//         console.log(`Dolphins win the trophy⚡(${avgDolphins} vs ${avgKoalas})`);
+//     } else if (avgKoalas >= 2 * avgDolphins) {
+//         console.log(`Koalas win the trophy⚡(${avgKoalas} vs {avgDolphins})`);
+//     } else {
+//         console.log(' No team wins...');
+//     }
+// }
+
+// checkWinner(scoreDolphins, scoreKoalas);
+
+// checkWinner(5200, 1001);
+
+// scoreDolphins = calcAverage(85, 54, 41);
+// scoreKoalas = calcAverage(23, 34, 27);
+// console.log(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
 
 /*
-// functions calling other functions
-function quantityOfVegetables(veg) {
-    return veg * 1;
-}
+// 3.9 Arrays
 
-function vegySalad(lettuce, onions, carrots) {
-    const amountOfLettuce = quantityOfVegetables(lettuce);
-    const amountOfOnions = quantityOfVegetables(onions);
-    const amountOfCarrots = quantityOfVegetables(carrots);
+const friend1 = 'Michael';
+const friend2 = ' Steven';
+const friend3 = ' Peter';
 
-    const salads = `Some people like ${amountOfLettuce} lettuce, ${amountOfOnions} onions and ${amountOfCarrots} carrots in their salad`;
-    return salads;
-};
-
-console.log(vegySalad(2, 5, 3));
-
-
-// 3.7 practice reviewing functions
-
-const calcAge = function (dateOfBirth) {
-    return 2052 - dateOfBirth;
-}
-
-const yearsUntilRetirement = function (dateOfBirth, lastName) {
-    const age = calcAge(dateOfBirth)
-    const retirement = 60 - age;
-
-    if (retirement > 0) {
-        console.log(`${lastName} retires in ${retirement} years`);
-        return +1
-    } else if (retirement < 10) {
-        console.log(`${lastName} retires in ${retirement} years`);
-        return retirement;
-    } else {
-        console.log(`${lastName} retires in ${retirement} years`);
-        return -1;
-    }
-
-
-}
-
-console.log(yearsUntilRetirement(2000, 'Edward'));
-console.log(yearsUntilRetirement(1900, 'Marley'));
-
-*/
-// 3.9 arrays practice
-
-/*
-const friend1 = 'Jerry';
-const friend2 = 'Fred';
-const friend3 = 'Lewis';// instead of all this
-
-const friends = ['Jerry', 'Fred', 'Lewis', 'Kirby'];//one way - first element is [0, 1, 2]
+const friends = ['Michael', 'Steven', 'Peter'];
 console.log(friends)
 
-// const years = new Array(1991, 1984, 2008, 2020);// another way(more ususal)
 
-console.log(friends[0])
-console.log(friends[2])
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(friends[0]);
+console.log(friends[2]);
 
-console.log(friends.length);// getting number of elements in the array (called a property)
-console.log(friends[friends.length - 1]);//(expects an expression, not a statement)
+console.log(friends.length);// counting elements in the array
+console.log(friends[friends.length - 1]);
 
-friends[2] = 'James';// change the element of the array.(Arrays can be mutated as per element)
+friends[2] = 'Jay';//changing an element #2 even though it is declared by const
 console.log(friends);
+// friends = ['Bob, 'Alice];// this would be illegal
 
-//friends = ['Bob. 'Alice];// cannot be done to replace the entire array
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+console.log(jonas.length);
 
-const firstName = 'Jim';
-const jim = [firstName, 'Clark', 2032 - 1960, 'racer', friends];// compiling all relevant data in one data structure. firstname, lastname, age , profession and array
-console.log(jim);
-console.log(jim.length);
+// Exercise
 
-// exercise
-const calcAge = function (birthyear) {
-    return 2055 - birthyear;
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
 }
+const yearss = [1990, 1967, 2002, 2010, 2018];
 
-const years = [1950, 1962, 2015, 2022];
+// calcAge(yearss);// cannot work because because it is trying to subtract all the years from 2037
+// // cannot do operations with arrays
 
-console.log(calcAge(years)); //cannot do this
-
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
+const age1 = calcAge(yearss[0]);
+const age2 = calcAge(yearss[1]);
+const age3 = calcAge(yearss[yearss.length - 1]);
 console.log(age1, age2, age3);
 
-const ages = [calcAge(years[0])], calcAge(years[1]), calcAge(years[years.length - 1]);???????
+const ages = [calcAge(yearss[0]), calcAge(yearss[0]), calcAge(yearss[years.length - 1])];
 console.log(ages);
 */
 
+/*
+// 4.0 Basic array operations
+const friends = ['Michael', 'Steven', 'Peter'];
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
+console.log(friends);
+
+// remove elements
+friends.pop();// last
+friends.pop();// remove another
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();// add elements
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));// because Bob is not in the list then it returns a value of -1
+
+friends.push(23);
+console.log(friends.includes('Steven'));//ES6 method to check if the elsement is included
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+// use the includes method to add conditionals
+
+if (friends.includes('Steven')) {
+    console.log('You have a friend called Steven');
+}
+*/
+
+/*
 // 4.1
-
-/*
-// const bill = 125;
-// const bill2 = 555;
-// const bill3 = 44;
-
-const jacob = {// objects practice
-    firstName: 'Jacob',
-    lastName: 'Frenchy',
-    age: 2023 - 1987,
-    hairColor: 'Blue',
-    hobby: ['Racing', 'eductaion'],
-    job: 'Contractor',
-    eyeColor: 'violet',
-    friends: ['Jim', 'Fred', 'Bob', 'James'],
-    favouriteFood: 'Pie',
-    pet: 'dog',
-};
-
-// console.log(jacob['lastName']);
-
-// const nameKey = 'Name';
-// console.log(jacob['first' + nameKey]);
-// console.log(jacob['last' + nameKey]);
-
-
-const details = prompt('Information about Jacob. Choose between firstName, lastName, age, hairColor, hobby, job, eyeColor, friends, favouriteFood and pet');
-
-
-
-if (jacob[details]) {//codeblock for error
-    console.log(jacob[details]);
-} else {
-    console.log(`Wrong entry! Please choose between firstName, lastName, age, hairColor, hobby, job, eyeColor, friends, favouriteFood and pet`);
+const calcTip = function (bill) {//function expression
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
 
-console.log(jacob.friends.length);//length
+// const calcTip = bill => bill>=50 && bill <= 300 ? bill * 0.15 : bill * 0.2; //arrow function
 
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
-// another challenge
-// 'Jacob has 4 friends and he is eager to meet new people. He enjoys his job as a contractor. Favourite food is Pie and his pet of choice is a dog.'
-
-console.log(`Jacob has ${jacob.friends.length} friends and he is eager to meet new people. He enjoys his job as a ${'job'}. His favourite food is ${'favouriteFood'} and his pet of choice is a ${'pet'}`);
-
+console.log(bills, tips, totals);
 */
+
+// 4.2 introduction to objects
+// const jonasArray = [// array
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven']
+// ];// in arrays we cannot give the elements a name only by order number
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };// by using objects we can give each element a name
+
+// console.log(jonas);
+
+// 4.3 Dot an Bracket Notation
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };// by using objects we can give each element a name
+
+// console.log(jonas);
+
+// console.log(jonas.lastName); //dot notation
+// console.log(jonas['lastName']);// bracket notation
+
+// const nameKey = 'Name'
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
+// // console.log(jonas.'last' + namekey)//cannot work with the dot notation
+
+// const interestedIn = prompt('What do you want to know about Jonas? CHoose between firstName, lastnNme, age, job and friends.');
+// // console.log(jonas.interestedIn)//is undefined because there is no property called interestedIn.
+// console.log(jonas[interestedIn]);//using brackets yields results in this case
+
+// if (jonas[interestedIn]) {
+//     console.log(jonas[interestedIn]);
+// } else {
+//     console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
+// }
+
+// jonas.location = 'Portugal';//dot
+// jonas['twitter'] = '@jonasschmedtmann';//bracket
+// console.log(jonas);
+
+// // challenge
+// // "Jonas has 3 friends, and his best friend is called Michael"
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`)
+
 /*
-// assignment challenge 3
 
-const mark = {
-    fullName: 'Mark Miller',
-    height: 1.69,
-    weight: 20,
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthyear: 1991,
+    job: 'teacher',//string
+    friends: ['Michael', 'Peter', 'Steven'],//array
+    hasDriversLicense: true,//boolean
 
-    calcBMI: function () {
-        this.bmi = this.weight / this.height ** 2
-        return - this.bmi;
+    // calcAge: function (birthyear) {
+    // function as a parameter
+    // return 2037 - birthyear;
+    //   }
+
+    // calcAge: function () {
+    //     // console.log(this);
+    //     return 2037 - this.birthyear;// using the this keyword connects the object to the method
+
+    calcAge: function () {
+        this.age = 2037 - this.birthyear;
+        return this.age;
     },
+
+    getSmmary: function () {// challenge
+        return `${this.firstName} is a ${this.calcAge()} - year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+    }
 }
+// by using objects we can give each element a name
 
-const john = {
-    fullName: 'John Smith',
-    height: 1.95,
-    weight: 95,
+console.log(jonas.calcAge());
 
-    calcBMI: function () {
-        this.bmi = this.weight / this.height ** 2
-        return - this.bmi;
-    },
-};
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
 
+// console.log(jonas['calcAge'](1991));
 
-mark.calcBMI();
-john.calcBMI();
-console.log(mark.bmi, john.bmi);
+// challenge
+// "Jonas is a 46-year old teacher, and he has a driver's license.
 
-if (mark.bmi > john.bmi) {
-    console.log(`${mark.fullName}'s BMI ${mark.bmi} is higher than ${john.fullName}'s BMI ${john.bmi}.`);
-} else if (john.bmi > mark.bmi) {
-    console.log(`${john.fullName}'s BMI ${john.bmi} is higher than ${mark.fullName}'s BMI ${mark.bmi}.`);
-}
+console.log(jonas.getSmmary());// for challenge to be executed
+
 */
+
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 2');
+// console.log('Lifting weights repetition 3');
+// console.log('Lifting weights repetition 4');
+// console.log('Lifting weights repetition 5');
+// console.log('Lifting weights repetition 6');
+// console.log('Lifting weights repetition 7');
+// console.log('Lifting weights repetition 8');
+// console.log('Lifting weights repetition 9');
+// console.log('Lifting weights repetition 10');
+
+
+//for loop keeps running while condition is true
+// for (let rep = 1; rep <= 10; rep++) {// rep++ means rep +1
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
 
 /*
-// practice loop 1
-for (let rep = 1; rep <= 50; rep++) {
-    console.log(`I like car#${rep}`);
+// 4.7 Looping arrays, breaking and continuing
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    2033 - 1990,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+
+const types = [];
+// console.log(jonas(1))// what we are trying to acheive
+// console.log(jonas(2))
+// console.log(jonas(3))
+// console.log(jonas(4))
+//honas[5] does not exist
+
+for (let i = 0; i < jonas.length; i++) {//adding jonas.length allows you to retrieve all the elements of the array instead of hardcoding it
+    //reading from jonas arrray
+    console.log(jonas[i], typeof jonas[i]);
+
+    //filling types of array
+    //types[i] = typeof jonas[i];//1 way
+    types.push(typeof jonas[i]);//another way
 }
 
-// practice loop 2
-for (let rep = 256; rep <= 280; rep++) {
-    console.log(`I am not a pencil ${rep}`);
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];//using a loop to calculate
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('---ONLY STRINGS--- ')// example
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+
+    console.log(jonas[i], typeof jonas[i]);
 }
 
-// practice loop 3
-for (let rep = 1; rep <= 20; rep++) {
-    console.log(`I have ${rep} chicken`)
-}
-// practice 4
-for (let rep = 2; rep <= 30; rep++) {
-    console.log(`I have ${rep} and chips`);
-}
+console.log('---BREAK WITH NUMBERS--- ')// example stop ater the firs number is found
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] === 'number') break;
 
-for (let rep = 4; rep <= 8; rep++) {
-    console.log(`to eat with ${rep} forks`);
-}
-
-//practice 4
-for (let rep = 3; rep <= 6; rep++) {
-    console.log(`lets have ${rep} drinks`);
-}
-
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`I have ${rep} pencils!`)
-    console.log(`I have ${rep} bananas`)
-    console.log(`This is ${rep} times interesting`)
-}
-
-for (let rep = 2; rep <= 3; rep++) {
-    console.log(`How amazing is this x${rep}`)
+    console.log(jonas[i], typeof jonas[i]);
 }
 */
-
 /*
-// loop within a loop practice
+// 4.8
 
-for (let bag = 1; bag <= 10; bag++) {
-    console.log(`I have ${bag} bag of apples`);
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    2033 - 1990,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
 
-    for (let apples = 1; apples <= 10; apples++) {
-        console.log(`Bag ${bag}: apple # ${apples} `);
-    }
+// 0,1,2,3...
+//4,3,2,1....
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
 }
 
-for (let basket = 1; basket <= 3; basket++) {
-    console.log(`I have ${basket} baskets`);
+for (let exercise = 1; exercise <= 3; exercise++) {//(loop #1)
+    console.log(`------starting exercise${exercise}`);
 
-    for (let fruits = 1; fruits <= 8; fruits++) {
-        console.log(` Basket # ${basket} : Fruit #${fruits} is in this basket`);
-    }
-}
-
-for (let parkingLot = 1; parkingLot <= 2; parkingLot++) {
-    console.log(` There are ${parkingLot} parking lots.`)
-
-    for (let cars = 1; cars <= 200; cars++) {
-        console.log(` car # ${cars} is located in parking lot # ${parkingLot} `);
-    }
-}
-
-for (let paint = 1; paint <= 5; paint++) {
-    console.log(` WHen using this color # ${paint} to paint`);
-
-    for (let coats = 1; coats <= 3; coats++) {
-        console.log(`It is recommended for paint # ${paint}, apply ${coats} coats`)
+    for (let rep = 1; rep <= 5; rep++) {// loop within a loop(loop#2)
+        console.log(`Exercise ${exercise}: lifting weight repetition ${rep}`);
     }
 }
 */
+
+// 4.9 while loop
+
+// for (let rep = 1; rep <= 10; rep++) {// normal
+//     console.log(`Lifting weights repetition${rep}`);
+// }
+
+
+// let rep = 1; // while loop
+// while (rep <= 10) {
+//     // console.log(`While Lifting weights repetition${rep}`);
+//     rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;// Math.trunc, Math.random
+// console.log(dice);
+
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('Loop is about to end...');
+// }
+
+
+const calcTip = function (bill) {//function expression
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// console.log(bills);
+
+const tips = [];
+const total = [];
+
+for (let i = 0; i < bills.length; i++) {
+    // console.log(`~${i}`);
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    total.push(tip + bills[i]);
+}
+console.log(bills, tips, total);
+
+
