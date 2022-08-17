@@ -167,7 +167,7 @@ const friend1 = 'Michael';
 const friend2 = ' Steven';
 const friend3 = ' Peter';
 
-const friends = ['Micheal', 'Steven', 'Peter'];
+const friends = ['Michael', 'Steven', 'Peter'];
 console.log(friends)
 
 
@@ -458,4 +458,45 @@ for (let exercise = 1; exercise <= 3; exercise++) {//(loop #1)
 }
 */
 
-upload correct file
+// 4.9 while loop
+
+// for (let rep = 1; rep <= 10; rep++) {// normal
+//     console.log(`Lifting weights repetition${rep}`);
+// }
+
+
+// let rep = 1; // while loop
+// while (rep <= 10) {
+//     // console.log(`While Lifting weights repetition${rep}`);
+//     rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;// Math.trunc, Math.random
+// console.log(dice);
+
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('Loop is about to end...');
+// }
+
+/*
+
+const calcTip = function (bill) {//function expression
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// console.log(bills);
+
+const tips = [];
+const total = [];
+
+for (let i = 0; i < bills.length; i++) {
+    // console.log(`~${i}`);
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    total.push(tip + bills[i]);
+}
+console.log(bills, tips, total);
+
+*/
