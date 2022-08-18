@@ -19,6 +19,28 @@
 // logger();
 // logger();
 
+
+// eg
+function games() {
+    console.log('Lots of people like to play games');
+}
+
+games();
+games();
+
+function practice() {
+    console.log('This takes lots of practice')
+}
+
+practice();
+
+function interest() {
+    console.log('This is also very interesting!!')
+}
+
+interest();
+
+
 // function fruitProcessor(apples, oranges) {
 //     console.log(apples, oranges);
 //     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
