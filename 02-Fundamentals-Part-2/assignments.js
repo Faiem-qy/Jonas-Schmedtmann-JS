@@ -1,19 +1,30 @@
 'use strict';
 
 
-const massCorbin = 78
-const heightCorbin = 1.69;
-const massMary = 92;
-const heightMary = 1.95;
+// const massCorbin = 78
+// const heightCorbin = 1.69;
+// const massMary = 92;
+// const heightMary = 1.95;
 
 // const massCorbin = 95
 // const heightCorbin = 1.88;
 // const massMary = 85;
 // const heightMary = 1.76;
 
-const BMICorbin = (massCorbin / heightCorbin) ** 2;
-const BMIMary = (massMary / heightMary) ** 2;
-console.log(BMICorbin, BMIMary);
+// const BMICorbin = (massCorbin / heightCorbin) ** 2;
+// const BMIMary = (massMary / heightMary) ** 2;
+// console.log(BMICorbin, BMIMary);
+
+
+const age = 22;
+
+if (age >= 18) {
+    console.log('Jenny can start driving.');
+} else {
+    const yearsLeft = 21 - age;
+    console.log(`Jenny has to wait ${yearsLeft} years`);
+}
+
 
 /*
 // const testName = 'Prince';
