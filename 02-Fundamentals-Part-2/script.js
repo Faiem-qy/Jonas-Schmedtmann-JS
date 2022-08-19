@@ -50,6 +50,21 @@ function carModels(toyota, honda) {
 const vehicles = carModels(1, 3);
 console.log(vehicles);
 
+practice
+function foodProcessor(carrots, cucumbers) {
+    console.log(carrots, cucumbers);
+    const food = `the ingredients for the soup are as follows ${carrots} carrots and ${cucumbers} cucumbers.`;
+    return food;
+}
+
+const vegySoup = foodProcessor(3, 1);
+console.log(vegySoup);
+
+
+
+
+
+
 // function fruitProcessor(apples, oranges) {
 //     console.log(apples, oranges);
 //     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
