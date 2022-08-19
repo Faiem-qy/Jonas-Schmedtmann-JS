@@ -16,15 +16,25 @@
 // console.log(BMICorbin, BMIMary);
 
 
-const age = 22;
+// const age = 22;
 
-if (age >= 18) {
-    console.log('Jenny can start driving.');
-} else {
-    const yearsLeft = 21 - age;
-    console.log(`Jenny has to wait ${yearsLeft} years`);
+// if (age >= 18) {
+//     console.log('Jenny can start driving.');
+// } else {
+//     const yearsLeft = 21 - age;
+//     console.log(`Jenny has to wait ${yearsLeft} years`);
+// }
+
+
+function animals(squirrel, dogs, cats) {
+    console.log(squirrel, dogs, cats)
+    const pets = (`Many people have ${squirrel} squirrels, ${dogs} dogs and ${cats}  cats.`)
+    return pets;
 }
 
+// animals(1, 3, 5);
+const typesOfPets = animals(2, 3, 5);
+console.log(typesOfPets);
 
 /*
 // const testName = 'Prince';
