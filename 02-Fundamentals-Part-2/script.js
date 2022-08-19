@@ -40,6 +40,15 @@ function interest() {
 
 interest();
 
+function carModels(toyota, honda) {
+    console.log(toyota, honda);
+    const brand = `lots of people like to drve ${honda} hondas and ${toyota} toyotas`;
+    return brand;
+}
+
+// carModels(1, 3);
+const vehicles = carModels(1, 3);
+console.log(vehicles);
 
 // function fruitProcessor(apples, oranges) {
 //     console.log(apples, oranges);
