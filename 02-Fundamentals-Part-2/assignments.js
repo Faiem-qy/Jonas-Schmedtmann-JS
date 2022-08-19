@@ -36,6 +36,21 @@ function animals(squirrel, dogs, cats) {
 const typesOfPets = animals(2, 3, 5);
 console.log(typesOfPets);
 
+
+function devices(apple, samsung) {
+    console.log(apple, samsung);
+    const mobileDevices = (`Most people had ${apple} apple ${samsung} samsung devices`);
+    return mobileDevices;
+}
+
+const personalDevices = devices(2, 2);
+console.log(personalDevices);
+
+
+
+
+
+
 /*
 // const testName = 'Prince';
 // console.log(testName);
