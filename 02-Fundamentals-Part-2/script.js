@@ -21,6 +21,7 @@
 
 
 // eg
+/*
 function games() {
     console.log('Lots of people like to play games');
 }
@@ -39,7 +40,8 @@ function interest() {
 }
 
 interest();
-
+*/
+/*
 function carModels(toyota, honda) {
     console.log(toyota, honda);
     const brand = `lots of people like to drve ${honda} hondas and ${toyota} toyotas`;
@@ -50,7 +52,8 @@ function carModels(toyota, honda) {
 const vehicles = carModels(1, 3);
 console.log(vehicles);
 
-practice
+
+//practice
 function foodProcessor(carrots, cucumbers) {
     console.log(carrots, cucumbers);
     const food = `the ingredients for the soup are as follows ${carrots} carrots and ${cucumbers} cucumbers.`;
@@ -59,9 +62,20 @@ function foodProcessor(carrots, cucumbers) {
 
 const vegySoup = foodProcessor(3, 1);
 console.log(vegySoup);
+*/
+function calcAge1(birthYr) {
+    return 2022 - birthYr;
+}
+
+const age1 = calcAge1(1986);
 
 
+constCalcAge2 = function (birthYr) {
+    return 2023 - birthYr;
+}
 
+const age2 = calcAge2(1923);
+console.log(age1, age2);
 
 
 
