@@ -25,6 +25,7 @@
 //     console.log(`Jenny has to wait ${yearsLeft} years`);
 // }
 
+/*
 
 function animals(squirrel, dogs, cats) {
     console.log(squirrel, dogs, cats)
@@ -46,9 +47,7 @@ function devices(apple, samsung) {
 const personalDevices = devices(2, 2);
 console.log(personalDevices);
 
-
-
-
+*/
 
 
 /*
