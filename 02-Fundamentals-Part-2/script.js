@@ -63,19 +63,31 @@ function foodProcessor(carrots, cucumbers) {
 const vegySoup = foodProcessor(3, 1);
 console.log(vegySoup);
 */
-function calcAge1(birthYr) {
-    return 2022 - birthYr;
+
+
+function calcFuel(gas) {
+    return 200 - (gas);
 }
 
-const age1 = calcAge1(1986);
+const gasoline = calcFuel(20);
+console.log(gasoline);
 
 
-constCalcAge2 = function (birthYr) {
-    return 2023 - birthYr;
+function calCarParts(bolts) {
+    return 10000 - (bolts);
 }
 
-const age2 = calcAge2(1923);
-console.log(age1, age2);
+const parts = calCarParts(500);
+console.log(parts)
+
+function breadMaker(white, wheat) {
+    console.log(white, wheat);
+    const loaf = `The best tasting breads have ${white} parts white and ${wheat} parts wheat and lots of butter `;
+    return loaf;
+}
+
+const typesOfBread = breadMaker(3, 5);
+console.log(typesOfBread);
 
 
 
