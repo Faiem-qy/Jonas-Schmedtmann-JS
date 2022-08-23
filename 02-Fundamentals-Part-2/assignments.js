@@ -169,8 +169,18 @@ const yearsUntilRetirement = function (dateOfBirth, lastName) {
 
 console.log(yearsUntilRetirement(2000, 'Edward'));
 console.log(yearsUntilRetirement(1900, 'Marley'));
-
 */
+function salad(carrots, cucumbers) {
+    console.log(carrots, cucumbers);
+    const vegan = `Salads with ${carrots} pieces of carrots and ${cucumbers} pieces of cucumbers make for a filling meal`
+    return vegan;
+}
+
+const healthy = salad(3, 2);
+console.log(healthy);
+
+
+
 // 3.9 arrays practice
 
 /*
