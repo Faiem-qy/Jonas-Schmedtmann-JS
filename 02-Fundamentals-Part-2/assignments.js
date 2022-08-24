@@ -170,6 +170,8 @@ const yearsUntilRetirement = function (dateOfBirth, lastName) {
 console.log(yearsUntilRetirement(2000, 'Edward'));
 console.log(yearsUntilRetirement(1900, 'Marley'));
 */
+
+/*
 function salad(carrots, cucumbers) {
     console.log(carrots, cucumbers);
     const vegan = `Salads with ${carrots} pieces of carrots and ${cucumbers} pieces of cucumbers make for a filling meal`
@@ -178,7 +180,7 @@ function salad(carrots, cucumbers) {
 
 const healthy = salad(3, 2);
 console.log(healthy);
-
+*/
 
 
 // 3.9 arrays practice
@@ -385,4 +387,13 @@ for (let paint = 1; paint <= 5; paint++) {
     }
 }
 */
+
+
+// 4.7 Looping arrays, breaking and continuing practice
+const roy = [
+    'Roy',
+    'Moss',
+    2033 - 1990,
+    'IT Technician',
+];
 
