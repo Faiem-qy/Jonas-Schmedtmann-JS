@@ -64,7 +64,7 @@ const vegySoup = foodProcessor(3, 1);
 console.log(vegySoup);
 */
 
-
+/*
 function calcFuel(gas) {
     return 200 - (gas);
 }
@@ -88,7 +88,7 @@ function breadMaker(white, wheat) {
 
 const typesOfBread = breadMaker(3, 5);
 console.log(typesOfBread);
-
+*/
 
 
 // function fruitProcessor(apples, oranges) {
@@ -446,6 +446,12 @@ console.log(jonas.getSmmary());// for challenge to be executed
 // for (let rep = 1; rep <= 10; rep++) {// rep++ means rep +1
 //     console.log(`Lifting weights repetition ${rep}`);
 // }
+
+
+
+for (let pumpkin = 1; pumpkin <= 10; pumpkin++) {
+    console.log(`Pumpkins must be sliced into ${pumpkin} pieces`);
+}
 
 /*
 // 4.7 Looping arrays, breaking and continuing
