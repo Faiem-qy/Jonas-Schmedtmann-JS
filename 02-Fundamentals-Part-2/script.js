@@ -449,10 +449,27 @@ console.log(jonas.getSmmary());// for challenge to be executed
 
 
 
-for (let pumpkin = 1; pumpkin <= 10; pumpkin++) {
-    console.log(`Pumpkins must be sliced into ${pumpkin} pieces`);
+// for (let pumpkin = 1; pumpkin <= 10; pumpkin++) {
+//     console.log(`Pumpkins must be sliced into ${pumpkin} pieces`);
+// }
+
+/*
+//example
+const ralph = [
+    'Ralph',
+    'Schmedtmann',
+    2037 - 1991,
+    'Engineer',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+for (let r = 0; r < ralph.length; r++) {
+    console.log(ralph[r]);
 }
 
+
+*/
 /*
 // 4.7 Looping arrays, breaking and continuing
 const jonas = [
@@ -471,7 +488,7 @@ const types = [];
 // console.log(jonas(2))
 // console.log(jonas(3))
 // console.log(jonas(4))
-//honas[5] does not exist
+//jonas[5] does not exist
 
 for (let i = 0; i < jonas.length; i++) {//adding jonas.length allows you to retrieve all the elements of the array instead of hardcoding it
     //reading from jonas arrray
