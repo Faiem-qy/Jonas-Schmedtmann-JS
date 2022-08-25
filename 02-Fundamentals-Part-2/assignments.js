@@ -390,10 +390,17 @@ for (let paint = 1; paint <= 5; paint++) {
 
 
 // 4.7 Looping arrays, breaking and continuing practice
+
 const roy = [
-    'Roy',
+    'Rpy',
     'Moss',
-    2033 - 1990,
-    'IT Technician',
+    2037 - 1991,
+    'IT',
+    ['Michael', 'Peter', 'Steven'],
+    true
 ];
+
+for (let r = 0; r < roy.length; r++) {
+    console.log(roy[r], typeof roy[r]);
+}
 
