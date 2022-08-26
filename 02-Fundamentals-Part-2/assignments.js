@@ -388,8 +388,12 @@ for (let paint = 1; paint <= 5; paint++) {
 }
 */
 
+/*
 
 // 4.7 Looping arrays, breaking and continuing practice
+
+
+const types = [];
 
 const roy = [
     'Rpy',
@@ -402,5 +406,44 @@ const roy = [
 
 for (let r = 0; r < roy.length; r++) {
     console.log(roy[r], typeof roy[r]);
+
+    //filling types array one way
+    // types[r] = typeof roy[r];// find types of a
+
+    // another way
+    types.push(typeof roy[r]);
 }
 
+console.log(types);
+
+
+const years = [2022, 2021, 2020, 2019];
+const ages = [];
+
+for (let y = 0; y < years.length; y++) {
+    ages.push(2037 - years[y]);
+}
+
+console.log(ages);
+*/
+
+/*
+//p1
+const orders = [50, 25, 72, 48, 66]
+const nu = [];
+
+for (let nn = 0; nn < orders.length; nn++) {
+    nu.push(200 - orders[nn]);
+}
+
+console.log(nu);
+
+//p2
+const numbersOfLego = [5000, 3000, 2570, 1750]
+const pieces = [];
+
+for (let l = 0; l < numbersOfLego.length; l++) {
+    pieces.push(17500 - numbersOfLego[l]);
+}
+console.log(pieces);
+*/
