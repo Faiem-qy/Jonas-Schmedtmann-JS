@@ -524,6 +524,16 @@ for (let i = 0; i < jonas.length; i++) {
     console.log(jonas[i], typeof jonas[i]);
 }
 */
+
+/*
+const numbers = [50, 20, 6, 427];
+const num = [];
+
+for (let n = 0; n < numbers.length; n++) {
+    num.push(1000 - numbers[n]);
+}
+console.log(num);
+
 /*
 // 4.8
 
