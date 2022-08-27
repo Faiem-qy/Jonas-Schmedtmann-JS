@@ -388,13 +388,20 @@ for (let paint = 1; paint <= 5; paint++) {
 }
 */
 
-/*
 
 // 4.7 Looping arrays, breaking and continuing practice
 
+const score = [50, 20, 6, 427];
+const sc = [];
 
-const types = [];
+for (let s = 0; s < score.length; s++) {
+    sc.push(1000 - score[s]);
+    //if (typeof score[s] === 'number') break;// break statement, stops after first number is found
+}
+console.log(sc);
+// const types = [];
 
+/*
 const roy = [
     'Rpy',
     'Moss',
@@ -447,3 +454,4 @@ for (let l = 0; l < numbersOfLego.length; l++) {
 }
 console.log(pieces);
 */
+
