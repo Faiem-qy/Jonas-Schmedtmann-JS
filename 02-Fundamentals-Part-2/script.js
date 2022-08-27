@@ -525,12 +525,33 @@ for (let i = 0; i < jonas.length; i++) {
 }
 */
 
-/*
+
+// const numbers = [50, 20, 6, 427];
+// const num = [];
+
+// for (let n = 0; n < numbers.length; n++) {
+//     num.push(1000 - numbers[n]);
+// }
+// console.log(num);
+
+
+// const numbers = [50, 20, 6, 427];
+// const num = [];
+
+// for (let n = 0; n < numbers.length; n++) {
+//     num.push(1000 - numbers[n]);
+//     if (typeof numbers[n] == 'number') continue;// continue statement
+// }
+// console.log(num);
+
+
+
 const numbers = [50, 20, 6, 427];
 const num = [];
 
 for (let n = 0; n < numbers.length; n++) {
     num.push(1000 - numbers[n]);
+    if (typeof numbers[n] === 'number') break;// break statement, stops after first number is found
 }
 console.log(num);
 
