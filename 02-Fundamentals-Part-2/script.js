@@ -555,8 +555,9 @@ for (let n = 0; n < numbers.length; n++) {
 }
 console.log(num);
 
-/*
+
 // 4.8
+
 
 const jonas = [
     'Jonas',
@@ -568,8 +569,8 @@ const jonas = [
     true
 ];
 
-// 0,1,2,3...
-//4,3,2,1....
+// 0,1,2,3...//looping forward
+//4,3,2,1....//looping backwards
 
 for (let i = jonas.length - 1; i >= 0; i--) {
     console.log(i, jonas[i]);
@@ -578,11 +579,11 @@ for (let i = jonas.length - 1; i >= 0; i--) {
 for (let exercise = 1; exercise <= 3; exercise++) {//(loop #1)
     console.log(`------starting exercise${exercise}`);
 
-    for (let rep = 1; rep <= 5; rep++) {// loop within a loop(loop#2)
-        console.log(`Exercise ${exercise}: lifting weight repetition ${rep}`);
-    }
+    // for (let rep = 1; rep <= 5; rep++) {// loop within a loop(loop#2)
+    //     console.log(`Exercise ${exercise}: lifting weight repetition ${rep}`);
 }
-*/
+
+
 
 // 4.9 while loop
 
@@ -626,3 +627,4 @@ for (let i = 0; i < bills.length; i++) {
 console.log(bills, tips, total);
 
 */
+
