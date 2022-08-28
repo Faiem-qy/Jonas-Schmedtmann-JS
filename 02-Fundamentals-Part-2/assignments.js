@@ -390,7 +390,7 @@ for (let paint = 1; paint <= 5; paint++) {
 
 
 // 4.7 Looping arrays, breaking and continuing practice
-
+/*
 const score = [50, 20, 6, 427];
 const sc = [];
 
@@ -400,6 +400,7 @@ for (let s = 0; s < score.length; s++) {
 }
 console.log(sc);
 // const types = [];
+*/
 
 /*
 const roy = [
@@ -455,3 +456,15 @@ for (let l = 0; l < numbersOfLego.length; l++) {
 console.log(pieces);
 */
 
+// 4.8
+
+const dog = [
+    'Sam',
+    2020 - 2010,
+    'terrier',
+    'white',
+];
+
+for (let d = 0; d < dog.length; d++) {
+    console.log(dog[d]);
+}
