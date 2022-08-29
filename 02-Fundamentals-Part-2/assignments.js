@@ -468,3 +468,12 @@ const dog = [
 for (let d = 0; d < dog.length; d++) {
     console.log(dog[d]);
 }
+
+for (let paint = 1; paint < 5; paint++) {
+    console.log(`Every car that passes through the plant needs ${paint} coats of paint`);
+
+    for (let coats = 1; coats < 6; coats++) {
+        console.log(`${coats} layers of clear coat is required`);
+    }
+}
+
