@@ -628,3 +628,11 @@ console.log(bills, tips, total);
 
 */
 
+
+for (let packag = 1; packag < 5; packag++) {
+    console.log(`Every item needs to be packed with a quantity of ${packag} per box`);
+
+    for (let box = 1; box < 6; box++) {
+        console.log(`Each box should contain ${box} packets`);
+    }
+}
