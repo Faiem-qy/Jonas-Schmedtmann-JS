@@ -545,7 +545,7 @@ for (let i = 0; i < jonas.length; i++) {
 // console.log(num);
 
 
-
+/*
 const numbers = [50, 20, 6, 427];
 const num = [];
 
@@ -554,7 +554,8 @@ for (let n = 0; n < numbers.length; n++) {
     if (typeof numbers[n] === 'number') break;// break statement, stops after first number is found
 }
 console.log(num);
-
+*/
+/*
 
 // 4.8
 
@@ -584,6 +585,7 @@ for (let exercise = 1; exercise <= 3; exercise++) {//(loop #1)
 }
 
 
+*/
 
 // 4.9 while loop
 
@@ -626,7 +628,7 @@ for (let i = 0; i < bills.length; i++) {
 }
 console.log(bills, tips, total);
 
-*/
+
 
 
 for (let packag = 1; packag < 5; packag++) {
@@ -635,4 +637,22 @@ for (let packag = 1; packag < 5; packag++) {
     for (let box = 1; box < 6; box++) {
         console.log(`Each box should contain ${box} packets`);
     }
+}
+*/
+
+// 4.9 while loop
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`Lifting weights repetition ${rep}`);
+//     rep++;
+// }
+
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
 }
