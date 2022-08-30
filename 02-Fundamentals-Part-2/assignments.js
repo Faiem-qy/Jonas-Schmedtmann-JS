@@ -456,6 +456,7 @@ for (let l = 0; l < numbersOfLego.length; l++) {
 console.log(pieces);
 */
 
+/*
 // 4.8
 
 const dog = [
@@ -473,7 +474,16 @@ for (let paint = 1; paint < 5; paint++) {
     console.log(`Every car that passes through the plant needs ${paint} coats of paint`);
 
     for (let coats = 1; coats < 6; coats++) {
-        console.log(`${coats} layers of clear coat is required`);
+        console.log(`${coats} layer/s of clear coat is required`);
     }
 }
+*/
+
+// 4.9 practice 
+let repp = 1;
+while (repp <= 10) {
+    console.log(`Lifting weights reppetition ${repp}`);
+    repp++;
+}
+
 
