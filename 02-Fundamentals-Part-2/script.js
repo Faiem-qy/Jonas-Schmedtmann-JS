@@ -648,11 +648,22 @@ for (let packag = 1; packag < 5; packag++) {
 //     rep++;
 // }
 
-
+/*
 let dice = Math.trunc(Math.random() * 6) + 1;
 // console.log(dice);
 
 while (dice !== 6) {
     console.log(`You rolled a ${dice}`);
     dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
 }
+*/
+/*
+let card = Math.trunc(Math.random() * 52) + 1;
+
+while (card !== 52) {
+    console.log(`You choose card number ${card}`);
+    card = Math.trunc(Math.random() * 52) + 1;
+    if (card === 42) console.log('you got #42');
+}
+*/
