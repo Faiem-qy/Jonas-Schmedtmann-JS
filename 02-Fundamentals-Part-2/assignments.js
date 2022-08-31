@@ -479,11 +479,30 @@ for (let paint = 1; paint < 5; paint++) {
 }
 */
 
+/*
 // 4.9 practice 
 let repp = 1;
 while (repp <= 10) {
-    console.log(`Lifting weights reppetition ${repp}`);
+    console.log(`Lifting weights repetition ${repp}`);
     repp++;
 }
+*/
 
+/*
+let nnumber = Math.trunc(Math.random() * 20) + 1;
+
+while (nnumber !== 20) {
+    console.log(`Number ${nnumber} has been selected`);
+    nnumber = Math.trunc(Math.random() * 20) + 1;
+    if (nnumber === 7) console.log('You got lucky number 7');
+}
+*/
+
+let chance = Math.trunc(Math.random() * 20) + 1;
+
+while (chance !== 15) {
+    console.log(`Number ${chance} has been selected`);
+    chance = Math.trunc(Math.random() * 20) + 1;
+    if (chance === 7) console.log('You got lucky number 7');
+}
 
