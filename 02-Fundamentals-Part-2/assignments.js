@@ -497,6 +497,7 @@ while (nnumber !== 20) {
     if (nnumber === 7) console.log('You got lucky number 7');
 }
 */
+/*
 
 let chance = Math.trunc(Math.random() * 20) + 1;
 
@@ -506,3 +507,22 @@ while (chance !== 15) {
     if (chance === 7) console.log('You got lucky number 7');
 }
 
+*/
+
+
+const ccalcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 :
+        bill * 0.2;
+}
+
+const billss = [22, 295, 176, 270, 100, 105, 10, 1100, 760, 52];
+const tip = [];
+const totalss = [];
+
+for (let i = 0; i < billss.length; i++) {
+    const tip = ccalcTip(bills[i]);
+    tips.push(tip);
+    totalss.push(tip + billss[i]);
+}
+
+console.log(billss, tips, totalss);
