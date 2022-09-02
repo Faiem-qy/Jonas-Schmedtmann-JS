@@ -510,19 +510,30 @@ while (chance !== 15) {
 */
 
 
-const ccalcTip = function (bill) {
+const clcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 :
         bill * 0.2;
 }
 
 const billss = [22, 295, 176, 270, 100, 105, 10, 1100, 760, 52];
-const tip = [];
+const tipps = [];
 const totalss = [];
 
 for (let i = 0; i < billss.length; i++) {
-    const tip = ccalcTip(bills[i]);
-    tips.push(tip);
-    totalss.push(tip + billss[i]);
+    const tipp = clcTip(billss[i]);
+    tipps.push(tipp);
+    totalss.push(tipp + billss[i]);
 }
 
-console.log(billss, tips, totalss);
+console.log(billss, tipps, totalss);
+
+const calcAvg = function (arrr) {
+    let sum = 0;
+    for (let ii = 0; ii < arrr.length; ii++) {
+        sum = sum + arrr[ii]
+    }
+    return sum / arrr.length
+}
+console.log(calcAvg([5, 6, 7]));
+console.log(calcAvg(totalss));
+console.log(calcAvg(tipps));
