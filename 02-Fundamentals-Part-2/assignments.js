@@ -480,7 +480,7 @@ for (let paint = 1; paint < 5; paint++) {
 */
 
 /*
-// 4.9 practice 
+// 4.9 practice
 let repp = 1;
 while (repp <= 10) {
     console.log(`Lifting weights repetition ${repp}`);
@@ -509,7 +509,7 @@ while (chance !== 15) {
 
 */
 
-
+/*
 const clcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 :
         bill * 0.2;
@@ -537,3 +537,8 @@ const calcAvg = function (arrr) {
 console.log(calcAvg([5, 6, 7]));
 console.log(calcAvg(totalss));
 console.log(calcAvg(tipps));
+*/
+
+
+// 5.5
+
