@@ -668,7 +668,7 @@ while (card !== 52) {
 }
 */
 
-
+/*
 // 5.0 
 
 const calcTip = function (bill) {
@@ -699,3 +699,5 @@ const calcAverage = function (arr) {
 console.log(calcAverage([2, 3, 6]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
+
+*/
