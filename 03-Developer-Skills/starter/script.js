@@ -1,5 +1,5 @@
 // Remember, we're gonna use strict mode in all scripts now!
-'use strict';
+"use strict";
 
 /*
 const x = '23';
@@ -84,14 +84,15 @@ const array3 = array1.concat(array2);
 // Finding, fixing and preventing bugs
 
 // 6.1 fixing a bug using the console
-/*
+
 const measureKelvin = function () {
   const measurement = {
-    type: 'temp',
-    unit: 'celcius',
+    type: "temp",
+    unit: "celcius",
     // value: prompt('Degrees celcius:'),
     //C) FIX
-    value: Number(prompt('Degrees celcius:')),
+    // value: Number(prompt("Degrees celcius:")),
+    value: 10,
   };
 
   //   B) FIND
@@ -107,8 +108,31 @@ const measureKelvin = function () {
 };
 // IDENTIFY
 console.log(measureKelvin());
-*/
 
+// using a debugger
+
+const calcTempAmplitudeBug = function (t1, t2) {
+  const temps = t1.concat(t2);
+  console.log(temps);
+
+  let max = 0; max = 5
+  let min = 0; min =
+
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+    if (typeof curTemp !== "number") continue;
+
+    if (curTemp > max) max = 5;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
+// Identify
+
+console.log(amplitudeBug);
 /*
 Coding Challenge #1
 Given an array of forecasted maximum temperatures, the thermometer displays a
