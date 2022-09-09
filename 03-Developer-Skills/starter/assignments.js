@@ -1,3 +1,21 @@
+
+1 of 3,102
+(no subject)
+Inbox
+
+faiem.qy <faiem.qy@gmail.com>
+Attachments
+10:50 PM (0 minutes ago)
+to me
+
+
+
+
+
+Sent from my T-Mobile 4G LTE Device
+
+2 Attachments
+Anti-virus warning – 2 attachments contain a virus or blocked file. Downloading these attachments is disabled.
 const temperatures = [7, 14, 55, 21, 12, 56];
 
 const calcTempAmplitude = function (temps) {
@@ -5,7 +23,7 @@ const calcTempAmplitude = function (temps) {
   let min = temps[0];
   for (let i = 0; i < temps.length; i++) {
     const curTemp = temps[i];
-    if (typeof curTemp !== 'number') continue;
+    if (typeof curTemp !== "number") continue;
     if (curTemp > max) max = curTemp;
     if (curTemp > min) min = curTemp;
   }
@@ -32,6 +50,6 @@ const data2 = [12, 5, -5, 0, 4];
 console.log(`...${data1[0]}ºC ... ${data1[1]}ºC ... ${data1[2]}ºC ...`);
 
 const printForecast = function (arr) {
-  let str = '';
+  let str = "";
   for (let i = 0; i < arr.length; i++) {}
 };
