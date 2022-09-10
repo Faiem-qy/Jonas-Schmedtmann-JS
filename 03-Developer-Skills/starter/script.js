@@ -80,6 +80,7 @@ const array3 = array1.concat(array2);
 
 */
 
+/*
 // 6.0 Debugging
 // Finding, fixing and preventing bugs
 
@@ -115,8 +116,8 @@ const calcTempAmplitudeBug = function (t1, t2) {
   const temps = t1.concat(t2);
   console.log(temps);
 
-  let max = 0; max = 5
-  let min = 0; min =
+  let max = 0;
+  let min = 0;
 
   for (let i = 0; i < temps.length; i++) {
     const curTemp = temps[i];
@@ -133,6 +134,7 @@ const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 // Identify
 
 console.log(amplitudeBug);
+
 /*
 Coding Challenge #1
 Given an array of forecasted maximum temperatures, the thermometer displays a
