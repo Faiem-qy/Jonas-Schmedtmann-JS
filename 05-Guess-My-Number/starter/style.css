@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: 'Press Start 2P', sans-serif;
-  color: #eee;
+  color: rgb(82, 39, 212);
   background-color: #222;
   /* background-color: #60b347; */
 }
@@ -22,12 +22,12 @@ body {
 header {
   position: relative;
   height: 35vh;
-  border-bottom: 7px solid #eee;
+  border-bottom: 7px solid rgb(255, 129, 18);
 }
 
 main {
   height: 65vh;
-  color: #eee;
+  color: rgb(202, 48, 48);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -57,7 +57,7 @@ h1 {
 }
 
 .number {
-  background: #eee;
+  background: rgb(238, 238, 238);
   color: #333;
   font-size: 6rem;
   width: 15rem;
@@ -89,7 +89,7 @@ h1 {
   color: inherit;
   font-size: 5rem;
   padding: 2.5rem;
-  width: 25rem;
+  width: 20rem;
   text-align: center;
   display: block;
   margin-bottom: 3rem;
