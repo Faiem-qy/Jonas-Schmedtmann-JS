@@ -51,46 +51,71 @@ calcAge(1991);
 
 // console.log(age); both of these cannot be called out of the scope
 // printAge();only from within
+
 */
 
-//Variables
-console.log(me);
-// console.log(job);
-// console.log(year)
+/*
+// console.log(this);
 
-var me = 'Jonas';
-let job = 'teacher';
-const year = 1991;
+const calcAge = function (birthYear) {
+  console.log(2037 - birthYear);
+  // console.log(this);
+};
+calcAge(1991);
 
-//Functions
-console.log(addDecl(2, 3));
-// console.log(addExpr(2, 3));
-console.log(addArrow);
-// console.log(addArrow(2, 3));
+const calcAgeArrow = birthYear => {
+  // arrow function does not have a 'this' keyword
+  console.log(2037 - birthYear);
+  // console.log(this);
+};
+calcAgeArrow(1980);
 
-function addDecl(a, b) {
-  return a + b;
-}
+const jonas = {
+  year: 1991,
+  calcAge: function () {
+    console.log(this);
+    console.log(2037 - this.year);
+  },
+};
+jonas.calcAge();
 
-const addExpr = function (a, b) {
-  return a + b;
+const matilda = {
+  year: 2017,
+};
+matilda.calcAge = jonas.calcAge;
+matilda.calcAge();
+
+const f = jonas.calcAge;
+// f();
+
+*/
+
+// var firstName = 'Matilda';
+const jonas = {
+  firstName: 'Jonas',
+  year: 1991,
+  calcAge: function () {
+    // console.log(this);
+    console.log(2037 - this.year);
+
+    const self = this; // self or that
+    const isMillenial = function () {
+      console.log(self);
+
+      console.log(self.year >= 1981 && self.year <= 1996);
+      // console.log(this.year >= 1981 && this.year <= 1996);
+    };
+    isMillenial();
+  },
+
+  // greet: function () {// this yields Hey Jonas
+  greet: () => {
+    //arrow dunction yileds Hey Matilda
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
 };
 
-var addArrow = (a, b) => a + b;
-
-//Example
-if (!numProducts) deleteShoppingCart();
-
-var numProducts = 10;
-
-function deleteShoppingCart() {
-  console.log('All products deleted!');
-}
-
-var x = 1;
-let y = 2;
-const z = 3;
-
-console.log(x === window.x);
-console.log(y === window.y);
-console.log(z === window.z);
+jonas.greet();
+jonas.calcAge();
+// never use an arrow function as a method
