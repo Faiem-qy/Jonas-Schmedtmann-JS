@@ -89,6 +89,7 @@ const f = jonas.calcAge;
 // f();
 
 */
+/*
 
 // var firstName = 'Matilda';
 const jonas = {
@@ -98,16 +99,22 @@ const jonas = {
     // console.log(this);
     console.log(2037 - this.year);
 
-    const self = this; // self or that
-    const isMillenial = function () {
-      console.log(self);
-
-      console.log(self.year >= 1981 && self.year <= 1996);
-      // console.log(this.year >= 1981 && this.year <= 1996);
+    
+    // //solution 1
+    // const self = this; // self or that
+    // const isMillenial = function () {
+    //   console.log(self);
+    //   console.log(self.year >= 1981 && self.year <= 1996);
+    //   // console.log(this.year >= 1981 && this.year <= 1996);
+    // };
+    
+    //solution 2
+    const isMillenial = () => {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
     };
     isMillenial();
   },
-
   // greet: function () {// this yields Hey Jonas
   greet: () => {
     //arrow dunction yileds Hey Matilda
@@ -119,3 +126,36 @@ const jonas = {
 jonas.greet();
 jonas.calcAge();
 // never use an arrow function as a method
+
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+
+addExpr(2, 5);
+addExpr(2, 5, 8, 12);
+
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+addArrow(2, 5, 8);
+
+*/
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'Jonas',
+  age: 30,
+};
+
+const friend = me;
+friend.age = 27;
+
+console.log('Friend:', friend);
+console.log('Me', me); // why for 'me' the age is also 27
