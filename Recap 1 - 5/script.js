@@ -78,4 +78,48 @@ console.log(typeof null); //bug in js it id desplayed as an object in the cl. it
 
 // 1.13
 
-let age = 
+let age = 30;
+age = 31; // reassigning a value toa variable, mutating the age variable
+
+const birthYear = 1991; // value cannot be changed at a later time when using const
+// birthYear = 1990;
+
+// const job;// cannot declare this as well
+
+// var is a legacy way of defining variables
+var job = 'programmer';
+job = 'teacher';
+
+// 1.14 Basic Operators
+
+// allows to combine values
+
+//math operators
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3); // 2 ** means 2 to the power of 3 = 2*2*2
+const firstName = 'Jonas';
+const LastName = 'Schmedtmann';
+console.log(firstName, LastName);
+
+console.log(firstName + ' ' + LastName);
+
+// assignment operator
+let x = 10 + 5; // 15
+x += 10; //x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x--; //minus 1
+x++; // add 1
+
+console.log(x);
+
+//comparison operators
+console.log(ageJonas > ageSarah); // is ageJonas greater than ageSarah// >, <, >=,<=
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
