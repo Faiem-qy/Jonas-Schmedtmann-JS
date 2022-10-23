@@ -76,6 +76,7 @@ console.log(typeof year);
 console.log(typeof null); //bug in js it id desplayed as an object in the cl. it should return as null
 */
 
+/*
 // 1.13
 
 let age = 30;
@@ -90,6 +91,8 @@ const birthYear = 1991; // value cannot be changed at a later time when using co
 var job = 'programmer';
 job = 'teacher';
 
+*/
+/*
 // 1.14 Basic Operators
 
 // allows to combine values
@@ -123,3 +126,23 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
+*/
+
+/*
+// 1.15 Operator precedence
+
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+
+console.log(25 - 10 - 5); //left to right order
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+*/
