@@ -147,32 +147,31 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
 
+/*
 //1.16 coding exercise
 
 //Test Data 1
-// let markMass = 78;
-// let markHeight = 1.69;
-
-// let johnMass = 92;
-// let johnHeight = 1.95;
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
 
 // Test Data 2
-// let markMass = 95;
-// let markHeight = 1.88;
-
-// let johnMass = 85;
-// let johnHeight = 1.76;
+// const markMass = 95;
+// const markHeight = 1.88;
+// const johnMass = 85;
+// const johnHeight = 1.76;
 
 // Test Data 3
-let markMass = 200;
-let markHeight = 1.88;
-
-let johnMass = 85;
-let johnHeight = 1.76;
+// const markMass = 200;
+// const markHeight = 1.88;
+// const johnMass = 85;
+// const johnHeight = 1.76;
 
 const markBMI = markMass / markHeight ** 2;
 const johnBMI = johnMass / johnHeight ** 2;
-console.log(markBMI, johnBMI);
+const markHigherBMI = markBMI > johnBMI;
+console.log(markBMI, johnBMI, markHigherBMI);
 
 if (markBMI > johnBMI) {
   console.log(
@@ -183,3 +182,35 @@ if (markBMI > johnBMI) {
     `John's BMI is ${johnBMI} and Mark's BMI is ${markBMI}. The results indicate that John's BMI is higher`
   );
 }
+*/
+
+/*
+
+// 1.17 Strings and template literals
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas =
+  "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!'; // string
+console.log(jonas);
+
+// template literals allow us to write strings in a normal way using back ticks
+const jonasNew = `I 'm ${firstName}, a ${year - birthYear} year old ${job}! `;
+console.log(jonasNew);
+
+// we can use back ticks for any regular String
+console.log(`Just a regular string...`);
+
+//multi line strings( before ES6)
+console.log('String with \n\
+ multiple \n\
+ lines');
+//\n\ means new line
+
+console.log(`String
+ multiple
+ lines`);
+*/
