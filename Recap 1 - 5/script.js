@@ -183,9 +183,7 @@ if (markBMI > johnBMI) {
   );
 }
 */
-
 /*
-
 // 1.17 Strings and template literals
 
 const firstName = 'Jonas';
@@ -196,6 +194,33 @@ const year = 2037;
 const jonas =
   "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!'; // string
 console.log(jonas);
+
+const js = 'JavaScript ' + ' is ' + ' very ' + ' awesome' + '!!';
+console.log(js);
+
+const string = 'Making ' + ' strings ' + ' are ' + ' pretty ' + ' Cool';
+console.log(string);
+
+const int =
+  'Interesting' +
+  ' that ' +
+  ' spaces ' +
+  ' must ' +
+  ' be ' +
+  ' used ' +
+  ' throughout ' +
+  ' the ' +
+  ' string ' +
+  'in' +
+  ' order ' +
+  ' to ' +
+  'maintain' +
+  ' the ' +
+  ' gaps ';
+console.log(int);
+
+const sim = ` This is literally so much easier to get the information across. Hey ${firstName} !! `;
+console.log(sim);
 
 // template literals allow us to write strings in a normal way using back ticks
 const jonasNew = `I 'm ${firstName}, a ${year - birthYear} year old ${job}! `;
@@ -214,3 +239,40 @@ console.log(`String
  multiple
  lines`);
 */
+
+//  1.18 Taking decisions if/else statements
+
+const age = 15;
+// const isOldEnough = age >= 18;
+
+if (age >= 18) {
+  console.log('Sarah can start driving license 🚗');
+} else {
+  // console.log(' Sarah is not old enough to start driving');
+  const yearsLeft = 18 - age;
+  console.log(` Sarah is too young, wait another ${yearsLeft} years`);
+}
+
+// if() {
+
+// } else {
+
+// } // called a control structure
+
+// const birthYear = 1991;
+// if (birthYear < +2000) {
+//   let century = 20;
+// } else {
+//   let century = 21;
+// }
+// console.log(century); if century is logged it will not be called as it is not defined and hence a code block. you must define it outside for it to work eg.
+
+let century;
+const birthYear = 2012;
+if (birthYear <= 2000) {
+  // <= (operator) is used to create a condition
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
