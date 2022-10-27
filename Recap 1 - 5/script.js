@@ -239,7 +239,7 @@ console.log(`String
  multiple
  lines`);
 */
-
+/*
 //  1.18 Taking decisions if/else statements
 
 const age = 15;
@@ -276,3 +276,85 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+*/
+
+/*
+const birthYear = 2001;
+const ageofpilot = 2019 - birthYear;
+console.log(ageofpilot);
+
+if (ageofpilot >= 21) {
+  console.log(
+    ` The pilot has reached the age of ${ageofpilot} which allows for practal training with a instructor`
+  );
+} else {
+  console.log(
+    ` This person cannot take practice lessons because they have not reached the permissible age `
+  );
+}
+*/
+
+/*
+// 1.19 coding challenge
+
+//Test Data 1
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+
+// Test Data 2
+// const markMass = 95;
+// const markHeight = 1.88;
+// const johnMass = 85;
+// const johnHeight = 1.76;
+
+// Test Data 3
+// const markMass = 200;
+// const markHeight = 1.88;
+// const johnMass = 85;
+// const johnHeight = 1.76;
+
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
+// const markHigherBMI = markBMI > johnBMI;
+// console.log(markBMI, johnBMI, markHigherBMI);
+
+if (markBMI >= johnBMI) {
+  console.log(
+    `Mark's BMI is ${markBMI} and John's BMI is ${johnBMI}. We can conclude that Mark's BMI is higher than John's`
+  );
+} else {
+  console.log(
+    `John's BMI is ${johnBMI} and Mark' BMI is ${markBMI}. We can conclude that John's BMI is higher than Mark's`
+  );
+}
+*/
+
+// 20. Type Conversion and Type Coercion
+
+//Type Conversion
+
+const inputYear = '1991';
+// console.log(inputYear + 18); // the numeber will not add to the string. it will be displayed as 199118
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+// console.log(Number('Jonas')); this will trigger a NaN message meaning Not a Number
+console.log(typeof NaN);
+// Both Number and String need to start with an uppercase letter to work
+
+console.log(String(23), 23);
+
+// Type Coercion
+console.log('I am ' + 23 + ' years old'); // the plus operator converts strings into numbers
+console.log('I am ' + '23' + ' years old'); // the results are the same
+console.log('I am ' + String(23) + ' years old'); // if the language does not have the automatic coercion then it would have to be done manually
+
+// not all operators so type coercion to strings eg
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n); // the result of this would 10 because it executed 1+1 = 11 - 1 = 10
