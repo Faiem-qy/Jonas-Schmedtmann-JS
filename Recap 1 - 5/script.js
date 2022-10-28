@@ -330,8 +330,8 @@ if (markBMI >= johnBMI) {
   );
 }
 */
-
-// 20. Type Conversion and Type Coercion
+/*
+// 1.20. Type Conversion and Type Coercion
 
 //Type Conversion
 
@@ -358,3 +358,41 @@ console.log('23' / '2');
 let n = '1' + 1;
 n = n - 1;
 console.log(n); // the result of this would 10 because it executed 1+1 = 11 - 1 = 10
+*/
+
+// 1.21 truthy falsy - 5 falsy values: 0, '',undefined, null, NaN
+//- will become  false when it is converted to a boolean
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0; //falsy value so the else statement is written to the console
+if (money) {
+  console.log("Don't spend it all");
+} else {
+  console.log('You should get a job!');
+}
+
+const money1 = 100; //truthy value so the if statement is written to the console
+if (money1) {
+  console.log("Don't spend it all");
+} else {
+  console.log('You should get a job!');
+}
+
+let height = 123; // since height is undefined it would be a falsy value hence else is executed
+if (height) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is UNDEFINED');
+}
+
+let height1; // since height is defined it would be a truthy value hence if block is executed
+if (height1) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is UNDEFINED');
+}
