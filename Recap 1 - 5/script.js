@@ -1,7 +1,7 @@
 'use strict';
 
 // 1.9
-/*
+/*--------------------------
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
 //1.10
@@ -50,7 +50,7 @@ console.log(myFirstJob);
 
 */
 
-/*
+/*-----------------------------
 let javaScriptIsFun = true;
 console.log(true);
 
@@ -76,7 +76,7 @@ console.log(typeof year);
 console.log(typeof null); //bug in js it id desplayed as an object in the cl. it should return as null
 */
 
-/*
+/*------------------------
 // 1.13
 
 let age = 30;
@@ -92,7 +92,7 @@ var job = 'programmer';
 job = 'teacher';
 
 */
-/*
+/*----------------------------
 // 1.14 Basic Operators
 
 // allows to combine values
@@ -128,7 +128,7 @@ const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
 */
 
-/*
+/*-------------------------------
 // 1.15 Operator precedence
 
 const now = 2037;
@@ -147,7 +147,7 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
 
-/*
+/*--------------------------------
 //1.16 coding exercise
 
 //Test Data 1
@@ -183,7 +183,7 @@ if (markBMI > johnBMI) {
   );
 }
 */
-/*
+/*-------------------------------
 // 1.17 Strings and template literals
 
 const firstName = 'Jonas';
@@ -294,7 +294,7 @@ if (ageofpilot >= 21) {
 }
 */
 
-/*
+/*--------------------
 // 1.19 coding challenge
 
 //Test Data 1
@@ -330,7 +330,7 @@ if (markBMI >= johnBMI) {
   );
 }
 */
-/*
+/*-----------------
 // 1.20. Type Conversion and Type Coercion
 
 //Type Conversion
@@ -360,6 +360,7 @@ n = n - 1;
 console.log(n); // the result of this would 10 because it executed 1+1 = 11 - 1 = 10
 */
 
+/*---------------------
 // 1.21 truthy falsy - 5 falsy values: 0, '',undefined, null, NaN
 //- will become  false when it is converted to a boolean
 
@@ -396,3 +397,28 @@ if (height1) {
 } else {
   console.log('Height is UNDEFINED');
 }
+
+*/
+
+// /*
+
+const age = '18';
+if (age === 18) console.log(' You just became an adult (strict)'); // curly brackets not necessary if it is just one line
+if (age == 18) console.log(' You just became an adult (loose)'); // only this line of code will be executed if the const age is false because of loose (==)
+
+const favourite = Number(prompt(" What's your favourite number ?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  // '23' == 23 this is loose
+  console.log('Cool! 23 is an amazing number!');
+} else if (favourite === 7) {
+  console.log('7 is also a cool number');
+} else if (favourite === 9) {
+  console.log('9 is also a cool number');
+} else {
+  console.log('Number is not 23 or 7 or 9');
+}
+
+if (favourite !== 23) console.log('Why not 23?');
