@@ -400,7 +400,8 @@ if (height1) {
 
 */
 
-// /*
+/*----------------------
+ //1.22
 
 const age = '18';
 if (age === 18) console.log(' You just became an adult (strict)'); // curly brackets not necessary if it is just one line
@@ -422,3 +423,62 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log('Why not 23?');
+
+*/
+
+// /* 1.23 Basic boolean  logic: THE AND, OR & NOT OPERATORS
+//lecture
+
+// 1.24 Locgical Operators
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log('Sarah is able to drive!');
+// } else {
+//   console.log('Someone else should drive...');
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  //! makes opposite hence not is tired
+  console.log('Sarah is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
+
+const hasGameTickets = true;
+const hasClothesForTheGame = true;
+const hasMoneyForFood = false;
+
+const canGoToTheGame =
+  hasGameTickets && hasClothesForTheGame && hasMoneyForFood;
+console.log(canGoToTheGame);
+
+if ((hasGameTickets && hasClothesForTheGame) || hasMoneyForFood) {
+  console.log('He can go to the game');
+} else {
+  console.log('He needs to have all items to go to the game!!');
+}
+
+const hasDownpayment = true;
+const hasJob = true;
+const hasGoodSalary = false;
+
+const canAffordNewHome = hasDownpayment && hasJob && hasGoodSalary;
+console.log(canAffordNewHome);
+
+if (hasDownpayment && hasJob && hasGoodSalary) {
+  console.log('John can afford to buy a home');
+} else {
+  console.log('John cannot afford to buy a home');
+}
