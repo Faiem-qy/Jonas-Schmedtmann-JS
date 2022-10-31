@@ -429,6 +429,7 @@ if (favourite !== 23) console.log('Why not 23?');
 // /* 1.23 Basic boolean  logic: THE AND, OR & NOT OPERATORS
 //lecture
 
+/*
 // 1.24 Locgical Operators
 
 const hasDriversLicense = true; //A
@@ -481,4 +482,41 @@ if (hasDownpayment && hasJob && hasGoodSalary) {
   console.log('John can afford to buy a home');
 } else {
   console.log('John cannot afford to buy a home');
+}
+*/
+// 1.25 Challenge
+
+// const score0Dolphins = (96 + 108 + 89) / 3;
+// const score0Koalas = (88 + 91 + 110) / 3;
+// const score1Dolphins = (97 + 112 + 101) / 3;
+// const score1Koalas = (109 + 95 + 123) / 3;
+// const score2Dolphins = (97 + 112 + 101) / 3;
+// const score2Koalas = (109 + 95 + 106) / 3;
+
+// console.log(score0Dolphins, score0Koalas);
+
+// if (score1Dolphins > score1Koalas) {
+//   console.log(`Dolphins Win!!!`);
+// } else if (score1Dolphins === score1Koalas) {
+//   console.log(` Its a draw!!!`);
+// } else {
+//   console.log(`Koalas Win!!!`);
+// }
+
+const score0Dolphins = (97 + 112 + 80) / 3;
+const score0Koalas = (109 + 95 + 50) / 3;
+console.log(score0Dolphins, score0Koalas);
+
+if (score0Dolphins > score0Koalas && score0Dolphins >= 100) {
+  console.log('Dolphins Win!!!');
+} else if (score0Koalas > score0Dolphins && score0Koalas >= 100) {
+  console.log('Koalas Win!!!');
+} else if (
+  score0Dolphins === score0Koalas &&
+  score0Dolphins >= 100 &&
+  score0Koalas >= 100
+) {
+  console.log('Its a draw!!!');
+} else {
+  console.log('No one wins the trophy');
 }
