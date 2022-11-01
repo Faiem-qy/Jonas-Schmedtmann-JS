@@ -294,7 +294,7 @@ if (ageofpilot >= 21) {
 }
 */
 
-/*--------------------
+/*------------------------------------
 // 1.19 coding challenge
 
 //Test Data 1
@@ -330,7 +330,7 @@ if (markBMI >= johnBMI) {
   );
 }
 */
-/*-----------------
+/*--------------------------------------
 // 1.20. Type Conversion and Type Coercion
 
 //Type Conversion
@@ -400,7 +400,7 @@ if (height1) {
 
 */
 
-/*----------------------
+/*---------------------------
  //1.22
 
 const age = '18';
@@ -429,7 +429,7 @@ if (favourite !== 23) console.log('Why not 23?');
 // /* 1.23 Basic boolean  logic: THE AND, OR & NOT OPERATORS
 //lecture
 
-/*
+/*---------------------------------
 // 1.24 Locgical Operators
 
 const hasDriversLicense = true; //A
@@ -484,6 +484,7 @@ if (hasDownpayment && hasJob && hasGoodSalary) {
   console.log('John cannot afford to buy a home');
 }
 */
+/*---------------------------
 // 1.25 Challenge
 
 // const score0Dolphins = (96 + 108 + 89) / 3;
@@ -503,20 +504,96 @@ if (hasDownpayment && hasJob && hasGoodSalary) {
 //   console.log(`Koalas Win!!!`);
 // }
 
-const score0Dolphins = (97 + 112 + 80) / 3;
-const score0Koalas = (109 + 95 + 50) / 3;
-console.log(score0Dolphins, score0Koalas);
+// const score0Dolphins = (97 + 112 + 80) / 3;
+// const score0Koalas = (109 + 95 + 50) / 3;
+// console.log(score0Dolphins, score0Koalas);
 
-if (score0Dolphins > score0Koalas && score0Dolphins >= 100) {
-  console.log('Dolphins Win!!!');
-} else if (score0Koalas > score0Dolphins && score0Koalas >= 100) {
-  console.log('Koalas Win!!!');
-} else if (
-  score0Dolphins === score0Koalas &&
-  score0Dolphins >= 100 &&
-  score0Koalas >= 100
-) {
-  console.log('Its a draw!!!');
-} else {
-  console.log('No one wins the trophy');
+// if (score0Dolphins > score0Koalas && score0Dolphins >= 100) {
+//   console.log('Dolphins Win!!!');
+// } else if (score0Koalas > score0Dolphins && score0Koalas >= 100) {
+//   console.log('Koalas Win!!!');
+// } else if (
+//   score0Dolphins === score0Koalas &&
+//   score0Dolphins >= 100 &&
+//   score0Koalas >= 100
+// ) {
+//   console.log('Its a draw!!!');
+// } else {
+//   console.log('No one wins the trophy');
+// }
+
+*/
+
+/*
+// 1.26 Switch statement
+// the switch statement is a cleaner easier to reads code but is comparable to the if else statement, it is less used and is up to personal preference.
+
+const day = 'wednesday';
+
+switch (day) {
+  case 'monday': // dy = 'monday'
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+    break;
+  case 'friday':
+    console.log('Record videos');
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy the weekend');
+    break;
+  default:
+    console.log('Not a valid day!');
 }
+
+//without using the break the code continues executing, break stops the code
+
+if (day === 'monday') {
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('Write code examples');
+} else if (day === 'friday') {
+  console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('Enjoy the weekend');
+} else {
+  console.log('Not a valid day');
+}
+
+
+// practice
+const carBrand = 'bentley';
+
+switch (carBrand) {
+  case 'alphaRomeo':
+    console.log('Alpha Romeo has a long history of racing');
+    break;
+  case 'bentley':
+    console.log("Bentley's are known for their luxury");
+    break;
+  case 'toyota':
+    console.log('Toyota is known for reliability');
+    break;
+  case 'honda':
+    console.log(
+      'Honda is known for its rational design, economical engineering and performance'
+    );
+    break;
+  case 'ferrari':
+    console.log('Ferrari makes legendary cars');
+    break;
+  case 'Porsche':
+    console.log('Porsche cars have kept similar design throught the years');
+  default:
+    console.log('Not a brand of car');
+}
+*/
