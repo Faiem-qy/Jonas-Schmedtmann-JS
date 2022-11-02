@@ -597,3 +597,21 @@ switch (carBrand) {
     console.log('Not a brand of car');
 }
 */
+
+// 1.27 Statement and expressions// a piece of code that provides a value
+
+3 + 4;
+1991;
+true && false && !false;
+
+if (23 > 10) {
+  const str = '23 is bigger';
+} // This is a statement
+
+console.log(`I'm ${2037 - 1991} years old`); //${} contains the expression. You cannot insert the statement within ${}.
+
+//1.28 The Conditional (Tenary) Operator
+const age = 15;
+age >= 18
+  ? console.log('I like to drink juice')
+  : console.log('I like to drink water');
