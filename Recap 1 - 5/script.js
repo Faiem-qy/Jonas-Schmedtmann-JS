@@ -597,7 +597,7 @@ switch (carBrand) {
     console.log('Not a brand of car');
 }
 */
-
+/*----------------------
 // 1.27 Statement and expressions// a piece of code that provides a value
 
 3 + 4;
@@ -609,9 +609,39 @@ if (23 > 10) {
 } // This is a statement
 
 console.log(`I'm ${2037 - 1991} years old`); //${} contains the expression. You cannot insert the statement within ${}.
-
+*/
+/*------------------
 //1.28 The Conditional (Tenary) Operator
-const age = 15;
-age >= 18
-  ? console.log('I like to drink juice')
-  : console.log('I like to drink water');
+// const age = 23;
+// age >= 18
+//   ? console.log('I like to drink juice') // conditional operator
+//   : console.log('I like to drink water');
+
+const age = 23;
+const drink = age >= 18 ? 'juice' : 'water';
+console.log(drink); // other way of writing it
+
+// or
+
+let drink2; // if else
+if (age >= 18) {
+  drink2 = 'juice';
+} else {
+  drink2 = 'water';
+}
+console.log(drink2);
+console.log(`I like to drink ${age >= 18 ? 'juice' : 'water'}`);
+ */
+
+/*
+// 1.29 challenge
+
+const bill = 40; // 275, 40, 430
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip} and the total value ${bill + tip}`
+);
+
+*/
