@@ -58,5 +58,49 @@ const bill1 = 500;
 
 const tip1 = bill1 >= 70 && bill1 <= 500 ? bill1 * 0.1 : bill1 * 0.15;
 console.log(
-  `The bill was ${bill1}, the tip was ${tip1} and the total was ${bill1 + tip1}`
+  `The bill was $${bill1}, the tip was $${tip1} and the total was $${
+    bill1 + tip1
+  }`
 );
+
+const bill2 = 60;
+
+const tip2 = bill2 >= 50 && bill2 <= 100 ? bill2 * 0.15 : bill2 * 0.2;
+console.log(
+  `The bill is $${bill2}, the tip is $${tip2} and the total is $${bill2 + tip2}`
+);
+
+const price = 25;
+
+const discount = price >= 20 && price <= 50 ? price * 0.15 : price * 0.35;
+console.log(
+  `If the price is $${price} and the discount is $${discount}, then the total price after discount is $${
+    price - discount
+  }`
+);
+
+const price1 = 275;
+const discount1 =
+  price1 >= 250 && price1 <= 350 ? price1 * 0.25 : price1 * 0.15;
+console.log(
+  `If the price is $${price1} and the discount is $${discount1}, the total cost is $${
+    price1 - discount1
+  }`
+);
+
+const price2 = 224.61;
+const discount2 =
+  price2 >= 200 && price2 <= 300 ? price2 * 0.32 : price2 * 0.45;
+console.log(
+  `If the original price is $${price2} and the discount is $${discount2}, then the total cost is $${
+    price2 - discount2
+  }`
+);
+
+// const price3 = 50.5;
+// const tax = price3 <= 50 && price3 >= 100 ? price3 * 0.15 : price3 * 0.25;
+// console.log(
+//   `If the price is $${price3} and the tax is ${tax}% the total cost is $${
+//     price3 + tax
+//   }`
+// );??
