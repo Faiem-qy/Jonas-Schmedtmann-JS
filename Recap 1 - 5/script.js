@@ -645,3 +645,45 @@ console.log(
 );
 
 */
+/*
+// 1.30 JS releases ES5,ES6+ and ESNext
+
+// -In 1995 Mocha (first gen) was made by Brendan Eich in 10 days.Brendan
+// -In 1996 Mocha changes to LiveScript, to attract developers, However JavaScript has almost nothing to do with Java. Microsoft launches IE, copying JS from Netscape and calling it JScript.
+//-In 1997 -ECMA releases ECMAScript 1 (ES1), the first official standard for JavaScript (ECMAScript is the standard, JavaScript the language in practice)
+//-2009 ES5 (ECMAScript 5) is released with lots of great new features.
+//- 2015 ES6 (called ES6)(ECMAScript 2015) was released : biggest update to the language ever
+//- 2016 Release of ES2016/ES2017/ES2018/ES2019/ES2020/ES2021/etc smaller updates instead of huge and spaced out updates
+
+// backward compatability supported
+// forward compatability obviously not supported
+
+//- How can we use modern JS today - use the most updatd google chrome browser
+// Use Babel to transpile and polyfill your code(converting back to ES5 to ensure browser compatability for all users)
+
+//-ES5 - fully supported in all browsers(down to IE9 from 2011), read to be used today
+//-ES6+ - well supported in all modern browsers, no support in older browsers, can use most features in production with transpiling and polyfilling
+//- ES2021 and newer - called ESNext: future versions of the language
+*/
+
+// 1.31 intro part 2 Fundamental
+// 1.32 setting up strict mode
+//1.33 Functions
+
+function logger() {
+  console.log('My name is Jonas');
+}
+
+//calling / running / invoking function
+logger();
+logger();
+logger();
+
+function fruitProcessor(apples, oranges) {
+  // apples and oragnes are the input data for the function
+  console.log(apples, oranges);
+  const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+  return juice;
+}
+
+fruitProcessor(5, 0);
