@@ -54,53 +54,105 @@ console.log(foodTemp);
 
 // practice challenge
 
-const bill1 = 500;
+// const bill1 = 500;
 
-const tip1 = bill1 >= 70 && bill1 <= 500 ? bill1 * 0.1 : bill1 * 0.15;
-console.log(
-  `The bill was $${bill1}, the tip was $${tip1} and the total was $${
-    bill1 + tip1
-  }`
-);
+// const tip1 = bill1 >= 70 && bill1 <= 500 ? bill1 * 0.1 : bill1 * 0.15;
+// console.log(
+//   `The bill was $${bill1}, the tip was $${tip1} and the total was $${
+//     bill1 + tip1
+//   }`
+// );
 
-const bill2 = 60;
+// const bill2 = 60;
 
-const tip2 = bill2 >= 50 && bill2 <= 100 ? bill2 * 0.15 : bill2 * 0.2;
-console.log(
-  `The bill is $${bill2}, the tip is $${tip2} and the total is $${bill2 + tip2}`
-);
+// const tip2 = bill2 >= 50 && bill2 <= 100 ? bill2 * 0.15 : bill2 * 0.2;
+// console.log(
+//   `The bill is $${bill2}, the tip is $${tip2} and the total is $${bill2 + tip2}`
+// );
 
-const price = 25;
+// const price = 25;
 
-const discount = price >= 20 && price <= 50 ? price * 0.15 : price * 0.35;
-console.log(
-  `If the price is $${price} and the discount is $${discount}, then the total price after discount is $${
-    price - discount
-  }`
-);
+// const discount = price >= 20 && price <= 50 ? price * 0.15 : price * 0.35;
+// console.log(
+//   `If the price is $${price} and the discount is $${discount}, then the total price after discount is $${
+//     price - discount
+//   }`
+// );
 
-const price1 = 275;
-const discount1 =
-  price1 >= 250 && price1 <= 350 ? price1 * 0.25 : price1 * 0.15;
-console.log(
-  `If the price is $${price1} and the discount is $${discount1}, the total cost is $${
-    price1 - discount1
-  }`
-);
+// const price1 = 275;
+// const discount1 =
+//   price1 >= 250 && price1 <= 350 ? price1 * 0.25 : price1 * 0.15;
+// console.log(
+//   `If the price is $${price1} and the discount is $${discount1}, the total cost is $${
+//     price1 - discount1
+//   }`
+// );
 
-const price2 = 224.61;
-const discount2 =
-  price2 >= 200 && price2 <= 300 ? price2 * 0.32 : price2 * 0.45;
-console.log(
-  `If the original price is $${price2} and the discount is $${discount2}, then the total cost is $${
-    price2 - discount2
-  }`
-);
+// const price2 = 224.61;
+// const discount2 =
+//   price2 >= 200 && price2 <= 300 ? price2 * 0.32 : price2 * 0.45;
+// console.log(
+//   `If the original price is $${price2} and the discount is $${discount2}, then the total cost is $${
+//     price2 - discount2
+//   }`
+// );
 
-// const price3 = 50.5;
-// const tax = price3 <= 50 && price3 >= 100 ? price3 * 0.15 : price3 * 0.25;
+// const price3 = 101.5;
+// const tax = price3 >= 50 && price3 <= 100 ? price3 * 0.15 : price3 * 0.25;
 // console.log(
 //   `If the price is $${price3} and the tax is ${tax}% the total cost is $${
 //     price3 + tax
 //   }`
-// );??
+// );
+
+// 1.33 functions
+// function reptile() {
+//   console.log('frog');
+// }
+
+// reptile();
+
+// function reptile(frog, aligators, ducks) {
+//   const amphibian = `There are ${frog} frogs and ${aligators} Aligators in the swamp. Sometimes ${ducks} ducks can be found by the swamp, although it is not a reptile`;
+//   return amphibian;
+// }
+
+// const rep = reptile(50000, 3, 2);
+// console.log(rep);
+
+// const rep2 = reptile(35000, 72, 5);
+// console.log(rep2);
+
+// const rep3 = reptile(3, 5, 7);
+// console.log(rep3);
+
+// const rep4 = reptile(6, 4, 8);
+// console.log(rep4);
+
+// function typesOfBakedItems(bread, croissant, bagel) {
+//   const bakery = `There are ${bread} loaves of bread, ${croissant} bags of croissants and ${bagel} boxes of bagels in the bakery`;
+//   return bakery;
+// }
+
+// const bread = typesOfBakedItems(50, 20, 30);
+// console.log(bread);
+
+// const bread2 = typesOfBakedItems(400, 50, 30);
+// console.log(bread2);
+
+// const bread3 = typesOfBakedItems(152, 3521, 6422);
+// console.log(bread3);
+
+// function watch(samsung, apple) {
+//   const brandOfWatch = `In Canada there are ${samsung} Samsung watch sales and ${apple} Apple watch sales per year.`;
+//   return brandOfWatch;
+// }
+
+// const sales = watch(35, 72);
+// console.log(sales);
+
+// const sales2 = watch(750, 745);
+// console.log(sales2);
+
+// const sales3 = watch(452, 352);
+// console.log(sales3);
