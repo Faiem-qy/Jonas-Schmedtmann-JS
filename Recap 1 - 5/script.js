@@ -674,16 +674,27 @@ function logger() {
   console.log('My name is Jonas');
 }
 
-//calling / running / invoking function
-logger();
-logger();
-logger();
+// //calling / running / invoking function is what this is called
+// logger();
+// logger();
+// logger();
 
-function fruitProcessor(apples, oranges) {
-  // apples and oragnes are the input data for the function
-  console.log(apples, oranges);
-  const juice = `Juice with ${apples} apples and ${oranges} oranges`;
-  return juice;
-}
+// function fruitProcessor(apples, oranges) {
+//   // these are called parameters
+//   // apples and oragnes are the input data for the function
+//   // console.log(apples, oranges);
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+//   return juice;
+// }
 
-fruitProcessor(5, 0);
+// // fruitProcessor(5, 0); // these values of the parameters are called the argument
+
+// const appleJuice = fruitProcessor(5, 0); // now we store this into a variable to use the value that was returned
+// console.log(appleJuice); // now the value was printed to the console by logging the variable
+// // console.log(fruitProcessor(5, 0)); // in this case we logged the result
+
+// const appleOrangeJuice = fruitProcessor(2, 4);
+// console.log(appleOrangeJuice);
+
+// // console.log();// is a type of function
+// // const num = Number('23');//Number is also a type of function, type num in the console in the browser
