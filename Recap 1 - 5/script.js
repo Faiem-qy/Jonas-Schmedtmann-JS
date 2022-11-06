@@ -570,7 +570,7 @@ if (day === 'monday') {
 }
 
 
-// practice
+// practice switch
 const carBrand = 'bentley';
 
 switch (carBrand) {
@@ -637,9 +637,7 @@ console.log(`I like to drink ${age >= 18 ? 'juice' : 'water'}`);
 // 1.29 challenge
 
 const bill = 40; // 275, 40, 430
-
 const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-
 console.log(
   `The bill was ${bill}, the tip was ${tip} and the total value ${bill + tip}`
 );
@@ -670,9 +668,9 @@ console.log(
 // 1.32 setting up strict mode
 //1.33 Functions
 
-function logger() {
-  console.log('My name is Jonas');
-}
+// function logger() {
+//   console.log('My name is Jonas');
+// }
 
 // //calling / running / invoking function is what this is called
 // logger();
@@ -698,3 +696,17 @@ function logger() {
 
 // // console.log();// is a type of function
 // // const num = Number('23');//Number is also a type of function, type num in the console in the browser
+
+function keyboard(apple, microsoft) {
+  const brnd = `Apple sold ${apple} keyboards and Microsoft sold ${microsoft} keyboards.`;
+  return brnd;
+}
+
+const ty1 = keyboard(50, 400);
+console.log(ty1);
+
+const ty2 = keyboard(20, 5420);
+console.log(ty2);
+
+const ty3 = keyboard(4520, 2301);
+console.log(ty3);
