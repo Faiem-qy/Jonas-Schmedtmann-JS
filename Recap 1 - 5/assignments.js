@@ -22,7 +22,7 @@
 //   console.log(`There are more ${fish2} than ${fish1}`);
 // }
 
-/*-------------------
+/*-------------------Conditional Operator-------------------------
 // 1.28
 const score = 19; // conditional operator
 const player = score >= 20 ? 'win' : 'loose';
@@ -49,8 +49,29 @@ const foodTemp =
     : 'This is below the temperature to store food';
 console.log(foodTemp);
 
-
+/*
 */
+const battery = 3000;
+const ba =
+  battery >= 2000 && battery <= 4000
+    ? 'The battery is fully charged'
+    : 'The battery is ovecharged';
+console.log(ba);
+
+const battery2 = 450;
+const ba2 =
+  battery2 >= 400 && battery2 <= 500
+    ? 'The battery has good capacity'
+    : 'The battery is overcharged';
+console.log(ba2);
+
+const oilChange = 50;
+const ch =
+  oilChange >= 40 && oilChange <= 100 ? oilChange * 0.13 : oilChange * 0.2;
+console.log(ch);
+console.log(
+  `The bill for the oil change is $${oilChange + ch}, taxes included`
+);
 
 // practice challenge
 
@@ -105,7 +126,7 @@ console.log(foodTemp);
 //   }`
 // );
 
-// 1.33 functions
+// 1.33 ---------------Functions----------------------------------------------
 // function reptile() {
 //   console.log('frog');
 // }
@@ -156,3 +177,11 @@ console.log(foodTemp);
 
 // const sales3 = watch(452, 352);
 // console.log(sales3);
+
+// function paper(kirkland, scott) {
+//   const pa = `${kirkland} people buy Kirkland tissue paper and ${scott} people purchase Scott tissue`;
+//   return pa;
+// }
+
+// const papr = paper(50, 400);
+// console.log(papr);
