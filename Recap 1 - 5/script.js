@@ -697,16 +697,37 @@ console.log(
 // // console.log();// is a type of function
 // // const num = Number('23');//Number is also a type of function, type num in the console in the browser
 
-function keyboard(apple, microsoft) {
-  const brnd = `Apple sold ${apple} keyboards and Microsoft sold ${microsoft} keyboards.`;
-  return brnd;
+// function keyboard(apple, microsoft) {
+//   const brnd = `Apple sold ${apple} keyboards and Microsoft sold ${microsoft} keyboards.`;
+//   return brnd;
+// }
+
+// const ty1 = keyboard(50, 400);
+// console.log(ty1);
+
+// const ty2 = keyboard(20, 5420);
+// console.log(ty2);
+
+// const ty3 = keyboard(4520, 2301);
+// console.log(ty3);
+
+// 1.34 Function declaratons vs expressions
+
+function calcAge1(birthYear) {
+  // Function Declaration
+  // const age = 2037- birthYear; //no neet to store this into a variable
+  // return age; or return age, we can simply do the following
+  return 2037 - birthYear;
 }
 
-const ty1 = keyboard(50, 400);
-console.log(ty1);
+const age1 = calcAge1(1991);
+console.log(age1);
 
-const ty2 = keyboard(20, 5420);
-console.log(ty2);
+const calcAge2 = function (birthYear) {
+  //Function expression (storing function into a variable)
+  return 2037 - birthYear;
+};
+const age2 = calcAge2(1991); // the function expression is called the same way and the results are the same
+console.log(age1, age2);
 
-const ty3 = keyboard(4520, 2301);
-console.log(ty3);
+// The difference between the declaration and the expression is that the function declaration can be called before defining it. expression cannot be called before defining it. expression forces you to structure your code.
