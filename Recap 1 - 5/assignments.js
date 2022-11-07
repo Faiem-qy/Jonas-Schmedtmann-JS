@@ -51,27 +51,27 @@ console.log(foodTemp);
 
 /*
 */
-const battery = 3000;
-const ba =
-  battery >= 2000 && battery <= 4000
-    ? 'The battery is fully charged'
-    : 'The battery is ovecharged';
-console.log(ba);
+// const battery = 3000;
+// const ba =
+//   battery >= 2000 && battery <= 4000
+//     ? 'The battery is fully charged'
+//     : 'The battery is ovecharged';
+// console.log(ba);
 
-const battery2 = 450;
-const ba2 =
-  battery2 >= 400 && battery2 <= 500
-    ? 'The battery has good capacity'
-    : 'The battery is overcharged';
-console.log(ba2);
+// const battery2 = 450;
+// const ba2 =
+//   battery2 >= 400 && battery2 <= 500
+//     ? 'The battery has good capacity'
+//     : 'The battery is overcharged';
+// console.log(ba2);
 
-const oilChange = 50;
-const ch =
-  oilChange >= 40 && oilChange <= 100 ? oilChange * 0.13 : oilChange * 0.2;
-console.log(ch);
-console.log(
-  `The bill for the oil change is $${oilChange + ch}, taxes included`
-);
+// const oilChange = 50;
+// const ch =
+//   oilChange >= 40 && oilChange <= 100 ? oilChange * 0.13 : oilChange * 0.2;
+// console.log(ch);
+// console.log(
+//   `The bill for the oil change is $${oilChange + ch}, taxes included`
+// );
 
 // practice challenge
 
@@ -185,3 +185,27 @@ console.log(
 
 // const papr = paper(50, 400);
 // console.log(papr);
+
+// 1
+const ketchup = function (heinz) {
+  return `${heinz} sales of Heinz ketchup is not bad for the day.`;
+};
+
+const k1 = ketchup(25);
+console.log(k1);
+
+// 2
+const ketchup2 = function (French) {
+  return `${French} sales of French ketchup is a good amount of sales.`;
+};
+
+const k2 = ketchup2(35);
+console.log(k2);
+
+// 3
+const ketchup3 = function (franks) {
+  return `There are ${franks} bottles of Franks ketchup left.`;
+};
+
+const k3 = ketchup3(60);
+console.log(k3);
