@@ -713,21 +713,40 @@ console.log(
 
 // 1.34 Function declaratons vs expressions
 
-function calcAge1(birthYear) {
-  // Function Declaration
-  // const age = 2037- birthYear; //no neet to store this into a variable
-  // return age; or return age, we can simply do the following
-  return 2037 - birthYear;
-}
+// function calcAge1(birthYear) {
+//   // Function Declaration
+//   // const age = 2037- birthYear; //no neet to store this into a variable
+//   // return age; or return age, we can simply do the following
+//   return 2037 - birthYear;
+// }
 
-const age1 = calcAge1(1991);
-console.log(age1);
+// const age1 = calcAge1(1991);
+// console.log(age1);
 
-const calcAge2 = function (birthYear) {
-  //Function expression (storing function into a variable)
-  return 2037 - birthYear;
-};
-const age2 = calcAge2(1991); // the function expression is called the same way and the results are the same
-console.log(age1, age2);
+// const calcAge2 = function (birthYear) {
+//   //Function expression (storing function into a variable)
+//   return 2037 - birthYear;
+// };
+// const age2 = calcAge2(1991); // the function expression is called the same way and the results are the same
+// console.log(age1, age2);
 
 // The difference between the declaration and the expression is that the function declaration can be called before defining it. expression cannot be called before defining it. expression forces you to structure your code.
+
+// 1.35 Arrow Functions - shorter simplest form
+
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = birthYear => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  return retirement;
+};
+
+console.log(yearsUntilRetirement(1991));
+//6min 24s
