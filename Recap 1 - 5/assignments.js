@@ -187,25 +187,25 @@ console.log(foodTemp);
 // console.log(papr);
 
 // 1
-const ketchup = function (heinz) {
-  return `${heinz} sales of Heinz ketchup is not bad for the day.`;
-};
+// const ketchup = function (heinz) {
+//   return `${heinz} sales of Heinz ketchup is not bad for the day.`;
+// };
 
-const k1 = ketchup(25);
-console.log(k1);
+// const k1 = ketchup(25);
+// console.log(k1);
 
-// 2
-const ketchup2 = function (French) {
-  return `${French} sales of French ketchup is a good amount of sales.`;
-};
+// // 2
+// const ketchup2 = function (French) {
+//   return `${French} sales of French ketchup is a good amount of sales.`;
+// };
 
-const k2 = ketchup2(35);
-console.log(k2);
+// const k2 = ketchup2(35);
+// console.log(k2);
 
-// 3
-const ketchup3 = function (franks) {
-  return `There are ${franks} bottles of Franks ketchup left.`;
-};
+// // 3
+// const ketchup3 = function (franks) {
+//   return `There are ${franks} bottles of Franks ketchup left.`;
+// };
 
-const k3 = ketchup3(60);
-console.log(k3);
+// const k3 = ketchup3(60);
+// console.log(k3);
