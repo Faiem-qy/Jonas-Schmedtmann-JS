@@ -209,3 +209,14 @@ console.log(foodTemp);
 
 // const k3 = ketchup3(60);
 // console.log(k3);
+
+const pepper = ripe => 100 - ripe;
+const chilli = pepper(52);
+console.log(chilli);
+
+const harvest = (ripe, red) => {
+  const days = 100 - ripe;
+  const picking = 10 - days;
+  return `When the pepper is ${red} days old it will be red which means that it has ${picking} days to be harvested`;
+};
+console.log(harvest(100, 80));
