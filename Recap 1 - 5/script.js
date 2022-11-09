@@ -1,7 +1,7 @@
 'use strict';
 
 // 1.9
-/*--------------------------
+/*-----------------------------------------------------------------
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
 //1.10
@@ -50,7 +50,7 @@ console.log(myFirstJob);
 
 */
 
-/*-----------------------------
+/*----------------------------------------------------------------------------
 let javaScriptIsFun = true;
 console.log(true);
 
@@ -76,7 +76,7 @@ console.log(typeof year);
 console.log(typeof null); //bug in js it id desplayed as an object in the cl. it should return as null
 */
 
-/*------------------------
+/*-------------------------------------------------------------------------
 // 1.13
 
 let age = 30;
@@ -92,7 +92,7 @@ var job = 'programmer';
 job = 'teacher';
 
 */
-/*----------------------------
+/*-------------------------------------------------------------------------
 // 1.14 Basic Operators
 
 // allows to combine values
@@ -128,7 +128,7 @@ const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
 */
 
-/*-------------------------------
+/*--------------------------------------------------------------------------
 // 1.15 Operator precedence
 
 const now = 2037;
@@ -147,7 +147,7 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
 
-/*--------------------------------
+/*----------------------------------------------------------------------
 //1.16 coding exercise
 
 //Test Data 1
@@ -183,7 +183,7 @@ if (markBMI > johnBMI) {
   );
 }
 */
-/*-------------------------------
+/*-------------------------------------------------------------------------
 // 1.17 Strings and template literals
 
 const firstName = 'Jonas';
@@ -240,6 +240,7 @@ console.log(`String
  lines`);
 */
 /*
+----------------------------------------------------------------------------------
 //  1.18 Taking decisions if/else statements
 
 const age = 15;
@@ -294,7 +295,7 @@ if (ageofpilot >= 21) {
 }
 */
 
-/*------------------------------------
+/*-------------------------------------------------------------------------------
 // 1.19 coding challenge
 
 //Test Data 1
@@ -330,7 +331,7 @@ if (markBMI >= johnBMI) {
   );
 }
 */
-/*--------------------------------------
+/*---------------------------------------------------------------------------
 // 1.20. Type Conversion and Type Coercion
 
 //Type Conversion
@@ -360,7 +361,7 @@ n = n - 1;
 console.log(n); // the result of this would 10 because it executed 1+1 = 11 - 1 = 10
 */
 
-/*---------------------
+/*-------------------------------------------------------------------------
 // 1.21 truthy falsy - 5 falsy values: 0, '',undefined, null, NaN
 //- will become  false when it is converted to a boolean
 
@@ -400,7 +401,7 @@ if (height1) {
 
 */
 
-/*---------------------------
+/*------------------------------------------------------------------------
  //1.22
 
 const age = '18';
@@ -429,7 +430,7 @@ if (favourite !== 23) console.log('Why not 23?');
 // /* 1.23 Basic boolean  logic: THE AND, OR & NOT OPERATORS
 //lecture
 
-/*---------------------------------
+/*---------------------------------------------------------------------
 // 1.24 Locgical Operators
 
 const hasDriversLicense = true; //A
@@ -484,7 +485,7 @@ if (hasDownpayment && hasJob && hasGoodSalary) {
   console.log('John cannot afford to buy a home');
 }
 */
-/*---------------------------
+/*-------------------------------------------------------------------------
 // 1.25 Challenge
 
 // const score0Dolphins = (96 + 108 + 89) / 3;
@@ -525,6 +526,7 @@ if (hasDownpayment && hasJob && hasGoodSalary) {
 */
 
 /*
+-------------------------------------------------------------------------
 // 1.26 Switch statement
 // the switch statement is a cleaner easier to reads code but is comparable to the if else statement, it is less used and is up to personal preference.
 
@@ -597,7 +599,7 @@ switch (carBrand) {
     console.log('Not a brand of car');
 }
 */
-/*----------------------
+/*---------------------------------------------------------------------
 // 1.27 Statement and expressions// a piece of code that provides a value
 
 3 + 4;
@@ -610,7 +612,7 @@ if (23 > 10) {
 
 console.log(`I'm ${2037 - 1991} years old`); //${} contains the expression. You cannot insert the statement within ${}.
 */
-/*------------------
+/*-------------------------------------------------------------------
 //1.28 The Conditional (Tenary) Operator
 // const age = 23;
 // age >= 18
@@ -634,6 +636,7 @@ console.log(`I like to drink ${age >= 18 ? 'juice' : 'water'}`);
  */
 
 /*
+// -----------------------------------------------------------------------
 // 1.29 challenge
 
 const bill = 40; // 275, 40, 430
@@ -644,6 +647,7 @@ console.log(
 
 */
 /*
+// -------------------------------------------------------------------
 // 1.30 JS releases ES5,ES6+ and ESNext
 
 // -In 1995 Mocha (first gen) was made by Brendan Eich in 10 days.Brendan
@@ -664,6 +668,7 @@ console.log(
 //- ES2021 and newer - called ESNext: future versions of the language
 */
 
+// -----------------------------------------------------------------
 // 1.31 intro part 2 Fundamental
 // 1.32 setting up strict mode
 //1.33 Functions
@@ -711,6 +716,7 @@ console.log(
 // const ty3 = keyboard(4520, 2301);
 // console.log(ty3);
 
+// ---------------------------------------------------------------
 // 1.34 Function declaratons vs expressions
 
 // function calcAge1(birthYear) {
@@ -732,6 +738,7 @@ console.log(
 
 // The difference between the declaration and the expression is that the function declaration can be called before defining it. expression cannot be called before defining it. expression forces you to structure your code.
 
+// -----------------------------------------------------------------------
 // 1.35 Arrow Functions - shorter simplest form
 
 // const calcAge2 = function (birthYear) {
@@ -742,11 +749,12 @@ const calcAge3 = birthYear => 2037 - birthYear;
 const age3 = calcAge3(1991);
 console.log(age3);
 
-const yearsUntilRetirement = birthYear => {
+const yearsUntilRetirement = (birthYear, firstName) => {
   const age = 2037 - birthYear;
   const retirement = 65 - age;
-  return retirement;
+  // return retirement;
+  return `${firstName} retires in ${retirement} years`;
 };
 
-console.log(yearsUntilRetirement(1991));
-//6min 24s
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1980, 'Bob'));
