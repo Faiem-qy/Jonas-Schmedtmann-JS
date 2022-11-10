@@ -210,13 +210,26 @@ console.log(foodTemp);
 // const k3 = ketchup3(60);
 // console.log(k3);
 
-const pepper = ripe => 100 - ripe;
-const chilli = pepper(52);
-console.log(chilli);
+// const pepper = ripe => 100 - ripe;
+// const chilli = pepper(52);
+// console.log(chilli);
 
-const harvest = (ripe, red) => {
-  const days = 100 - ripe;
-  const picking = 10 - days;
-  return `When the pepper is ${red} days old it will be red which means that it has ${picking} days to be harvested`;
+// const harvest = (ripe, red) => {
+//   const days = 100 - ripe;
+//   const picking = 10 - days;
+//   return `When the pepper is ${red} days old it will be red which means that it has ${picking} days to be harvested`;
+// };
+// console.log(harvest(100, 80));
+
+const time = cookTime => 40 - cookTime;
+const ct = time(15);
+console.log(ct);
+
+const timeRemaining = (cookTime, nameOfDish) => {
+  const remaining = 50 - cookTime;
+  const finished = 60 - remaining;
+  // return finished;
+  return `The ${nameOfDish} will be finished in ${cookTime} minutes. `;
 };
-console.log(harvest(100, 80));
+
+console.log(timeRemaining(30, 'beef stew'));
