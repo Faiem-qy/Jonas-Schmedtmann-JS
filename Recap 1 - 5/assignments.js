@@ -221,15 +221,47 @@ console.log(foodTemp);
 // };
 // console.log(harvest(100, 80));
 
-const time = cookTime => 40 - cookTime;
-const ct = time(15);
-console.log(ct);
+// const time = cookTime => 40 - cookTime;
+// const ct = time(15);
+// console.log(ct);
 
-const timeRemaining = (cookTime, nameOfDish) => {
-  const remaining = 50 - cookTime;
-  const finished = 60 - remaining;
-  // return finished;
-  return `The ${nameOfDish} will be finished in ${cookTime} minutes. `;
-};
+// const timeRemaining = (cookTime, nameOfDish) => {
+//   const remaining = 50 - cookTime;
+//   const finished = 60 - remaining;
+//   // return finished;
+//   return `The ${nameOfDish} will be finished in ${cookTime} minutes. `;
+// };
 
-console.log(timeRemaining(30, 'beef stew'));
+// console.log(timeRemaining(30, 'beef stew'));
+
+//1.36 Functions calling othe functions
+// example 1
+function bowlsOfPortions(por) {
+  return por * 5;
+}
+
+function portion(chicken, friedRice) {
+  const bowlsOfChicken = bowlsOfPortions(chicken);
+  const bowlsOfRice = bowlsOfPortions(friedRice);
+
+  const dish = `Table four need ${bowlsOfRice} portions of Fried Rice and ${bowlsOfChicken} portions of Chicken.`;
+  return dish;
+}
+
+console.log(portion(5, 3));
+
+// example 2
+
+function replacement(newHires) {
+  return newHires * 2;
+  // return (newHires = `if the employees are new hires then they need 2 devies`);// this works as well
+}
+
+function devices(apple, lenovo) {
+  const appleHires = replacement(apple);
+  const lenovoHires = replacement(lenovo);
+  const laptops = `Ontario has ${appleHires} orders of Apple devices and ${lenovoHires} orders of Lenovo devices `;
+  return laptops;
+}
+
+console.log(devices(250, 300));
