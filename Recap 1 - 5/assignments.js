@@ -236,32 +236,32 @@ console.log(foodTemp);
 
 //1.36 Functions calling othe functions
 // example 1
-function bowlsOfPortions(por) {
-  return por * 5;
-}
+// function bowlsOfPortions(por) {
+//   return por * 5;
+// }
 
-function portion(chicken, friedRice) {
-  const bowlsOfChicken = bowlsOfPortions(chicken);
-  const bowlsOfRice = bowlsOfPortions(friedRice);
+// function portion(chicken, friedRice) {
+//   const bowlsOfChicken = bowlsOfPortions(chicken);
+//   const bowlsOfRice = bowlsOfPortions(friedRice);
 
-  const dish = `Table four need ${bowlsOfRice} portions of Fried Rice and ${bowlsOfChicken} portions of Chicken.`;
-  return dish;
-}
+//   const dish = `Table four need ${bowlsOfRice} portions of Fried Rice and ${bowlsOfChicken} portions of Chicken.`;
+//   return dish;
+// }
 
-console.log(portion(5, 3));
+// console.log(portion(5, 3));
 
-// example 2
+// // example 2
 
-function replacement(newHires) {
-  return newHires * 2;
-  // return (newHires = `if the employees are new hires then they need 2 devies`);// this works as well
-}
+// function replacement(newHires) {
+//   return newHires * 2;
+//   // return (newHires = `if the employees are new hires then they need 2 devies`);// this works as well
+// }
 
-function devices(apple, lenovo) {
-  const appleHires = replacement(apple);
-  const lenovoHires = replacement(lenovo);
-  const laptops = `Ontario has ${appleHires} orders of Apple devices and ${lenovoHires} orders of Lenovo devices `;
-  return laptops;
-}
+// function devices(apple, lenovo) {
+//   const appleHires = replacement(apple);
+//   const lenovoHires = replacement(lenovo);
+//   const laptops = `Ontario has ${appleHires} orders of Apple devices and ${lenovoHires} orders of Lenovo devices `;
+//   return laptops;
+// }
 
-console.log(devices(250, 300));
+// console.log(devices(250, 300));
