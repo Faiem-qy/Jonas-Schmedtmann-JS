@@ -778,23 +778,63 @@ console.log(
 
 //1.37 Reviewing Functions
 
-const calcAge11 = function (birthYear) {
-  return 2037 - birthYear;
-};
+// const calcAge11 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
-const yearsUntilRetirement = function (birthYear, firstName) {
-  const age = calcAge11(birthYear);
-  const retirement = 65 - age;
-  if (retirement > 0) {
-    console.log(`${firstName} retires in ${retirement} years`);
-    return retirement;
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//   const age = calcAge11(birthYear);
+//   const retirement = 65 - age;
+//   if (retirement > 0) {
+//     console.log(`${firstName} retires in ${retirement} years`);
+//     return retirement;
+//   } else {
+//     console.log(`${firstName} is already retired`);
+//     return -1;
+//   }
+
+//   return retirement;
+//   // return `${firstName} retires in ${retirement} years`;
+// };
+// console.log(yearsUntilRetirement(1991, 'Jonas'));
+// console.log(yearsUntilRetirement(1950, 'Mike'));
+
+const avgDolphins = (44 + 23 + 71) / 3;
+const avgKoalas = (65 + 54 + 49) / 3;
+
+// const avgDolphins = (85 + 54 + 41) / 3;
+// const avgKoalas = (23 + 54 + 27) / 3;
+
+console.log(avgDolphins, avgKoalas);
+
+// Function
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(44, 23, 71));
+
+// Test 1
+let scoreD = calcAverage(44, 23, 71);
+let scoreK = calcAverage(65, 54, 49);
+console.log(scoreD, scoreK);
+
+const checkWinner = (avgDolphins, avgKoalas) => {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(
+      `Dolphins average score is ${avgDolphins} and average score of Koalas is ${avgKoalas} so Dolphins win!!`
+    );
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(
+      `Koalas average score is ${avgKoalas} and average score of Dolphins is ${avgDolphins} so Koalas win!!`
+    );
   } else {
-    console.log(`${firstName} is already retired`);
-    return -1;
+    console.log(`No team wins`);
   }
-
-  return retirement;
-  // return `${firstName} retires in ${retirement} years`;
 };
-console.log(yearsUntilRetirement(1991, 'Jonas'));
-console.log(yearsUntilRetirement(1950, 'Mike'));
+
+checkWinner(avgDolphins, avgKoalas);
+checkWinner(251, 123);
+checkWinner(123, 456);
+
+scoreD = calcAverage(85, 54, 41);
+scoreK = calcAverage(23, 34, 27);
+console.log(scoreD, scoreK);
+checkWinner(scoreD, scoreK);
