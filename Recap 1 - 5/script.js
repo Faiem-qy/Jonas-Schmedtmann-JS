@@ -799,42 +799,86 @@ console.log(
 // console.log(yearsUntilRetirement(1991, 'Jonas'));
 // console.log(yearsUntilRetirement(1950, 'Mike'));
 
-const avgDolphins = (44 + 23 + 71) / 3;
-const avgKoalas = (65 + 54 + 49) / 3;
+// const avgDolphins = (44 + 23 + 71) / 3;
+// const avgKoalas = (65 + 54 + 49) / 3;
 
-// const avgDolphins = (85 + 54 + 41) / 3;
-// const avgKoalas = (23 + 54 + 27) / 3;
+// // const avgDolphins = (85 + 54 + 41) / 3;
+// // const avgKoalas = (23 + 54 + 27) / 3;
 
-console.log(avgDolphins, avgKoalas);
+// console.log(avgDolphins, avgKoalas);
 
-// Function
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-console.log(calcAverage(44, 23, 71));
+// // Function
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+// console.log(calcAverage(44, 23, 71));
 
-// Test 1
-let scoreD = calcAverage(44, 23, 71);
-let scoreK = calcAverage(65, 54, 49);
-console.log(scoreD, scoreK);
+// // Test 1
+// let scoreD = calcAverage(44, 23, 71);
+// let scoreK = calcAverage(65, 54, 49);
+// console.log(scoreD, scoreK);
 
-const checkWinner = (avgDolphins, avgKoalas) => {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(
-      `Dolphins average score is ${avgDolphins} and average score of Koalas is ${avgKoalas} so Dolphins win!!`
-    );
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(
-      `Koalas average score is ${avgKoalas} and average score of Dolphins is ${avgDolphins} so Koalas win!!`
-    );
-  } else {
-    console.log(`No team wins`);
-  }
+// const checkWinner = (avgDolphins, avgKoalas) => {
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(
+//       `Dolphins average score is ${avgDolphins} and average score of Koalas is ${avgKoalas} so Dolphins win!!`
+//     );
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     console.log(
+//       `Koalas average score is ${avgKoalas} and average score of Dolphins is ${avgDolphins} so Koalas win!!`
+//     );
+//   } else {
+//     console.log(`No team wins`);
+//   }
+// };
+
+// checkWinner(avgDolphins, avgKoalas);
+// checkWinner(251, 123);
+// checkWinner(123, 456);
+
+// scoreD = calcAverage(85, 54, 41);
+// scoreK = calcAverage(23, 34, 27);
+// console.log(scoreD, scoreK);
+// checkWinner(scoreD, scoreK);
+
+// 1.39 Arrays
+
+// Instead of this
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+//Using the array as a function
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]); // within [] js expects an expression, not statement
+
+// Only primitive values are immutable, an Array is not a primitive value
+// we can add elements to the array or change..Peter to Jay
+// We cannot replace the entire array eg
+// friends = ['Bob', 'Alice']; //eg here
+friends[2] = 'Jay';
+console.log(friends);
+
+const jonas = ['Jonas', ' Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+console.log(jonas.length);
+
+//Exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
 };
+const yrs = [1990, 1967, 2002, 2010, 2018];
+// console.log(calcAge(yrs));
+const age1 = calcAge(yrs[0]);
+const age2 = calcAge(yrs[1]);
+const age3 = calcAge(yrs[yrs.length - 1]);
+console.log(age1, age2, age3);
 
-checkWinner(avgDolphins, avgKoalas);
-checkWinner(251, 123);
-checkWinner(123, 456);
-
-scoreD = calcAverage(85, 54, 41);
-scoreK = calcAverage(23, 34, 27);
-console.log(scoreD, scoreK);
-checkWinner(scoreD, scoreK);
+const ages = [calcAge(yrs[0]), calcAge(yrs[1]), calcAge(yrs[yrs.length - 1])];
+console.log(ages);
