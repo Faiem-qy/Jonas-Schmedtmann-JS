@@ -267,27 +267,34 @@ console.log(foodTemp);
 // console.log(devices(250, 300));
 
 // 1.38 challenge ---------------------------------------------------
-console.log(avgDolphins, avgKoalas);
+// console.log(avgDolphins, avgKoalas);
 
-// Function
-const calcAverage1 = (a, b, c) => (a + b + c) / 3;
-console.log(calcAverage1(44, 23, 71));
+// // Function
+// const calcAverage1 = (a, b, c) => (a + b + c) / 3;
+// console.log(calcAverage1(44, 23, 71));
 
-// Test 1
-const scoreD1 = calcAverage1(44, 23, 71);
-const scoreK1 = calcAverage1(65, 54, 49);
-console.log(scoreD1, scoreK1);
+// // Test 1
+// const scoreD1 = calcAverage1(44, 23, 71);
+// const scoreK1 = calcAverage1(65, 54, 49);
+// console.log(scoreD1, scoreK1);
 
-const checkWinner1 = (avgDolphins, avgKoalas) => {
-  if (avgDolphins > avgKoalas) {
-    console.log(
-      `Dolphins average score is ${avgDolphins} and average score of Koalas is ${avgKoalas} so Dolphins win!!`
-    );
-  } else {
-    console.log(
-      `Koalas average score is ${avgKoalas} and average score of Dolphins is ${avgDolphins} so Koalas win!!`
-    );
-  }
-};
+// const checkWinner1 = (avgDolphins, avgKoalas) => {
+//   if (avgDolphins > avgKoalas) {
+//     console.log(
+//       `Dolphins average score is ${avgDolphins} and average score of Koalas is ${avgKoalas} so Dolphins win!!`
+//     );
+//   } else {
+//     console.log(
+//       `Koalas average score is ${avgKoalas} and average score of Dolphins is ${avgDolphins} so Koalas win!!`
+//     );
+//   }
+// };
 
-console.log(checkWinner1(avgDolphins, avgKoalas));
+// console.log(checkWinner1(avgDolphins, avgKoalas));
+
+// 1.39 Arrays
+const drnk = ['Pepsi', 'Fanta', 'Coke', 'Dr Pepper', 'A&W'];
+console.log(drnk);
+console.log(drnk.length);
+console.log(drnk.length - 1);
+console.log(drnk[3]);
