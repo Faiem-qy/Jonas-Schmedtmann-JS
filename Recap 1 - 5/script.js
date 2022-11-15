@@ -842,43 +842,78 @@ console.log(
 // 1.39 Arrays
 
 // Instead of this
-const friend1 = 'Michael';
-const friend2 = 'Steven';
-const friend3 = 'Peter';
+// const friend1 = 'Michael';
+// const friend2 = 'Steven';
+// const friend3 = 'Peter';
+
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
+
+// //Using the array as a function
+// const years = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]); // within [] js expects an expression, not statement
+
+// // Only primitive values are immutable, an Array is not a primitive value
+// // we can add elements to the array or change..Peter to Jay
+// // We cannot replace the entire array eg
+// // friends = ['Bob', 'Alice']; //eg here
+// friends[2] = 'Jay';
+// console.log(friends);
+
+// const jonas = ['Jonas', ' Schmedtmann', 2037 - 1991, 'teacher', friends];
+// console.log(jonas);
+// console.log(jonas.length);
+
+// //Exercise
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const yrs = [1990, 1967, 2002, 2010, 2018];
+// // console.log(calcAge(yrs));
+// const age1 = calcAge(yrs[0]);
+// const age2 = calcAge(yrs[1]);
+// const age3 = calcAge(yrs[yrs.length - 1]);
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge(yrs[0]), calcAge(yrs[1]), calcAge(yrs[yrs.length - 1])];
+// console.log(ages);
+
+// 1.40 Basic Array Operations(Methods)
 
 const friends = ['Michael', 'Steven', 'Peter'];
+// friends.push('Jay'); //Push is a method which is technically a function( which is attached to the friends array)
+
+// Push ADDS an element to the END of the array--------
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+
+// unshift - method to ADD to the BEGINING of the array---------
+friends.unshift('John');
 console.log(friends);
 
-//Using the array as a function
-const years = new Array(1991, 1984, 2008, 2020);
+//    REMOVE from the END of the Array
 
-console.log(friends[0]);
-console.log(friends[2]);
-
-console.log(friends.length);
-console.log(friends[friends.length - 1]); // within [] js expects an expression, not statement
-
-// Only primitive values are immutable, an Array is not a primitive value
-// we can add elements to the array or change..Peter to Jay
-// We cannot replace the entire array eg
-// friends = ['Bob', 'Alice']; //eg here
-friends[2] = 'Jay';
+// friends.pop();
+// friends.pop();
+console.log(friends);
+const popped = friends.pop();
+console.log(popped);
 console.log(friends);
 
-const jonas = ['Jonas', ' Schmedtmann', 2037 - 1991, 'teacher', friends];
-console.log(jonas);
-console.log(jonas.length);
+friends.shift(); // REMOVE from the BEGINING
+console.log(friends);
 
-//Exercise
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
-const yrs = [1990, 1967, 2002, 2010, 2018];
-// console.log(calcAge(yrs));
-const age1 = calcAge(yrs[0]);
-const age2 = calcAge(yrs[1]);
-const age3 = calcAge(yrs[yrs.length - 1]);
-console.log(age1, age2, age3);
+// indexOf
+console.log(friends.indexOf('Steven')); // tells you which number the element is in the array eg 0,1,2,3 etc
 
-const ages = [calcAge(yrs[0]), calcAge(yrs[1]), calcAge(yrs[yrs.length - 1])];
-console.log(ages);
+console.log(friends.indexOf('Bob')); // this returns -1 because this element is not present in the array
+
+//Includes
+console.log(friends.includes('Steven')); // Includes reveals a true or false answer
+console.log(friends.includes('Bob')); // includes reveals a false answer in this case
