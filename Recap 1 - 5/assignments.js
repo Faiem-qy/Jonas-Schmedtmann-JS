@@ -293,8 +293,40 @@ console.log(foodTemp);
 // console.log(checkWinner1(avgDolphins, avgKoalas));
 
 // 1.39 Arrays
-const drnk = ['Pepsi', 'Fanta', 'Coke', 'Dr Pepper', 'A&W'];
-console.log(drnk);
-console.log(drnk.length);
-console.log(drnk.length - 1);
-console.log(drnk[3]);
+// const drnk = ['Pepsi', 'Fanta', 'Coke', 'Dr Pepper', 'A&W'];
+// console.log(drnk);
+// console.log(drnk.length);
+// console.log(drnk.length - 1);
+// console.log(drnk[3]);
+
+const tools = ['Wrench', 'Socket', 'Pliers', 'Screw Driver'];
+console.log(tools);
+console.log(tools.length);
+console.log(tools.indexOf('Socket'));
+
+//Add front element
+tools.unshift('Torque Wrench', 'line wrench');
+console.log(tools);
+
+//Remove front element
+tools.shift();
+console.log(tools);
+tools.shift();
+console.log(tools);
+
+//Add last element
+tools.push('Crescent');
+console.log(tools);
+tools.push('Slip jaw');
+console.log(tools);
+
+// Remove last element
+tools.pop();
+console.log(tools);
+tools.pop();
+console.log(tools);
+
+console.log(tools.indexOf('Pliers')); //location in array
+console.log(tools.indexOf('Drill Bit')); // if not in the array a -1 will appear
+console.log(tools.includes('Screw Driver')); // is this in the array true
+console.log(tools.includes('Drill Bit'));//  will wriet false if it is not in the array
