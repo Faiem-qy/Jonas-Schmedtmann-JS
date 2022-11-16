@@ -885,35 +885,51 @@ console.log(
 
 // 1.40 Basic Array Operations(Methods)
 
-const friends = ['Michael', 'Steven', 'Peter'];
-// friends.push('Jay'); //Push is a method which is technically a function( which is attached to the friends array)
+// const friends = ['Michael', 'Steven', 'Peter'];
+// // friends.push('Jay'); //Push is a method which is technically a function( which is attached to the friends array)
 
-// Push ADDS an element to the END of the array--------
-const newLength = friends.push('Jay');
-console.log(friends);
-console.log(newLength);
+// // Push ADDS an element to the END of the array--------
+// const newLength = friends.push('Jay');
+// console.log(friends);
+// console.log(newLength);
 
-// unshift - method to ADD to the BEGINING of the array---------
-friends.unshift('John');
-console.log(friends);
+// // unshift - method to ADD to the BEGINING of the array---------
+// friends.unshift('John');
+// console.log(friends);
 
-//    REMOVE from the END of the Array
+// //    REMOVE from the END of the Array
 
-// friends.pop();
-// friends.pop();
-console.log(friends);
-const popped = friends.pop();
-console.log(popped);
-console.log(friends);
+// // friends.pop();
+// // friends.pop();
+// console.log(friends);
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
 
-friends.shift(); // REMOVE from the BEGINING
-console.log(friends);
+// friends.shift(); // REMOVE from the BEGINING
+// console.log(friends);
 
-// indexOf
-console.log(friends.indexOf('Steven')); // tells you which number the element is in the array eg 0,1,2,3 etc
+// // indexOf
+// console.log(friends.indexOf('Steven')); // tells you which number the element is in the array eg 0,1,2,3 etc
 
-console.log(friends.indexOf('Bob')); // this returns -1 because this element is not present in the array
+// console.log(friends.indexOf('Bob')); // this returns -1 because this element is not present in the array
 
-//Includes
-console.log(friends.includes('Steven')); // Includes reveals a true or false answer
-console.log(friends.includes('Bob')); // includes reveals a false answer in this case
+// //Includes
+// console.log(friends.includes('Steven')); // Includes reveals a true or false answer
+// console.log(friends.includes('Bob')); // includes reveals a false answer in this case
+
+// 1.41 challenge 2
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+console.log(calcTip(125));
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(totals);
+
+console.log(bills, tips, totals);
