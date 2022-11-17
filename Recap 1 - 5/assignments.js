@@ -331,20 +331,22 @@ console.log(foodTemp);
 // console.log(tools.includes('Screw Driver')); // is this in the array true
 // console.log(tools.includes('Drill Bit')); //  will wriet false if it is not in the array
 
-const calcTip1 = function (bill1) {
-  return bill1 >= 100 && bill1 <= 500 ? bill1 * 0.2 : bill1 * 0.3;
-};
+// const calcTip1 = function (bill1) {
+//   return bill1 >= 100 && bill1 <= 500 ? bill1 * 0.2 : bill1 * 0.3;
+// };
 
-console.log(calcTip1(250));
+// console.log(calcTip1(250));
 
-const bills1 = [175, 542, 325];
+// const bills1 = [175, 542, 325];
 
-const tips1 = [calcTip1(bills1[0]), calcTip1(bills1[1]), calcTip1(bills1[2])];
+// const tips1 = [calcTip1(bills1[0]), calcTip1(bills1[1]), calcTip1(bills1[2])];
 
-const totals1 = [
-  bills1[0] + tips1[0],
-  bills1[1] + tips1[1],
-  bills1[2] + tips1[2],
-];
+// const totals1 = [
+//   bills1[0] + tips1[0],
+//   bills1[1] + tips1[1],
+//   bills1[2] + tips1[2],
+// ];
 
-console.log(bills1, tips1, totals1);
+// console.log(bills1, tips1, totals1);
+
+// 1.43
