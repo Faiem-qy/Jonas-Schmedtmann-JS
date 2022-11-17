@@ -933,3 +933,55 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
 
 console.log(bills, tips, totals);
+
+// 1.42 Intorduction to Objects
+
+// Array - order matters alot eg [0] or [4]
+// const jonasArray = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 + 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven'],
+// ];
+
+// // Object - order does not matter when retrieving
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: ' Schmedtmann',
+//   agr: 2037 - 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven'],
+// };
+
+// 1.43 Dot and Bracket Notation
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  agr: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+};
+
+//  Using the Dot notation we can call specific data
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+//Brackets Notation - cannot use the dot notation here
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+// in this example we can only get results by using the brackets notation
+const interestedin = prompt(
+  'What do you want to know about Jonas? Choose between firstName, lastName, age, Job and friends'
+);
+console.log(jonas[interestedin]);
+
+if (jonas[interestedin]) {
+  console.log(jonas[interestedin]);
+} else {
+  console.log('Wrong request');
+}
