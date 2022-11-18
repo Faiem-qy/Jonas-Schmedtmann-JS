@@ -350,3 +350,18 @@ console.log(foodTemp);
 // console.log(bills1, tips1, totals1);
 
 // 1.43
+
+const dog = {
+  name: 'Spike',
+  hair: 'Brown',
+  eyes: 'Black',
+  height: 20,
+  favouriteFood: 'Beef Steak',
+  tricks: 'roll over',
+};
+
+console.log(dog);
+
+const pet = prompt(
+  'If you would like information about Spike choose between name, hair, eyes, height, favouriteFood,tricks'
+);
