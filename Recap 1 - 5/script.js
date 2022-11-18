@@ -920,19 +920,19 @@ console.log(
 
 // 1.41 challenge 2
 
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-};
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
 
-console.log(calcTip(125));
+// console.log(calcTip(125));
 
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(totals);
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(totals);
 
-console.log(bills, tips, totals);
+// console.log(bills, tips, totals);
 
 // 1.42 Intorduction to Objects
 
@@ -956,32 +956,45 @@ console.log(bills, tips, totals);
 
 // 1.43 Dot and Bracket Notation
 
-const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  agr: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven'],
-};
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   agr: 2037 - 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven'],
+// };
 
-//  Using the Dot notation we can call specific data
-console.log(jonas);
-console.log(jonas.lastName);
-console.log(jonas['lastName']);
+// //  Using the Dot notation we can call specific data
+// console.log(jonas);
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
 
-//Brackets Notation - cannot use the dot notation here
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
+// //Brackets Notation - cannot use the dot notation here
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
 
-// in this example we can only get results by using the brackets notation
-const interestedin = prompt(
-  'What do you want to know about Jonas? Choose between firstName, lastName, age, Job and friends'
-);
-console.log(jonas[interestedin]);
+// // in this example we can only get results by using the brackets notation
+// const interestedin = prompt(
+//   'What do you want to know about Jonas? Choose between firstName, lastName, age, Job and friends'
+// );
+// console.log(jonas[interestedin]);
 
-if (jonas[interestedin]) {
-  console.log(jonas[interestedin]);
-} else {
-  console.log('Wrong request');
-}
+// if (jonas[interestedin]) {
+//   console.log(jonas[interestedin]);
+// } else {
+//   console.log(
+//     'Wrong request! Choose between firstName, lastName, age, Job and friends'
+//   );
+// }
+
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@jonasschmedtman';
+// console.log(jonas);
+
+// // Challenge
+// //make a string from the array - "Jonas has 3 friends, and his best friend is called Michael"
+
+// console.log(
+//   `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+// );
