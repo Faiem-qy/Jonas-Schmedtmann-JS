@@ -999,14 +999,14 @@ console.log(
 //   `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
 // );
 
-//1.44 Object Methods
+//1.44 Object Methods...any Function that is attached  to an Expression is a Method
 const jonas = {
   firstName: 'Jonas',
   lastName: 'Schmedtmann',
   birthYear: 1991,
   job: 'teacher',
   friends: ['Michael', 'Peter', 'Steven'],
-  hasDriversLicense: true,
+  hasDriversLicense: false,
 
   // calcAge: function (birthYear) {
   //   return 2037 - birthYear;
@@ -1019,6 +1019,12 @@ const jonas = {
     this.age = 2037 - this.birthYear;
     return this.age;
   },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      this.job
+    }, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`;
+  },
 };
 
 console.log(jonas.calcAge()); //using the 'this'keyword
@@ -1028,3 +1034,8 @@ console.log(jonas.age);
 console.log(jonas.age);
 
 // console.log(jonas['calcAge'](1991));
+
+//Challenge
+//"Jonas is a 46- year old teacher, and he has a/ no driver's license"
+
+console.log(jonas.getSummary());
