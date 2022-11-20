@@ -365,3 +365,25 @@ console.log(foodTemp);
 // const pet = prompt(
 //   'If you would like information about Spike choose between name, hair, eyes, height, favouriteFood,tricks'
 // );
+
+//1.44 Objects
+
+const james = {
+  firstName: 'James',
+  lastName: 'Wilder',
+  birthYear: 1984,
+  job: 'Land Scaper',
+  friends: ['Spencer', 'Fred', 'Bob', 'Jim'],
+  hasPilotLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+
+  calcAge: function () {
+    console.log(this);
+    return 2037 - this.birthYear;
+  },
+};
+
+console.log(james.calcAge(1987));
+// console.log(james['calcAge'](1988));// wil yield same result
