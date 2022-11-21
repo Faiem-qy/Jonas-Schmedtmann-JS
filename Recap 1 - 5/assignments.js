@@ -372,7 +372,7 @@ const james = {
   firstName: 'James',
   lastName: 'Wilder',
   birthYear: 1984,
-  job: 'Land Scaper',
+  job: 'Landscaper',
   friends: ['Spencer', 'Fred', 'Bob', 'Jim'],
   hasPilotLicense: true,
 
@@ -380,10 +380,21 @@ const james = {
   //   return 2037 - birthYear;
 
   calcAge: function () {
-    console.log(this);
-    return 2037 - this.birthYear;
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} year old ${
+      james.job
+    } and he has ${this.hasPilotLicense ? 'a' : 'no'} pilot's Licence`;
   },
 };
 
-console.log(james.calcAge(1987));
+console.log(james.calcAge());
+
 // console.log(james['calcAge'](1988));// wil yield same result
+
+// ('James is a 52 year old teacher and he has a pilot's license');
+// getSummary;
+
+console.log(james.getSummary());
