@@ -398,3 +398,22 @@ console.log(james.calcAge());
 // getSummary;
 
 console.log(james.getSummary());
+
+const drink = function (coffee) {
+  return `People in Canada prefer to have ${coffee} drinks from Tim Hortons every week`;
+};
+
+const bev = drink(45);
+console.log(bev);
+
+// 1.46 looping
+
+for (let score = 10; score <= 20; score++) {
+  console.log(`The current range for winning scores are ${score} of ${score}`);
+}
+
+for (let lit = 40; lit <= 55; lit++) {
+  console.log(`The current amount of fuel left is ${lit} of ${lit} litres`);
+}
+
+// 1.47
