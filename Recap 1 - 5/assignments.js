@@ -368,52 +368,52 @@ console.log(foodTemp);
 
 //1.44 Objects
 
-const james = {
-  firstName: 'James',
-  lastName: 'Wilder',
-  birthYear: 1984,
-  job: 'Landscaper',
-  friends: ['Spencer', 'Fred', 'Bob', 'Jim'],
-  hasPilotLicense: true,
+// const james = {
+//   firstName: 'James',
+//   lastName: 'Wilder',
+//   birthYear: 1984,
+//   job: 'Landscaper',
+//   friends: ['Spencer', 'Fred', 'Bob', 'Jim'],
+//   hasPilotLicense: true,
 
-  // calcAge: function (birthYear) {
-  //   return 2037 - birthYear;
+//   // calcAge: function (birthYear) {
+//   //   return 2037 - birthYear;
 
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()} year old ${
-      james.job
-    } and he has ${this.hasPilotLicense ? 'a' : 'no'} pilot's Licence`;
-  },
-};
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()} year old ${
+//       james.job
+//     } and he has ${this.hasPilotLicense ? 'a' : 'no'} pilot's Licence`;
+//   },
+// };
 
-console.log(james.calcAge());
+// console.log(james.calcAge());
 
-// console.log(james['calcAge'](1988));// wil yield same result
+// // console.log(james['calcAge'](1988));// wil yield same result
 
-// ('James is a 52 year old teacher and he has a pilot's license');
-// getSummary;
+// // ('James is a 52 year old teacher and he has a pilot's license');
+// // getSummary;
 
-console.log(james.getSummary());
+// console.log(james.getSummary());
 
-const drink = function (coffee) {
-  return `People in Canada prefer to have ${coffee} drinks from Tim Hortons every week`;
-};
+// const drink = function (coffee) {
+//   return `People in Canada prefer to have ${coffee} drinks from Tim Hortons every week`;
+// };
 
-const bev = drink(45);
-console.log(bev);
+// const bev = drink(45);
+// console.log(bev);
 
-// 1.46 looping
+// // 1.46 looping
 
-for (let score = 10; score <= 20; score++) {
-  console.log(`The current range for winning scores are ${score} of ${score}`);
-}
+// for (let score = 10; score <= 15; score++) {
+//   console.log(`The current range for winning scores are ${score} of ${score}`);
+// }
 
-for (let lit = 40; lit <= 55; lit++) {
-  console.log(`The current amount of fuel left is ${lit} of ${lit} litres`);
-}
+// for (let lit = 40; lit <= 45; lit++) {
+//   console.log(`The current amount of fuel left is ${lit} of ${lit} litres`);
+// }
 
-// 1.47
+// // 1.47
