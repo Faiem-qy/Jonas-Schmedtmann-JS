@@ -1112,12 +1112,20 @@ const jonas = [
   true,
 ];
 
-console.log(jonas[0]);
-console.log(jonas[1]);
-console.log(jonas[2]);
-console.log(jonas[3]);
-console.log(jonas[4]);
+const types = [];
+// console.log(jonas[0]);
+// console.log(jonas[1]);
+// console.log(jonas[2]);
+// console.log(jonas[3]);
+// console.log(jonas[4]);
 
 for (let i = 0; i < jonas.length; i++) {
   console.log(jonas[i], typeof jonas[i]);
+
+  // Filling types of array
+  // types[i] = typeof jonas[i];
+
+  types.push(typeof jonas[i]);
 }
+
+console.log(types);
