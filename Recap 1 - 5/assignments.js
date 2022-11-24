@@ -416,4 +416,4 @@ console.log(foodTemp);
 //   console.log(`The current amount of fuel left is ${lit} of ${lit} litres`);
 // }
 
-// // 1.47
+// // 1.47 Looping Arrays Breaking and Continuing
