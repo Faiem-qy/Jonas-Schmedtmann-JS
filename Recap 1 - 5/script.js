@@ -1096,36 +1096,36 @@ console.log(
 
 // for loop keep running while condition is true
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repetition ${rep}`);
-}
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
 
-// 1.47
+// // 1.47
 
-const jonas = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true,
-  true,
-];
+// const jonas = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven'],
+//   true,
+//   true,
+// ];
 
-const types = [];
-// console.log(jonas[0]);
-// console.log(jonas[1]);
-// console.log(jonas[2]);
-// console.log(jonas[3]);
-// console.log(jonas[4]);
+// const types = [];
+// // console.log(jonas[0]);
+// // console.log(jonas[1]);
+// // console.log(jonas[2]);
+// // console.log(jonas[3]);
+// // console.log(jonas[4]);
 
-for (let i = 0; i < jonas.length; i++) {
-  console.log(jonas[i], typeof jonas[i]);
+// for (let i = 0; i < jonas.length; i++) {
+//   console.log(jonas[i], typeof jonas[i]);
 
-  // Filling types of array
-  // types[i] = typeof jonas[i];
+//   // Filling types of array
+//   // types[i] = typeof jonas[i];
 
-  types.push(typeof jonas[i]);
-}
+//   types.push(typeof jonas[i]);
+// }
 
-console.log(types);
+// console.log(types);
