@@ -418,14 +418,14 @@ console.log(foodTemp);
 
 // // 1.47 Looping Arrays Breaking and Continuing
 
-const fred = ['Fred', 'Rivers', 2022 - 1998, 'Jamaican', 'Driver'];
+// const fred = ['Fred', 'Rivers', 2022 - 1998, 'Jamaican', 'Driver'];
 
-for (let f = 0; f < fred.length; f++) {
-  console.log(fred[f], typeof fred[f]);
-  if (typeof fred[f] !== 'string') continue;
-}
+// for (let f = 0; f < fred.length; f++) {
+//   console.log(fred[f], typeof fred[f]);
+//   if (typeof fred[f] !== 'string') continue;
+// }
 
-for (let f = 0; f < fred.length; f++) {
-  console.log(fred[f], typeof fred[f]);
-  if (typeof fred[f] !== 'number') break;
-}
+// for (let f = 0; f < fred.length; f++) {
+//   console.log(fred[f], typeof fred[f]);
+//   if (typeof fred[f] !== 'number') break;
+// }
