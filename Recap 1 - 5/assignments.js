@@ -432,8 +432,8 @@ console.log(foodTemp);
 
 // 1.49
 
-let rep1 = 1;
-while (rep1 <= 10) {
-  console.log(`Weights repetition ${rep1}`);
-  rep1++;
-}
+// let rep1 = 1;
+// while (rep1 <= 10) {
+//   console.log(`Weights repetition ${rep1}`);
+//   rep1++;
+// }
