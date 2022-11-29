@@ -1171,34 +1171,34 @@ console.log(
 
 //1.50 challenge
 
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-};
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
 
-console.log(calcTip(22));
+// console.log(calcTip(22));
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tipps1 = [];
-const totals = [];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tipps1 = [];
+// const totals = [];
 
-for (let i = 0; i < bills.length; i++) {
-  const tip = calcTip(bills[i]);
-  tipps1.push(tip);
-  totals.push(tip + bills[i]);
-}
+// for (let i = 0; i < bills.length; i++) {
+//   const tip = calcTip(bills[i]);
+//   tipps1.push(tip);
+//   totals.push(tip + bills[i]);
+// }
 
-console.log(bills, tipps1, totals);
+// console.log(bills, tipps1, totals);
 
-const calcAverage = function (arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    // sum = sum + arr[i]; this is the same as bellow
-    sum += arr[i];
-  }
-  // console.log(sum);
-  return sum / arr.length;
-};
+// const calcAverage = function (arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     // sum = sum + arr[i]; this is the same as bellow
+//     sum += arr[i];
+//   }
+//   // console.log(sum);
+//   return sum / arr.length;
+// };
 
-console.log(calcAverage([2, 3, 7]));
-console.log(calcAverage(totals));
-console.log(calcAverage(tipps1));
+// console.log(calcAverage([2, 3, 7]));
+// console.log(calcAverage(totals));
+// console.log(calcAverage(tipps1));
