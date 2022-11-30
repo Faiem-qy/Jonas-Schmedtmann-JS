@@ -1202,3 +1202,39 @@ console.log(
 // console.log(calcAverage([2, 3, 7]));
 // console.log(calcAverage(totals));
 // console.log(calcAverage(tipps1));
+
+// 1.59
+
+//Problem  - We work for a company building a smart home thermometer. Our most recent task is this:"Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor error."
+
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+//1 understanding the problem
+//-what id temp amplitude? answer: differenve between hihest and lowest temp
+//-how to compute max and min temps?
+//= What's a sensor error? and what to do?
+
+// 2. Breaking into sub problems
+// - how to ignore errore?
+// -find max value in temp array
+//- find min value in temp array
+//-Subtract min from max (amplitude)and return it
+
+const calcTempAmplitude = function (temps) {
+  let max = temps[0];
+  let min = temps[0];
+
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+
+    if (typeof curTemp !== 'number') continue;
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+// calcTempAmplitude([3, 7, 4, 1, 8]);
+const amplitude = calcTempAmplitude(temperatures);
+console.log(amplitude);
