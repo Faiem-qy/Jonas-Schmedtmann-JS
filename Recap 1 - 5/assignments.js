@@ -438,31 +438,33 @@ console.log(foodTemp);
 //   rep1++;
 // }
 
-const calcTipp = function (bills) {
-  return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
-};
-console.log(calcTipp(22));
+// const calcTipp = function (bills) {
+//   return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+// };
+// console.log(calcTipp(22));
 
-const bills2 = [22, 250, 170, 450, 35, 100, 5, 1200, 85, 45];
-const tipps2 = [];
-const totals2 = [];
+// const bills2 = [22, 250, 170, 450, 35, 100, 5, 1200, 85, 45];
+// const tipps2 = [];
+// const totals2 = [];
 
-for (let i = 0; i < bills2.length; i++) {
-  const tip = calcTipp(bills2[i]);
-  tipps2.push(tip);
-  totals2.push(tip + bills2[i]);
-}
-console.log(bills2, tipps2, totals2);
+// for (let i = 0; i < bills2.length; i++) {
+//   const tip = calcTipp(bills2[i]);
+//   tipps2.push(tip);
+//   totals2.push(tip + bills2[i]);
+// }
+// console.log(bills2, tipps2, totals2);
 
-const calcAverage2 = function (arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-  // console.log(sum);
-  return sum / arr.length;
-};
+// const calcAverage2 = function (arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   // console.log(sum);
+//   return sum / arr.length;
+// };
 
-console.log(calcAverage2([2, 3, 6]));
-console.log(calcAverage2(totals2));
-console.log(calcAverage2(tipps2));
+// console.log(calcAverage2([2, 3, 6]));
+// console.log(calcAverage2(totals2));
+// console.log(calcAverage2(tipps2));
+
+// 1.59
