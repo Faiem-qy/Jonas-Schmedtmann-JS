@@ -467,4 +467,6 @@ console.log(foodTemp);
 // console.log(calcAverage2(totals2));
 // console.log(calcAverage2(tipps2));
 
-// 1.59
+// 1.59 
+
+const temperatures = 
