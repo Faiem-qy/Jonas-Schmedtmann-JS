@@ -467,6 +467,44 @@ console.log(foodTemp);
 // console.log(calcAverage2(totals2));
 // console.log(calcAverage2(tipps2));
 
-// 1.59 
+// ---------------------------------------
 
-const temperatures = 
+const thomas = [
+  'Thomas',
+  'Shelby',
+  2023 - 1990,
+  'Contractor',
+  ['Raj', 'Sherwin', 'Michael'],
+  true,
+];
+
+const types = [];
+
+// console.log(thomas[0]);
+
+for (let i = 0; i < thomas.length; i++) {
+  //Reading from thomas array
+  console.log(thomas[i], typeof thomas[i]);
+  //   filling types of array
+  //   types[i] = typeof thomas[i];
+  types.push(typeof thomas[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  2037 - years[i];
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+
+for (let i = 0; i < thomas.length; i++) {
+  if (typeof thomas[i] !== 'string') continue;
+  console.log(thomas[i], typeof thomas[i]);
+}
