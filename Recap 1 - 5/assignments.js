@@ -469,42 +469,79 @@ console.log(foodTemp);
 
 // ---------------------------------------
 
-const thomas = [
-  'Thomas',
-  'Shelby',
-  2023 - 1990,
-  'Contractor',
-  ['Raj', 'Sherwin', 'Michael'],
+// const thomas = [
+//   'Thomas',
+//   'Shelby',
+//   2023 - 1990,
+//   'Contractor',
+//   ['Raj', 'Sherwin', 'Michael'],
+//   true,
+// ];
+
+// const types = [];
+
+// // console.log(thomas[0]);
+
+// for (let i = 0; i < thomas.length; i++) {
+//   //Reading from thomas array
+//   console.log(thomas[i], typeof thomas[i]);
+//   //   filling types of array
+//   //   types[i] = typeof thomas[i];
+//   types.push(typeof thomas[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   2037 - years[i];
+//   ages.push(2037 - years[i]);
+// }
+
+// console.log(ages);
+
+// // continue and break
+
+// for (let i = 0; i < thomas.length; i++) {
+//   if (typeof thomas[i] !== 'string') continue;
+//   console.log(thomas[i], typeof thomas[i]);
+// }
+
+//1.48
+//looping backwards
+const jeff = [
+  'Jeff',
+  'Gordon',
+  2052 - 1890,
+  'driver',
+  ['Andre', 'Jhonson', ' Freddie'],
   true,
 ];
 
-const types = [];
-
-// console.log(thomas[0]);
-
-for (let i = 0; i < thomas.length; i++) {
-  //Reading from thomas array
-  console.log(thomas[i], typeof thomas[i]);
-  //   filling types of array
-  //   types[i] = typeof thomas[i];
-  types.push(typeof thomas[i]);
+for (let i = jeff.length - 1; i >= 0; i--) {
+  console.log(i, jeff[i]);
 }
 
-console.log(types);
+for (let exercise = 1; exercise <= 4; exercise++) {
+  console.log(`---------------Starting exercise ${exercise}`);
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
-
-for (let i = 0; i < years.length; i++) {
-  2037 - years[i];
-  ages.push(2037 - years[i]);
+  for (let rep = 1; rep <= 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+  }
+  for (let rep2 = 1; rep2 <= 3; rep2++) {
+    console.log(`For each set ${rep2}a rest should be taken`);
+  }
 }
 
-console.log(ages);
+//1.49 while loop
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition #{rep}`);
+// }
 
-// continue and break
-
-for (let i = 0; i < thomas.length; i++) {
-  if (typeof thomas[i] !== 'string') continue;
-  console.log(thomas[i], typeof thomas[i]);
+let rep = 1;
+while (rep <= 10) {
+  console.log(`WHILE:Lifting weights repetition ${rep}`);
+  rep++;
 }
