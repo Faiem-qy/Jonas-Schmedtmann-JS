@@ -1270,3 +1270,5 @@
 // // calcTempAmplitude([3, 7, 4, 1, 8]);
 // const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
 // console.log(amplitudeNew);
+
+// 1.60 debugging
