@@ -511,29 +511,29 @@ console.log(foodTemp);
 
 //1.48
 //looping backwards
-const jeff = [
-  'Jeff',
-  'Gordon',
-  2052 - 1890,
-  'driver',
-  ['Andre', 'Jhonson', ' Freddie'],
-  true,
-];
+// const jeff = [
+//   'Jeff',
+//   'Gordon',
+//   2052 - 1890,
+//   'driver',
+//   ['Andre', 'Jhonson', ' Freddie'],
+//   true,
+// ];
 
-for (let i = jeff.length - 1; i >= 0; i--) {
-  console.log(i, jeff[i]);
-}
+// for (let i = jeff.length - 1; i >= 0; i--) {
+//   console.log(i, jeff[i]);
+// }
 
-for (let exercise = 1; exercise <= 4; exercise++) {
-  console.log(`---------------Starting exercise ${exercise}`);
+// for (let exercise = 1; exercise <= 4; exercise++) {
+//   console.log(`---------------Starting exercise ${exercise}`);
 
-  for (let rep = 1; rep <= 6; rep++) {
-    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
-  }
-  for (let rep2 = 1; rep2 <= 3; rep2++) {
-    console.log(`For each set ${rep2}a rest should be taken`);
-  }
-}
+//   for (let rep = 1; rep <= 6; rep++) {
+//     // console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+//   }
+//   for (let rep2 = 1; rep2 <= 3; rep2++) {
+//     console.log(`For each set ${rep2}a rest should be taken`);
+//   }
+// }
 
 //1.49 while loop
 // for (let rep = 1; rep <= 10; rep++) {
@@ -542,6 +542,15 @@ for (let exercise = 1; exercise <= 4; exercise++) {
 
 let rep = 1;
 while (rep <= 10) {
-  console.log(`WHILE:Lifting weights repetition ${rep}`);
+  // console.log(`WHILE:Lifting weights repetition ${rep}`);
   rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+while (dice !== 6) {
+  // dice different from 6
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log(`Loop is about to end`);
 }
