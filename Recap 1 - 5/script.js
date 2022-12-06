@@ -1271,6 +1271,7 @@
 // const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
 // console.log(amplitudeNew);
 
+/*
 // 1.60 debugging
 //1.61 debugging with the console and breakpoints
 
@@ -1332,3 +1333,32 @@ const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 
 //A - Identify the Big
 console.log(amplitudeBug);
+*/
+
+// 1.62
+
+// understand the problem
+// - Array transformed into stringm separated by
+// - WHat is X days? answer: Index+1
+
+// 2. breaking up into subproblems
+// - Transform array into String
+// - transform each element to string with 0c
+// - strings need to contain DataTransfer(index+1)
+// - add... between elements and start and end of string
+//- log sring to console
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+console.log(`...${data1[0]} oC ...${data1[1]} oC ...${data1[2]} oC ...`);
+
+const printForecast = function (arr) {
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str = str + `${arr[i]}oC`;
+  }
+  console.log(str);
+};
+
+printForecast(data1);
