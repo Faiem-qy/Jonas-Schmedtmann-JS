@@ -555,18 +555,18 @@ console.log(foodTemp);
 //   if (dice === 6) console.log(`Loop is about to end`);
 // }
 
-// 1.62
-const testData1 = [24, 23, 13];
-const testData2 = [12, -22, -5, 0, 4];
+ // 1.62
+// const testData1 = [24, 23, 13];
+// const testData2 = [12, -22, -5, 0, 4];
 
-// 0176
+// // 0176
 
-const printForecast1 = function (arr) {
-  let str = '';
-  for (let i = 0; i < arr.length; i++) {
-    str = str + `${arr[i]}°c in ${i + 1} days... `;
-  }
-  console.log('...' + str);
-};
+// const printForecast1 = function (arr) {
+//   let str = '';
+//   for (let i = 0; i < arr.length; i++) {
+//     str = str + `${arr[i]}°c in ${i + 1} days... `;
+//   }
+//   console.log('...' + str);
+// };
 
-printForecast1(testData1);
+// printForecast1(testData1);
