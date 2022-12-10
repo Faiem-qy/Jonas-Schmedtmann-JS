@@ -555,7 +555,7 @@ console.log(foodTemp);
 //   if (dice === 6) console.log(`Loop is about to end`);
 // }
 
- // 1.62
+// 1.62
 // const testData1 = [24, 23, 13];
 // const testData2 = [12, -22, -5, 0, 4];
 
@@ -570,3 +570,36 @@ console.log(foodTemp);
 // };
 
 // printForecast1(testData1);
+
+let raceNumber = Math.floor(Math.random() * 1000);
+
+let rRegEarly = false;
+let rAge = 18;
+
+if (rAge >= 18 && rRegEarly === true) {
+  console.log(Number(1000) + raceNumber);
+}
+
+if (rAge >= 18 && rRegEarly === true) {
+  console.log(
+    `If you are over 18 and have registered early will begin the race at 9:30am. Younr race number is ${
+      Number(1000) + raceNumber
+    }`
+  );
+} else if (rAge > 18 && rRegEarly !== true) {
+  console.log(
+    `You are over 18 but you have registered late, hence, you will begin the race at 11:00am. Your race number is ${
+      Number(1000) + raceNumber
+    }`
+  );
+} else if (rAge < 18) {
+  console.log(
+    `Your age is ${rAge}. Because you are under 18, you will bein the race at 12:30pm. Your race number is ${
+      Number(1000) + raceNumber
+    }`
+  );
+} else if ((rAge = 18)) {
+  console.log(
+    `Runners who are ${rAge} years old should see the registration desk`
+  );
+}
