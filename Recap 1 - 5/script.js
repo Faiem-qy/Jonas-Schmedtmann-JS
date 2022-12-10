@@ -1362,4 +1362,3 @@ console.log(amplitudeBug);
 // };
 
 // printForecast(data1);
-/*
