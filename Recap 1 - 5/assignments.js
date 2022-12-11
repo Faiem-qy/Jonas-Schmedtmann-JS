@@ -603,4 +603,40 @@ if (rAge >= 18 && rRegEarly === true) {
     `Runners who are ${rAge} years old should see the registration desk`
   );
 }
-//
+
+const satellite = 'The Moon';
+const galaxy = 'The Milky Way';
+const stars = 'North Star';
+
+const logVisibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+	let region = 'The Arctic';
+  if (region === 'The Arctic'){
+    let lightWaves = 'Northern Lights';
+  console.log(lightWaves);
+  }
+  
+  console.log(lightWaves);
+};
+
+logVisibleLightWaves();
+
+
+const callMyNightSky = function( ) {
+return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+
+}
+console.log(callMyNightSky());
+
+const satellite = 'The Moon';
+const galaxy = 'The Milky Way';
+let stars = 'North Star';
+
+const callMyNightSky = () => {
+stars = 'Sirius';
+	return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
+};
+
+console.log(callMyNightSky());
+console.log(stars);
+
