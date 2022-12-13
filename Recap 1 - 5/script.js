@@ -1363,80 +1363,59 @@ console.log(amplitudeBug);
 
 // printForecast(data1);
 
+// let num = 2;
 
-const city = 'New York City';
-const logCitySkyline = function(){
-  let skyscraper = 'Empire State Building';
-  return 'The stars over the ' + skyscraper + ' in ' + city;
-};
+// const plusFive = () => {
+//   let numPlusFive = num + 5;
+//   return numPlusFive;
+// };
 
-console.log(logCitySkyline());
+// console.log(plusFive());
 
+// let words = ['Hello', 'Cruel', 'And', 'Round', 'World'];
 
-const hobbies = ['swim','play','drive'];
+// for (let i = 0; i < words.length; i++) {
+//   console.log(words[i]);
+// }
+// console.log(words);
 
-console.log(hobbies);
+// let amount = 5;
 
-const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+// const applyTax = () => {
+//   console.log(amount);
+//   amount += amount * 0.1;
+// };
 
+// console.log(amount);
 
-const listItem = famousSayings[0];
-console.log(listItem);
+// applyTax();
 
-console.log(famousSayings[2]);
+// let cost = 500;
+// let type = 'House';
 
+// if (cost < 500 || type === 'House') {
+//   console.log("I'll buy it!");
+// } else {
+//   console.log('I won’t buy it!');
+// }
 
-let groceryList = ['bread', 'tomatoes', 'milk'];
+// let cost = 500;
+// let type = 'House';
 
-groceryList[1] = 'avocados';
+// if (cost < 500 && type === 'Apartment’) {
+//     console.log("I'll buy it!");
+// }
+// else {
+//     console.log("I won’t buy it!")
+// }
 
-let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+// let amount = 5;
 
-const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
-condiments[0] = 'Mayo';
-console.log(condiments);
+// const applyTax = () => {
+//   console.log(amount);
+//   amount += amount * 0.1;
+// };
 
-condiments = ['Mayo'];
-console.log(condiments);
+// console.log(amount);
 
-utensils[3] = 'Spoon';
-console.log(utensils);
-
-const chores = ['wash dishes', 'do laundry', 'take out trash'];
-chores.push('cook food', 'eat food')
-console.log(chores);
-
-const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
-
-
-// groceryList.shift();
-// console.log(groceryList);
-
-// groceryList.unshift('popcorn');
-// console.log(groceryList);
-
-// console.log(groceryList.slice(1,4));
-// console.log(groceryList);
-const pastaIndex = groceryList.indexOf('pasta')
-console.log(pastaIndex);
-
-
-const concept = ['arrays', 'can', 'be', 'mutated'];
-
-function changeArr(arr){
-  arr[3] = 'MUTATED';
-}
-
-changeArr(concept);
-console.log(concept);
-
-const removeElement = function (newArr){
-newArr.pop()
-};
-removeElement(concept);
-console.log(removeElement);
-console.log(concept);
-
-
-const numberClusters = [[1,2],[3,4],[5,6]];
-const target=numberClusters[2][1];
+// console.log(applyTax(5));
