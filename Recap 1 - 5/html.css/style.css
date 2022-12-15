@@ -1,3 +1,17 @@
 body {
-  background-color: rgb(115, 136, 84);
+  background-color: rgb(103, 140, 49);
+  font-family: Arial;
+  font-size:20 px:
+}
+
+h2{
+font-size:40px;
+}
+
+.first{
+    color: red;
+}
+
+#ypur-name {
+    background-color: yellow;
 }
