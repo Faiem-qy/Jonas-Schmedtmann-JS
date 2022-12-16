@@ -1,17 +1,18 @@
 body {
-  background-color: rgb(103, 140, 49);
-  font-family: Arial;
-  font-size:20 px:
+  background-color: rgb(107, 48, 171);
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
-h2{
-font-size:40px;
+h2 {
+  font-size: 40px;
 }
 
-.first{
-    color: red;
+.first {
+  color: red;
 }
 
-#ypur-name {
-    background-color: yellow;
+#your-name {
+  background-color: yellow;
+  border: 5px;
 }
