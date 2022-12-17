@@ -1419,3 +1419,13 @@ console.log(amplitudeBug);
 // console.log(amount);
 
 // console.log(applyTax(5));
+
+
+let cost = 1000;
+let type = 'Car';
+
+if (cost < 650 && type === 'Wagon') {
+  console.log('Buy Two');
+} else {
+  console.log('I would buy one');
+}
