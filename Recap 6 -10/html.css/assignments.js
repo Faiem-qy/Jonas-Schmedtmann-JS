@@ -69,6 +69,7 @@ document.querySelector('.again').addEventListener('click', function () {
 });
 */
 
+/*
 // Refactoring to improving and eliminate duplicate code
 
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
@@ -130,3 +131,5 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '30rem';
 });
+
+*/
