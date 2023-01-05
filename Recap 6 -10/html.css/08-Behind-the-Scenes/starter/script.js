@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 function calcAge(birthYear) {
   const age = 2037 - birthYear;
 
@@ -34,3 +34,57 @@ const firstName = "Jonas";
 calcAge(1991);
 // console.log(age); cannot be accessed because it is in a function scope.
 // printAge() cannot be accessed because it is in a function scope
+*/
+
+/*
+// 8.95 Hoistiing and TDZ practice
+console.log(me);
+// console.log(job);
+// console.log(year);
+
+var me = "Jonas";
+let job = "teacher";
+const yeat = 1991;
+
+//Functions
+console.log(addDecl(2, 3));
+// console.log(addExpr(2, 3));
+console.log(addArrow);
+// console.log(addArrow(2, 3));
+
+function addDecl(a, b) {
+  return a + b;
+}
+
+var addExpr = function (a, b) {
+  return a + b;
+};
+
+var addArrow = (a, b) => a + b;
+
+//Example
+
+console.log(undefined);
+if (!numProducts) deleteShoppingCart(); //this will retun all products deleted because of hoisting, num products is not 10 and is actually undefined even though it is declared as 10.
+
+var numProducts = 10;
+
+function deleteShoppingCart() {
+  console.log("All products deleted!");
+}
+
+//best practices
+// - use const most of the time unless you really need to change variables at a later time then use let
+//- in order to write clean code it is better to declare variables first
+//- always declare functions first and use them after the declaration
+
+var x = 1;
+let y = 2;
+const z = 3;
+
+console.log(x === window.x);
+console.log(y === window.x);
+console.log(z === window.x);
+
+*/
+// 8.96 The This keyword
