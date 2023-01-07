@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 /*
 function calcAge(birthYear) {
   const age = 2037 - birthYear;
@@ -90,7 +90,7 @@ console.log(z === window.x);
 // 8.96 The This keyword
 
 const bob = {
-  name: 'Bob',
+  name: "Bob",
   year: 1989,
   calcAge: function () {
     return 2037 - this.year; // this.year has the same effect of sayig Bob.year
@@ -109,7 +109,7 @@ const calcAge = function (birthYear) {
 calcAge(1991);
 // ---------------------------
 // arrow function uses the lexical this keyword, it uses the this version from the parent scope
-const calcAgeArrow = birthYear => {
+const calcAgeArrow = (birthYear) => {
   console.log(2037 - birthYear);
   console.log(this);
 };
@@ -127,4 +127,9 @@ jonas.calcAge();
 const matilda = {
   year: 2017,
 };
+
 matilda.calcAge = jonas.calcAge;
+matilda.calcAge();
+
+const f = jonas.calcAge;
+f();
