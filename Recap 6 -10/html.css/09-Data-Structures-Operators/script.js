@@ -1,7 +1,7 @@
 'use strict';
 
 const weekdays = ['mon', 'tue', 'wed', 'thr', 'fri', 'sat', 'sun'];
-const hours = {
+const openingHours = {
   [weekdays[3]]: {
     open: 12,
     close: 22,
@@ -26,7 +26,7 @@ const restaurant = {
 
   // openingHours: openingHours,
   //ES6 enganced object literals
-  hours,
+  openingHours,
 
   order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
@@ -48,6 +48,60 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+// 9.114 Looping Objects: Object keys, values and entries
+
+const properties = Object.keys(openingHours);
+console.log(properties);
+
+let openStr = `we are open on ${properties.length}`;
+
+for (const day of properties) {
+  openStr += `${day},`;
+}
+console.log(openStr);
+
+//Property Values
+const values = Object.values(openingHours);
+console.log(values);
+
+//Entire object
+const entries = Object.entries(openingHours);
+console.log(entries);
+
+for (const [key, { open, close }] of entries) {
+  console.log(`On ${key} we open at ${open} and close at ${close}`);
+}
+
+/*  9.113 Optional chaining
+// if (restaurant.openingHours && restaurant.openingHours.mon)
+//   console.log(restaurant.openingHours.mon.open);
+
+// //With optional chaining
+// console.log(restaurant.openingHours.mon?.open);
+// console.log(restaurant.openingHours?.mon?.open);
+
+// Example
+const days = ['mon', 'tue', 'wed', 'thr', 'fri', 'sat', 'sun'];
+
+for (const day of days) {
+  console.log(day);
+  const open = restaurant.openingHours[day]?.open ?? 'closed';
+  console.log(`On ${day}, we open at ${open}`);
+}
+
+//Methods
+console.log(restaurant.order?.(0, 1) ?? 'Methos does not exist');
+console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method does not exist');
+
+// Arrays
+const users = [{ name: 'Jonas', email: 'hello@jonas.io' }];
+// const users = [];
+
+console.log(users[0]?.name ?? 'User array empty');
+
+if (users.length > 0) console.log(users[0].name);
+else console.log('user array empty');
+*/
 
 // 9.112
 
