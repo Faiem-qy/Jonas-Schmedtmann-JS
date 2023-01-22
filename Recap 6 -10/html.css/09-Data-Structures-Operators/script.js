@@ -48,6 +48,10 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+
+// 9.115 challenge 2
+
+/*
 // 9.114 Looping Objects: Object keys, values and entries
 
 const properties = Object.keys(openingHours);
@@ -71,6 +75,7 @@ console.log(entries);
 for (const [key, { open, close }] of entries) {
   console.log(`On ${key} we open at ${open} and close at ${close}`);
 }
+*/
 
 /*  9.113 Optional chaining
 // if (restaurant.openingHours && restaurant.openingHours.mon)
