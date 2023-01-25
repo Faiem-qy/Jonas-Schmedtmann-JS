@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-const weekdays = ["mon", "tue", "wed", "thr", "fri", "sat", "sun"];
+const weekdays = ['mon', 'tue', 'wed', 'thr', 'fri', 'sat', 'sun'];
 const openingHours = {
   [weekdays[3]]: {
     open: 12,
@@ -18,11 +18,11 @@ const openingHours = {
 
 // Data needed for first part of the section
 const restaurant = {
-  name: "Classico Italiano",
-  location: "Via Angelo Tavanti 23, Firenze, Italy",
-  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
-  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
-  mainMenu: ["Pizza", "Pasta", "Risotto"],
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
   // openingHours: openingHours,
   //ES6 enganced object literals
@@ -32,7 +32,7 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery({ starterIndex = 1, mainIndex = 0, time = "20:00", address }) {
+  orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
     console.log(
       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
@@ -49,8 +49,71 @@ const restaurant = {
   },
 };
 
-// 120 challenge #3
+const airline = 'Tap Air Portugal';
+const plane = 'A320';
 
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log('B737'[0]);
+
+console.log(airline.length);
+console.log('B737'.length);
+
+console.log(airline.indexOf('r')); // for the first 'r' in const airline
+console.log(airline.lastIndexOf('r')); //last r in const airline
+console.log(airline.indexOf('portugal')); // cannot be found in the string because the P is case sensitive
+
+// using the slice method to extract part of the String
+console.log(airline.slice(4)); //MAKES A SUB String, DOESN'T CHANGE IT
+console.log(airline.slice(4, 7)); // only air is extracted 7-4 = 3
+
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+console.log(airline.slice(-2));
+/*
+// 120 challenge #3
+const gameEvents = new Map([
+  [17, '⚽ GOAL'],
+  [36, '🔁 Substitution'],
+  [47, '⚽ GOAL'],
+  [61, '🔁 Substitution'],
+  [64, '🔶 Yellow card'],
+  [69, '🔴 Red card'],
+  [70, '🔁 Substitution'],
+  [72, '🔁 Substitution'],
+  [76, '⚽ GOAL'],
+  [80, '⚽ GOAL'],
+  [92, '🔶 Yellow card'],
+]);
+
+
+//1.
+const events = [...new Set(gameEvents.values())];
+console.log(events);
+
+// 2.
+gameEvents.delete(64);
+
+// 3.
+console.log(
+  `An event happened, on abverage, every ${90 / gameEvents.size} minutes`
+);
+
+const time = [...gameEvents.keys()].pop();
+console.log(time);
+console.log(
+  `An event happened, on abverage, every ${time / gameEvents.size} minutes`
+);
+
+// 4.
+for (const [min, event] of gameEvents) {
+  const half = min <= 45 ? 'FIRST' : 'SECOND';
+  console.log(`[HALF] ${min}: ${event}`);
+}
+*/
+/*
 //119 Which data structure should you use?
 
 // // sources of data
@@ -59,7 +122,10 @@ const restaurant = {
 // from external sources eg api
 // arrays vs sets
 // objects vs maps
+
+*/
 /*
+
 // 118 Maps - Iteration
 
 const question = new Map([
