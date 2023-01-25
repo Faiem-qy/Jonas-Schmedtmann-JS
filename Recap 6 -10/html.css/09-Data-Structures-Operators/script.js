@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const weekdays = ['mon', 'tue', 'wed', 'thr', 'fri', 'sat', 'sun'];
+const weekdays = ["mon", "tue", "wed", "thr", "fri", "sat", "sun"];
 const openingHours = {
   [weekdays[3]]: {
     open: 12,
@@ -18,11 +18,11 @@ const openingHours = {
 
 // Data needed for first part of the section
 const restaurant = {
-  name: 'Classico Italiano',
-  location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  name: "Classico Italiano",
+  location: "Via Angelo Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
 
   // openingHours: openingHours,
   //ES6 enganced object literals
@@ -32,7 +32,7 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
+  orderDelivery({ starterIndex = 1, mainIndex = 0, time = "20:00", address }) {
     console.log(
       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
@@ -48,6 +48,18 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+
+// 120 challenge #3
+
+//119 Which data structure should you use?
+
+// // sources of data
+// from the program itself
+// from the UI
+// from external sources eg api
+// arrays vs sets
+// objects vs maps
+/*
 // 118 Maps - Iteration
 
 const question = new Map([
