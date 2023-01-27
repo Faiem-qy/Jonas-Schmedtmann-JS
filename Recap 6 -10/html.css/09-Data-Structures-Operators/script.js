@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const weekdays = ['mon', 'tue', 'wed', 'thr', 'fri', 'sat', 'sun'];
+const weekdays = ["mon", "tue", "wed", "thr", "fri", "sat", "sun"];
 const openingHours = {
   [weekdays[3]]: {
     open: 12,
@@ -18,11 +18,11 @@ const openingHours = {
 
 // Data needed for first part of the section
 const restaurant = {
-  name: 'Classico Italiano',
-  location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  name: "Classico Italiano",
+  location: "Via Angelo Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
 
   // openingHours: openingHours,
   //ES6 enganced object literals
@@ -32,7 +32,7 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
+  orderDelivery({ starterIndex = 1, mainIndex = 0, time = "20:00", address }) {
     console.log(
       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
@@ -48,30 +48,79 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+//9.122 working with strings 2
+const airline = "Tap Air Portugal";
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase);
 
-const airline = 'Tap Air Portugal';
-const plane = 'A320';
+//Fix capitalization in name
+const passenger = "jonAS"; // should look like this JONAS
+const passengerLower = passenger.toLocaleLowerCase();
+const passengerCorrect = passenger[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
+// Comparing emails
+const email = "hello@jonas.io";
+const loginEmail = "  Hello@Jonas.Io \n";
+// const lowerEmail = loginEmail.toLocaleLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+const normalizedEmail = loginEmail.toLocaleLowerCase().trim();
+console.log(normalizedEmail);
+console.log(email === normalizedEmail);
+
+//replacing
+const priceGB = " 288,97%";
+const priceUS = priceGB.replace("%", "$").replace(",", "."); //replace , with . and $ with $
+console.log(priceUS);
+
+const announcement =
+  "All passengers come to boarding door 23. Boarding door 23!";
+
+console.log(announcement.replace("door", "gate"));
+console.log(announcement.replaceAll("door", "gate")); // works with newer versions of JS
+console.log(announcement.replace(/door/g, "gate"));
+
+/*
+//9.121 working with strings
+
+const airline = "Tap Air Portugal";
+const plane = "A320";
 
 console.log(plane[0]);
 console.log(plane[1]);
 console.log(plane[2]);
-console.log('B737'[0]);
+console.log("B737"[0]);
 
 console.log(airline.length);
-console.log('B737'.length);
+console.log("B737".length);
 
-console.log(airline.indexOf('r')); // for the first 'r' in const airline
-console.log(airline.lastIndexOf('r')); //last r in const airline
-console.log(airline.indexOf('portugal')); // cannot be found in the string because the P is case sensitive
+console.log(airline.indexOf("r")); // for the first 'r' in const airline
+console.log(airline.lastIndexOf("r")); //last r in const airline
+console.log(airline.indexOf("portugal")); // cannot be found in the string because the P is case sensitive
 
 // using the slice method to extract part of the String
 console.log(airline.slice(4)); //MAKES A SUB String, DOESN'T CHANGE IT
 console.log(airline.slice(4, 7)); // only air is extracted 7-4 = 3
 
-console.log(airline.slice(0, airline.indexOf(' ')));
-console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+console.log(airline.slice(0, airline.indexOf(" ")));
+console.log(airline.slice(airline.lastIndexOf(" ") + 1));
 
-console.log(airline.slice(-2));
+console.log(airline.slice(-2)); // last two letters from portugal
+console.log(airline.slice(1, -1));
+
+const checkMiddleSeat = function (seat) {
+  //B and E are middle seats
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") console.log("You got the middle seat");
+  else console.log("You got lucky");
+};
+checkMiddleSeat("11B");
+checkMiddleSeat("23C");
+checkMiddleSeat("3E");
+
+console.log(typeof new String("jonas").slice);
+*/
+
 /*
 // 120 challenge #3
 const gameEvents = new Map([
