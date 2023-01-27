@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-const weekdays = ["mon", "tue", "wed", "thr", "fri", "sat", "sun"];
+const weekdays = ['mon', 'tue', 'wed', 'thr', 'fri', 'sat', 'sun'];
 const openingHours = {
   [weekdays[3]]: {
     open: 12,
@@ -18,11 +18,11 @@ const openingHours = {
 
 // Data needed for first part of the section
 const restaurant = {
-  name: "Classico Italiano",
-  location: "Via Angelo Tavanti 23, Firenze, Italy",
-  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
-  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
-  mainMenu: ["Pizza", "Pasta", "Risotto"],
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
   // openingHours: openingHours,
   //ES6 enganced object literals
@@ -32,7 +32,7 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery({ starterIndex = 1, mainIndex = 0, time = "20:00", address }) {
+  orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
     console.log(
       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
@@ -49,19 +49,19 @@ const restaurant = {
   },
 };
 //9.122 working with strings 2
-const airline = "Tap Air Portugal";
+const airline = 'Tap Air Portugal';
 console.log(airline.toLowerCase());
 console.log(airline.toUpperCase);
 
 //Fix capitalization in name
-const passenger = "jonAS"; // should look like this JONAS
+const passenger = 'jonAS'; // should look like this JONAS
 const passengerLower = passenger.toLocaleLowerCase();
 const passengerCorrect = passenger[0].toUpperCase() + passengerLower.slice(1);
 console.log(passengerCorrect);
 
 // Comparing emails
-const email = "hello@jonas.io";
-const loginEmail = "  Hello@Jonas.Io \n";
+const email = 'hello@jonas.io';
+const loginEmail = '  Hello@Jonas.Io \n';
 // const lowerEmail = loginEmail.toLocaleLowerCase();
 // const trimmedEmail = lowerEmail.trim();
 const normalizedEmail = loginEmail.toLocaleLowerCase().trim();
@@ -69,16 +69,40 @@ console.log(normalizedEmail);
 console.log(email === normalizedEmail);
 
 //replacing
-const priceGB = " 288,97%";
-const priceUS = priceGB.replace("%", "$").replace(",", "."); //replace , with . and $ with $
+const priceGB = ' 288,97%';
+const priceUS = priceGB.replace('%', '$').replace(',', '.'); //replace , with . and $ with $
 console.log(priceUS);
 
 const announcement =
-  "All passengers come to boarding door 23. Boarding door 23!";
+  'All passengers come to boarding door 23. Boarding door 23!';
 
-console.log(announcement.replace("door", "gate"));
-console.log(announcement.replaceAll("door", "gate")); // works with newer versions of JS
-console.log(announcement.replace(/door/g, "gate"));
+console.log(announcement.replace('door', 'gate'));
+console.log(announcement.replaceAll('door', 'gate')); // works with newer versions of JS
+console.log(announcement.replace(/door/g, 'gate'));
+
+//Booleans
+const plane = 'A320neo';
+console.log(plane.includes('A320'));
+console.log(plane.includes('Boeing'));
+console.log(plane.startsWith('Air'));
+
+if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
+  console.log('Part of the NEW Airbus family');
+}
+
+//Practice exercise
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();// needed to make the search work
+  if (baggage.includes('knife') || baggage.includes('gun')) {
+    console.log('You are NOT allowed on board');
+  } else {
+    console.log('Welcome aboard!');
+  }
+};
+
+checkBaggage('I have a laptop, some Food and a pocket Knife');
+checkBaggage('Socks and camera');
+checkBaggage('Got some snacks and a gun for protection');
 
 /*
 //9.121 working with strings
