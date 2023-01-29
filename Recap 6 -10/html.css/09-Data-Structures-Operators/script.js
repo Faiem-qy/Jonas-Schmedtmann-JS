@@ -48,6 +48,27 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+// 9.123 working with strings part 3
+console.log('a+very+nice+string'.split('+')); //spliting with +
+console.log('Jonas Schmedtmann'.split(' ')); // split with a space
+
+const [firstName, lastName] = 'Jonas Schmedtmann'.split(' '); //destructuring
+
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' '); //join
+console.log(newName);
+
+const capatilizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+
+  for (const n of names) {
+    namesUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(namesUpper.join(' '));
+};
+capatilizeName('jessica ann smith davis');
+capatilizeName('jonas schmedtmann');
+/*
 //9.122 working with strings 2
 const airline = 'Tap Air Portugal';
 console.log(airline.toLowerCase());
@@ -92,7 +113,7 @@ if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
 
 //Practice exercise
 const checkBaggage = function (items) {
-  const baggage = items.toLowerCase();// needed to make the search work
+  const baggage = items.toLowerCase(); // needed to make the search work
   if (baggage.includes('knife') || baggage.includes('gun')) {
     console.log('You are NOT allowed on board');
   } else {
@@ -103,7 +124,7 @@ const checkBaggage = function (items) {
 checkBaggage('I have a laptop, some Food and a pocket Knife');
 checkBaggage('Socks and camera');
 checkBaggage('Got some snacks and a gun for protection');
-
+*/
 /*
 //9.121 working with strings
 
