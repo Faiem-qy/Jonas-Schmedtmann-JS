@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const weekdays = ['mon', 'tue', 'wed', 'thr', 'fri', 'sat', 'sun'];
+const weekdays = ["mon", "tue", "wed", "thr", "fri", "sat", "sun"];
 const openingHours = {
   [weekdays[3]]: {
     open: 12,
@@ -18,11 +18,11 @@ const openingHours = {
 
 // Data needed for first part of the section
 const restaurant = {
-  name: 'Classico Italiano',
-  location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  name: "Classico Italiano",
+  location: "Via Angelo Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
 
   // openingHours: openingHours,
   //ES6 enganced object literals
@@ -32,7 +32,7 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
+  orderDelivery({ starterIndex = 1, mainIndex = 0, time = "20:00", address }) {
     console.log(
       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
@@ -48,56 +48,111 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+
+// 9.124 challenge
+/*
+Write a program that receives a list of variable names written in underscore_case
+and convert them to camelCase.
+The input will come from a textarea inserted into the DOM (see code below to
+insert the elements), and conversion will happen when the button is pressed.
+Test data (pasted to textarea, including spaces):
+underscore_case
+first_name
+Some_Variable
+calculate_AGE
+delayed_departure
+Should produce this output (5 separate console.log outputs):
+underscoreCase ✅
+firstName ✅✅
+someVariable ✅✅✅
+calculateAge ✅✅✅✅
+delayedDeparture ✅✅✅✅✅
+Hints:
+§ Remember which character defines a new line in the textarea 😉
+§ The solution only needs to work for a variable made out of 2 words, like a_b
+§ Start without worrying about the ✅. Tackle that only after you have the variable
+name conversion working 😉
+§ This challenge is difficult on purpose, so start watching the solution in case
+you're stuck. Then pause and continue!
+Afterwards, test with your own test data!
+*/
+
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
+
+document.querySelector("button").addEventListener("click", function () {
+  const text = document.querySelector("textarea").value;
+  const rows = text.split("\n");
+
+  for (const [i, row] of rows.entries()) {
+    const [first, second] = row.toLowerCase().trim().split("_");
+
+    const output = `${first}${second.replace(
+      second[0],
+      second[0].toUpperCase()
+    )}`;
+    console.log(`${output.padEnd(20)} ${"✅".repeat(i + 1)}`);
+  }
+});
+
+// underscore_case
+// first_name
+// Some_Variable
+// calculate_AGE
+// delayed_departure
+
+/*
 // 9.123 working with strings part 3
-console.log('a+very+nice+string'.split('+')); //spliting with +
-console.log('Jonas Schmedtmann'.split(' ')); // split with a space
+console.log("a+very+nice+string".split("+")); //spliting with +
+console.log("Jonas Schmedtmann".split(" ")); // split with a space
 
-const [firstName, lastName] = 'Jonas Schmedtmann'.split(' '); //destructuring
+const [firstName, lastName] = "Jonas Schmedtmann".split(" "); //destructuring
 
-const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' '); //join
+const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" "); //join
 console.log(newName);
 
 const capatilizeName = function (name) {
-  const names = name.split(' ');
+  const names = name.split(" ");
   const namesUpper = [];
 
   for (const n of names) {
     // namesUpper.push(n[0].toUpperCase() + n.slice(1));
     namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
   }
-  console.log(namesUpper.join(' '));
+  console.log(namesUpper.join(" "));
 };
-capatilizeName('jessica ann smith davis');
-capatilizeName('jonas schmedtmann');
+capatilizeName("jessica ann smith davis");
+capatilizeName("jonas schmedtmann");
 
 // Padding
-const message = 'Go to gate 23!';
-console.log(message.padStart(25, '+').padEnd(30, '+'));
-console.log('Jonas'.padStart(25, '+').padEnd(30, '+'));
+const message = "Go to gate 23!";
+console.log(message.padStart(25, "+").padEnd(30, "+"));
+console.log("Jonas".padStart(25, "+").padEnd(30, "+"));
 
 const maskCreditCard = function (number) {
   // padding credit card numbers
-  const str = number + '';
+  const str = number + "";
   const last = str.slice(-4);
-  return last.padStart(str.length, '*');
+  return last.padStart(str.length, "*");
 };
 console.log(maskCreditCard(64637836));
 console.log(maskCreditCard(43378463864647384));
-console.log(maskCreditCard('334859493847755774747'));
+console.log(maskCreditCard("334859493847755774747"));
 
 //Repeat
 
-const message2 = 'Bad weather ...All Departures Delayed...';
+const message2 = "Bad weather ...All Departures Delayed...";
 console.log(message2.repeat(5));
 
 const planesInLine = function (n) {
   // example for planes in line at the airport
-  console.log(`There are ${n} planes in line ${'✈'.repeat(n)}`);
+  console.log(`There are ${n} planes in line ${"✈".repeat(n)}`);
 };
 
 planesInLine(5);
 planesInLine(3);
 planesInLine(12);
+*/
 
 /*
 //9.122 working with strings 2
