@@ -934,3 +934,52 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log((p, q, r));
 */
+
+
+//Udacity  7.0
+const musicians = 0;
+
+if(musicians <= 0) {
+    console.log ("not a group");
+}else if(musicians ===1) {
+    console.log("solo");
+}else if(musicians ===2) {
+    console.log("duet");
+}else if(musicians ===3){
+    console.log("trio");
+}else if(musicians === 4) {
+    console.log("quartet");
+}else if(musicians > 4){
+    console.log("this is a large group");
+}
+
+//Udacity  8.0
+let suspect = "Mr. Parkes"; 
+let room = "billiards room";
+
+let weapon = "";
+let solved = false;
+
+
+if (room == "ballroom" && suspect == "Mr. Kalehoff") {
+solved = true;
+weapon = "poison";
+} else if (room == "gallery" && suspect == "Ms. Van Cleve") {
+solved = true;
+weapon = "trophy";
+} else if (room == "billiards room" && suspect == "Mrs. Sparr") {
+solved = true;
+weapon = "pool stick";
+} else {
+solved = true;
+weapon = "knife";
+suspect = "Mr. Parkes";
+room = "dining room";
+}
+
+
+if (solved) {
+console.log(suspect+" did it in the "+room+" with the "+weapon+"!");
+} else {
+"nothing"
+}
