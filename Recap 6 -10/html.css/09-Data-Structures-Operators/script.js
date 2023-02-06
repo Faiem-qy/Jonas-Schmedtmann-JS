@@ -983,3 +983,23 @@ console.log(suspect+" did it in the "+room+" with the "+weapon+"!");
 } else {
 "nothing"
 }
+
+//Udacity 12.
+var balance = 0;
+var checkBalance = true;
+var isActive = true;
+
+// your code goes here
+
+if(checkBalance === false) {
+    console.log("Thank you. Have a nice day!");
+}else if(checkBalance === true && isActive === true && balance > 0){
+    console.log("Your balance is $" + balance + ".");
+}else if(checkBalance === true && isActive === false && balance > 0){
+    console.log("Your balance is negative. Please contact the bank");
+}else if(checkBalance === true && isActive === false){
+    console.log("Your account is no longer active.");
+}else if(checkBalance === true && isActive === true && balance === 0){
+    console.log("Your account is empty.");
+}
+//to review
