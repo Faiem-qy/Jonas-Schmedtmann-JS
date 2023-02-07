@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
 // 10.128
@@ -66,15 +66,16 @@ checkIn(flight, jonas);
 */
 // 10.130 First class or higher order functions
 
+/*
 // 10.131 Functions accepting call back functions
 
 const oneWord = function (str) {
-  return str.replace(/ /g, "").toLowerCase();
+  return str.replace(/ /g, '').toLowerCase();
 };
 
 const upperFirstWord = function (str) {
-  const [first, ...others] = str.split(" ");
-  return [first.toUpperCase(), ...others].join(" ");
+  const [first, ...others] = str.split(' ');
+  return [first.toUpperCase(), ...others].join(' ');
 };
 
 //Higher-order function
@@ -85,13 +86,35 @@ const transformer = function (str, fn) {
   console.log(`Transformed by:${fn.name}`);
 };
 
-transformer("JavaScript is the best!", upperFirstWord);
-transformer("Javascript is the best!", oneWord);
+transformer('JavaScript is the best!', upperFirstWord);
+transformer('Javascript is the best!', oneWord);
 
 //JS uses callbacks all the time
 const high5 = function () {
-  console.log("👍");
+  console.log('👍');
 };
-document.body.addEventListener("click", high5);
+document.body.addEventListener('click', high5);
 
-["Jonas", "Martha", "Adam"].forEach(high5);
+['Jonas', 'Martha', 'Adam'].forEach(high5);
+*/
+
+/*
+//132. Functions returning functions
+const greet = function (greeting) {
+  return function (name) {
+    // works because of something called a closure
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet('Hey');
+greeterHey('Jonas');
+greeterHey('Steven');
+
+greet('Hello')('Jonas');
+
+const greetArr = greeting => name => console.log(`${greeting} ${name}`);
+
+greetArr('Hi')('Jonas');
+
+*/
