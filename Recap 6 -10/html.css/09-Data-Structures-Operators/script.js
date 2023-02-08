@@ -936,6 +936,62 @@ console.log((p, q, r));
 */
 
 
+*********************************DATA TYPES & VARIABLES**********************************************
+
+//Udacity Data Types 2-5
+// this expression equals 4, change it to equal 42
+console.log(100 / 2 + 1 - 9);
+
+
+// Udacity 2-9
+var celsius = 12;
+var fahrenheit = celsius * (1.8) + 32
+console.log(fahrenheit);
+
+// Udacity 2-14
+// fix the right side of the expression
+var answer = "ALL Strings are CrEaTeD equal" == "ALL Strings are CrEaTeD equal";
+console.log(answer);
+
+// Udacity 2-15
+var joke = "Why couldn't the shoes go out and play? \n They were all \"tied\" up!"
+console.log(joke);
+
+// Udacity 2-16
+var haiku = "Blowing from the west" + "\nFallen leaves gather" +  "\nIn the east."
+console.log(haiku);
+
+// Udacity 2-21
+var thingOne = "red";
+var thingTwo = "blue";
+console.log(thingOne+" "+ thingTwo);
+
+// Udacity 2-22
+var fullName = "Billy Bob";
+
+// Udacity 2-23
+var bill = 10.25 + 3.99 + 7.15;
+var tip = 0.15*bill;
+var total = bill + tip
+console.log(total.toFixed(2));
+
+// Udacity 2-24
+var adjective1 = "amazing";
+var adjective2 = "fun";
+var adjective3 = "entertaining";
+var madLib = "The Intro to JavaScript course is " + adjective1+". James and Julia are so " + adjective2 +". I cannot wait to work through the rest of this " +adjective3 +" content!"
+console.log (madLib);
+
+// Udacity 2-25
+var firstName = "Julia" ;
+var interest = "cats" ;
+var hobby = "video games" ;
+var awesomeMessage = "Hi, my name is " + firstName + ". I love " + interest+ ". In my spare time, I like to " + hobby+"." ;
+console.log(awesomeMessage);
+
+
+// ************************************CONDITIONALS***************************************
+// 
 //Udacity  7.0
 const musicians = 0;
 
