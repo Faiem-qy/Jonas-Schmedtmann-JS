@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 // 10.128
@@ -122,8 +122,8 @@ greetArr('Hi')('Jonas');
 // 133. The call and apply Methods
 
 const lufthansa = {
-  airline: 'Lufthansa',
-  iataCode: 'LH',
+  airline: "Lufthansa",
+  iataCode: "LH",
   bookings: [],
   // booking:function(){}
   book(flightNum, name) {
@@ -134,13 +134,13 @@ const lufthansa = {
   },
 };
 
-lufthansa.book(239, 'Jonas Schmedtmann');
-lufthansa.book(635, 'John Smith');
+lufthansa.book(239, "Jonas Schmedtmann");
+lufthansa.book(635, "John Smith");
 console.log(lufthansa);
 
 const eurowings = {
-  airline: 'Eurowings',
-  iataCode: 'EW',
+  airline: "Eurowings",
+  iataCode: "EW",
   bookings: [],
 };
 
@@ -150,24 +150,66 @@ const book = lufthansa.book;
 // book(23, 'Sarah Williams');
 
 // call method
-book.call(eurowings, 23, 'Sarah Williams'); // manually and explicitly set the this keyword of the function to call
+book.call(eurowings, 23, "Sarah Williams"); // manually and explicitly set the this keyword of the function to call
 
 console.log(eurowings);
 
-book.call(lufthansa, 239, 'Mary Cooper'); //manipulating the this keyword using the call method
+book.call(lufthansa, 239, "Mary Cooper"); //manipulating the this keyword using the call method
 console.log(lufthansa);
 
 const swiss = {
-  airline: 'Swiss Airlines',
-  iataCode: 'LX',
+  airline: "Swiss Airlines",
+  iataCode: "LX",
   bookings: [],
 };
-book.call(swiss, 583, 'Mary Cooper');
+book.call(swiss, 583, "Mary Cooper");
 console.log(swiss);
 
 //  Apply method
-const flightData = [583, 'George Cooper'];
+const flightData = [583, "George Cooper"];
 book.apply(swiss, flightData);
 console.log(swiss);
 
 book.call(swiss, ...flightData);
+
+// 134 The bind method
+// book.call(eurowings, 23, 'Sarah Williams');
+
+const bookEw = book.bind(eurowings);
+const bookLH = book.bind(lufthansa);
+const bookLX = book.bind(swiss);
+
+bookEw(23, "Steven Williams");
+
+const bookEW23 = book.bind(eurowings, 23); // partial application
+bookEW23("Jonas Schmedtmann");
+bookEW23("Martha Cooper");
+
+// Objects used together with event listeners
+
+lufthansa.planes = 300;
+lufthansa.buyPlane = function () {
+  console.log(this);
+
+  this.planes++;
+  console.log(this.planes);
+};
+//lufthansa.buyPlane ();
+
+document
+  .querySelector(".buy")
+  .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
+
+// Partial application
+
+const addTax = (rate, value) => value + value * rate;
+
+console.log(addTax(0.1, 200));
+
+// this keyword not present so we can use null
+const addVAT = addTax.bind(null, 0.13);
+
+console.log(addVAT(100));
+console.log(addVAT(23));
+
+// use example with the greet function
