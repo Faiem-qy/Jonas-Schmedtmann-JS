@@ -119,6 +119,7 @@ greetArr('Hi')('Jonas');
 
 */
 
+/*
 // 133. The call and apply Methods
 
 const lufthansa = {
@@ -211,5 +212,28 @@ const addVAT = addTax.bind(null, 0.13);
 
 console.log(addVAT(100));
 console.log(addVAT(23));
+*/
 
-// use example with the greet function
+//134 the bind method
+// challenge
+
+// 135 Immediately Invoked Function Expression
+const runOnce = function () {
+  console.log("This will never run again");
+};
+runOnce();
+
+// IIFE
+(function () {
+  console.log("This will never runa again");
+  const isPrivate = 23;
+})();
+
+(() => console.log("This will ALSO never run again"))();
+
+{
+  const isPrivate = 23;
+  var notPrivate = 46;
+}
+
+console.log(notPrivate);
