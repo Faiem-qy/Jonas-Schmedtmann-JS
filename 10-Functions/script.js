@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
 // 10.128
@@ -217,23 +217,53 @@ console.log(addVAT(23));
 //134 the bind method
 // challenge
 
+/*
 // 135 Immediately Invoked Function Expression
 const runOnce = function () {
-  console.log("This will never run again");
+  console.log('This will never run again');
 };
 runOnce();
 
+// 136
 // IIFE
 (function () {
-  console.log("This will never runa again");
+  console.log('This will never runa again');
   const isPrivate = 23;
 })();
 
-(() => console.log("This will ALSO never run again"))();
+(() => console.log('This will ALSO never run again'))();
 
 {
   const isPrivate = 23;
   var notPrivate = 46;
 }
-
 console.log(notPrivate);
+*/
+// 137 closures
+
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+
+const booker = secureBooking();
+booker();
+booker();
+booker();
+
+//Closure notes
+// closure makes a function remember all the variables that existed
+// A closure is the closed- over variable environment of the execution context in which a function was created, even after that execution context is gone.
+// A closure gives a funcrion access to all the variables of its parent function, even after parent function has returned. The function keepa a reference to its outer scope, which preserves the scope chain throughout time.
+
+// A closure makes sure that a function doesn't loose connection to variables that existed at the function's birth place.
+
+//  A closure is like a backpack that a function carries around wherever it goes. This backpack has all the variables that were present in the environment where the function was created.
+// We do NOT have to manually create closures, this is a JavaScript feature that happens automatically. We can't even access closed - over variab;es explicitly. A closure is NOT a tangible JavaScript object.
+
+console.dir(booker);
+booker();
