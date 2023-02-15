@@ -132,6 +132,7 @@ console.log('jonas'.at(0));
 console.log('jonas'.at(-1));
 
 */
+/*
 //144  Looping arrays forEach Method
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -158,3 +159,27 @@ movements.forEach(function (mov, i, arr) {
 // 1: function(400)
 // 2: function(450)
 // ...
+*/
+
+// 145 forEach with Maps and Sets
+
+const currencies = new Map([
+  ['USD', 'United States Dollar'],
+  ['EUR', 'Euro'],
+  ['GBP', 'Pound sterling'],
+]);
+
+currencies.forEach(function (value, key, map) {
+  console.log(`${key}: ${value}`);
+});
+
+// Set
+const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
+console.log(currenciesUnique);
+currenciesUnique.forEach(function (value, _, /*key*/ map) {
+  // _ means a throwaway variable
+  // console.log(`${key}:${value}`);
+  console.log(`${value}:${value}`);
+});
+
+// 146 Project :'Bankist' App
