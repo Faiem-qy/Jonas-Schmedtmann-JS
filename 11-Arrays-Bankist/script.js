@@ -271,19 +271,20 @@ console.log(movements);
 console.log(movementsUSD);
 
 const movementsUSDfor = [];
-for (const mov of movements) movementsUSDfor.push(mov * eurToUsd);
+for (const mov of movements) movementsUSDfor.push(mov * eurToUsd); // functional programming
 console.log(movementsUSDfor);
 
-const movementsDescriptions = movements.map((mov, i) => {
-  `Movement ${i + 1}: You ${mov > 0 ? 'deposited' : 'withdrew'} ${Math.abs(
-    mov
-  )}`;
+const movementsDescriptions = movements.map(
+  (mov, i, arr) =>
+    `Movement ${i + 1}: You ${mov > 0 ? 'deposited' : 'withdrew'} ${Math.abs(
+      mov
+    )}`
 
   // if (mov > 0) { // if else statement for the line above 279
   //   return `Movement ${i +1}: You deposited ${mov}`;
   // }else {\
   //   return`Movement ${i + 1}: You witdrew ${Math.abs(mov)}`;
   // }
-});
+);
 
 console.log(movementsDescriptions);
