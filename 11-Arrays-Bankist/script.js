@@ -76,7 +76,39 @@ const displayMovements = function (movements) {
   });
 };
 
-displayMovements(account1.movements); /*
+displayMovements(account1.movements);
+
+//151 continued
+
+const createUsernames = function (accs) {
+  accs.forEach(function (acc) {
+    acc.username = acc.owner
+      // const username = user
+      .toLowerCase()
+      .split(' ')
+      .map(name => name[0])
+      .join('');
+    // return username;
+  });
+};
+
+createUsernames(accounts);
+console.log(accounts);
+// console.log(createUsernames('Steven Thomas Williams'));
+
+// const user = 'Steven Thomas Williams'; // stw
+// const username = user
+//   .toLowerCase()
+//   .split(' ')
+//   .map(function (name) {
+//     //map(name=>name[0]) return name not needed when using =>
+//     return name[0];
+//   }) // can be simplified using arrow function-
+//   .join('');
+
+// console.log(username);
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; /*
 
 // console.log(containerMovements.innerHTML);
 
@@ -155,7 +187,7 @@ console.log('jonas'.at(-1));
 //144  Looping arrays forEach Method
 */
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /*
 //  for (const movement of movements)
@@ -198,7 +230,7 @@ currencies.forEach(function (value, key, map) {
 // Set
 const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
 console.log(currenciesUnique);
-currenciesUnique.forEach(function (value, _, map) {/*key*/ /*
+currenciesUnique.forEach(function (value, _, map) {key
   // _ means a throwaway variable
   // console.log(`${key}:${value}`);
   console.log(`${value}:${value}`);
@@ -256,6 +288,7 @@ checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
 */
 
 // 149 Data Transformations: map, filter, reduce
+/*
 // 150 The Map Method
 
 // using the movements array
@@ -271,20 +304,20 @@ console.log(movements);
 console.log(movementsUSD);
 
 const movementsUSDfor = [];
-for (const mov of movements) movementsUSDfor.push(mov * eurToUsd); // functional programming
+for (const mov of movements) movementsUSDfor.push(mov * eurToUsd);
 console.log(movementsUSDfor);
 
-const movementsDescriptions = movements.map(
-  (mov, i, arr) =>
-    `Movement ${i + 1}: You ${mov > 0 ? 'deposited' : 'withdrew'} ${Math.abs(
-      mov
-    )}`
+const movementsDescriptions = movements.map((mov, i) => {
+  `Movement ${i + 1}: You ${mov > 0 ? 'deposited' : 'withdrew'} ${Math.abs(
+    mov
+  )}`;
 
   // if (mov > 0) { // if else statement for the line above 279
   //   return `Movement ${i +1}: You deposited ${mov}`;
   // }else {\
   //   return`Movement ${i + 1}: You witdrew ${Math.abs(mov)}`;
   // }
-);
+});
+*/
 
-console.log(movementsDescriptions);
+// 151 Computing Usernames
