@@ -321,3 +321,39 @@ const movementsDescriptions = movements.map((mov, i) => {
 */
 
 // 151 Computing Usernames
+
+/*
+// 152 The Filter Method
+const deposits = movements.filter(function (mov) {
+  return mov > 0;
+});
+console.log(movements);
+console.log(deposits);
+
+const depositsFor = [];
+for (const mov of movements) if (mov > 0) depositsFor.push(mov);
+console.log(depositsFor);
+
+// const withdrawals = movements.filter(function (movv) {
+//   return movv < 0; // same as arrow function below
+// });
+
+const withdrawals = movements.filter(mov => mov < 0);
+
+console.log(withdrawals);
+
+*/
+
+// The reduce Method
+
+console.log(movements);
+
+//accumulator is like a snowball
+const balance = movements.reduce(function (accumulator, current, i, arr) {
+  console.log(`Iteration ${i}: ${accumulator}`);
+  // console.log(i);
+  // console.log(current);
+  return accumulator + current;
+}, 0);
+
+console.log(balance);
