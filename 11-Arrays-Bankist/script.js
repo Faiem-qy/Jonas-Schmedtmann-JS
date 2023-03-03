@@ -93,7 +93,13 @@ const createUsernames = function (accs) {
 };
 
 createUsernames(accounts);
-console.log(accounts);
+
+const calcPrintBalance = function (movements) {
+  const balance = movements.reduce((acc, mov) => acc + mov, 0);
+  labelBalance.textContent = `${balance} EUR`;
+};
+calcPrintBalance(account1.movements);
+// console.log(accounts);
 // console.log(createUsernames('Steven Thomas Williams'));
 
 // const user = 'Steven Thomas Williams'; // stw
@@ -349,11 +355,22 @@ console.log(withdrawals);
 console.log(movements);
 
 //accumulator is like a snowball
-const balance = movements.reduce(function (accumulator, current, i, arr) {
-  console.log(`Iteration ${i}: ${accumulator}`);
-  // console.log(i);
-  // console.log(current);
-  return accumulator + current;
-}, 0);
+// const balance = movements.reduce(function (accumulator, current, i, arr) {
+//   console.log(`Iteration ${i}: ${accumulator}`);
+//   // console.log(i);
+//   // console.log(current);
+//   return accumulator + current;
+// }, 0);
+
+// Using arrow function
+const balance = movements.reduce(
+  (accumulator, current) => accumulator + current,
+  0
+);
 
 console.log(balance);
+
+//same result as .reduce using a for loop
+let balance2 = 0;
+for (const mov of movements) balance2 += mov;
+console.log(balance2);
