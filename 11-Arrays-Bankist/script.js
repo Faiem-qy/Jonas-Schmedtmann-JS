@@ -349,7 +349,7 @@ const withdrawals = movements.filter(mov => mov < 0);
 console.log(withdrawals);
 
 */
-
+/*
 // The reduce Method
 
 console.log(movements);
@@ -381,3 +381,28 @@ const max = movements.reduce((acc, mov) => {
   else return mov;
 }, movements[0]);
 console.log(max);
+*/
+
+// 1.
+// Complete the solution so that it reverses the string passed into it.
+
+// 'world'  =>  'dlrow'
+// 'word'   =>  'drow'
+
+// change string into array(split())
+// reverse array(.reverse)
+// change from array to string (join())
+function solution(str) {
+  let string = str.split("").reverse().join("");
+  return string;
+}
+
+console.log(solution("world"));
+console.log(solution("word"));
+
+// variant
+// const solution = str => str.split('').reverse().join('');
+
+// 2nd variant
+// const solution = s => [...s].reverse().join('')
+// 2.
