@@ -406,3 +406,10 @@ console.log(solution("word"));
 // 2nd variant
 // const solution = s => [...s].reverse().join('')
 // 2.
+
+
+// double the integer and return it.
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i*2;
+}
